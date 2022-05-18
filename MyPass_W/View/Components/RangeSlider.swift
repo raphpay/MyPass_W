@@ -9,6 +9,8 @@ import SwiftUI
 
 struct RangeSlider: View {
     
+    // TODO: Simplify this component according to his type
+    var type: ValueType = .characters
     @Binding var value: Double
     var range: ClosedRange<Double>
     var onDecrease: (() -> Void)
@@ -16,8 +18,10 @@ struct RangeSlider: View {
     
     var body: some View {
         VStack {
-            Text("\(Int(value)) charactersisual")
+            Text(type == .characters ? "i18n-characters-slider \(value.toString())" : "i18n-separator-slider \(value.toString())")
                 .font(.custom(Fonts.secularOne.rawValue, size: 26))
+                .scaledToFit()
+                .minimumScaleFactor(0.7)
             HStack {
                 Button {
                     onDecrease()

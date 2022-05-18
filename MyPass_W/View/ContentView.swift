@@ -27,7 +27,7 @@ struct ContentView: View {
                     .font(.custom(Fonts.secularOne.rawValue, size: 30))
                     .foregroundColor(.white)
                 
-                RangeSlider(value: $viewModel.charactersValue, range: viewModel.charactersRange) {
+                RangeSlider(type: .characters, value: $viewModel.charactersValue, range: viewModel.charactersRange) {
                     viewModel.decreaseValue(.characters)
                 } onIncrease: {
                     viewModel.increaseValue(.characters)
@@ -36,7 +36,7 @@ struct ContentView: View {
                 Spacer()
                     .frame(height: 100)
                 
-                RangeSlider(value: $viewModel.separatorValue, range: viewModel.separatorRange) {
+                RangeSlider(type: .separators, value: $viewModel.separatorValue, range: viewModel.separatorRange) {
                     viewModel.decreaseValue(.separators)
                 } onIncrease: {
                     viewModel.increaseValue(.separators)

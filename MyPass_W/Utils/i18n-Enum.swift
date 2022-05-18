@@ -13,11 +13,11 @@ enum i18n {
     var translation: String {
         switch self {
         case .generate:
-            return "i18n_generate"
+            return "i18n-generate"
         case .copy:
-            return "i18n_copy"
+            return "i18n-copy"
         case .textfield:
-            return "i18n_textField"
+            return "i18n-textField"
         }
     }
 }
