@@ -94,4 +94,28 @@ final class ContentViewViewModel: ObservableObject {
         
         return color
     }
+    
+    func calculateTitle() -> String {
+        var title: String
+        
+        switch (charactersValue) {
+        case PasswordStrenght.weak.range:
+            title = PasswordStrenght.weak.title
+            break
+        case PasswordStrenght.mediocre.range:
+            title = PasswordStrenght.mediocre.title
+            break
+        case PasswordStrenght.strong.range:
+            title = PasswordStrenght.strong.title
+            break
+        case PasswordStrenght.veryStrong.range:
+            title = PasswordStrenght.veryStrong.title
+            break
+        default:
+            title = PasswordStrenght.weak.title
+            break
+        }
+        
+        return title
+    }
 }
