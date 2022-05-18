@@ -9,5 +9,3 @@
 "i18n-generate" = "Generate";
 "i18n-copy" = "Copy";
 "i18n-textField" = "Here will be your generated password";
-"i18n-characters-slider %@" = "%@ characters";
-"i18n-separator-slider %@" = "1 separator each %@ characters";

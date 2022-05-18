@@ -9,5 +9,3 @@
 "i18n-generate" = "Générer";
 "i18n-copy" = "Copier";
 "i18n-textField" = "Ici apparaîtra votre mot de passe";
-"i18n-characters-slider %@" = "%@ caractères";
-"i18n-separator-slider %@" = "1 separateur tous les %@ caractères";
