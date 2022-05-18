@@ -17,11 +17,10 @@ struct RangeSlider: View {
     var range: ClosedRange<Double>
     var onDecrease: (() -> Void)
     var onIncrease: (() -> Void)
-
     
     var body: some View {
         VStack {
-            Text(type == .characters ? "characters-count \(Int(value))" : "separators-count \(Int(value))", tableName: locale.identifier == "fr" ? "Plurals-fr" : "Plurals-en")
+            Text(type == .characters ? "characters-count \(Int(value))" : "separators-count \(Int(value))", tableName: "Plurals-\(locale.identifier)")
                 .font(.custom(Fonts.secularOne.rawValue, size: 26))
                 .scaledToFit()
                 .minimumScaleFactor(0.7)
