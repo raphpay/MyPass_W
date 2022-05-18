@@ -23,7 +23,7 @@ struct ContentView: View {
             
             
             VStack {
-                Text(viewModel.calculateTitle())
+                Text(LocalizedStringKey(viewModel.calculateTitle()))
                     .font(.custom(Fonts.secularOne.rawValue, size: 30))
                     .foregroundColor(.white)
                 

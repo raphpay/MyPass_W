@@ -14,13 +14,13 @@ enum PasswordStrenght {
     var title: String {
         switch self {
         case .weak:
-            return "Weak"
+            return i18n.weak.translation
         case .mediocre:
-            return "Mediocre"
+            return i18n.mediocre.translation
         case .strong:
-            return "Strong"
+            return i18n.strong.translation
         case .veryStrong:
-            return "Very Strong"
+            return i18n.veryStrong.translation
         }
     }
     

@@ -9,3 +9,7 @@
 "i18n-generate" = "Générer";
 "i18n-copy" = "Copier";
 "i18n-textField" = "Ici apparaîtra votre mot de passe";
+"i18n-weak" = "Faible";
+"i18n-mediocre" = "Mediocre";
+"i18n-strong" = "Fort";
+"i18n-veryStrong" = "Très Fort";
