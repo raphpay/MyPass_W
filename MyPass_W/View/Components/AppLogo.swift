@@ -16,6 +16,7 @@ struct AppLogo: View {
                 .font(.custom(Fonts.secularOne.rawValue, size: 28))
             Spacer()
         }.padding()
+            .foregroundColor(.white)
     }
 }
 

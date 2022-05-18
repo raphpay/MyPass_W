@@ -25,7 +25,7 @@ struct ContentView: View {
             VStack {
                 Text(viewModel.calculateTitle())
                     .font(.custom(Fonts.secularOne.rawValue, size: 30))
-                    .bold()
+                    .foregroundColor(.white)
                 
                 RangeSlider(value: $viewModel.charactersValue, range: viewModel.charactersRange) {
                     viewModel.decreaseValue(.characters)
@@ -41,7 +41,7 @@ struct ContentView: View {
                 } onIncrease: {
                     viewModel.increaseValue(.separators)
                 }
-            }
+            }.padding(.top, 16)
 
             Spacer()
                 .frame(height: 100)

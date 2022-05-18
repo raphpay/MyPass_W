@@ -25,6 +25,7 @@ struct RangeSlider: View {
                     Image(systemName: "minus")
                 }
                 Slider(value: $value, in: range)
+                    .tint(.black)
                 Button {
                     onIncrease()
                 } label: {
@@ -32,6 +33,7 @@ struct RangeSlider: View {
                 }
             }
         }.padding(.horizontal, 16)
+            .foregroundColor(.white)
     }
 }
 
@@ -42,6 +44,5 @@ struct RangeSlider_Previews: PreviewProvider {
         } onIncrease: {
             //
         }
-
     }
 }
