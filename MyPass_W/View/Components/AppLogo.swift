@@ -10,7 +10,7 @@ import SwiftUI
 struct AppLogo: View {
     var body: some View {
         HStack {
-            Image(systemName: "lock.shield")
+            Image(systemName: SFSymbols.lockShield.rawValue)
                 .font(.custom(Fonts.secularOne.rawValue, size: 28))
             Text("My Pass_W")
                 .font(.custom(Fonts.secularOne.rawValue, size: 28))
