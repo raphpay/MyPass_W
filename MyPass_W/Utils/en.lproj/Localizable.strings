@@ -5,3 +5,7 @@
   Created by Raphaël Payet on 18/05/2022.
   
 */
+
+"i18n_generate" = "Generate";
+"i18n_copy" = "Copy";
+"i18n_textField" = "Here will be your generated password";
