@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import SwiftUI
 
 final class ContentViewViewModel: ObservableObject {
     @Published var generatedPassword: String = ""
@@ -16,6 +17,7 @@ final class ContentViewViewModel: ObservableObject {
     @Published var separatorRange: ClosedRange<Double> = 1...10
     @Published var showAlert: Bool = false
     @Published var alertTitle: String = ""
+    @Published var backgroundColor: Color = .ui.strong
     
     func decreaseValue(_ valueType: ValueType) {
         switch valueType {

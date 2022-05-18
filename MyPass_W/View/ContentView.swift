@@ -15,6 +15,30 @@ struct ContentView: View {
     
     @StateObject var viewModel = ContentViewViewModel()
     
+    func calculateColor() -> Color {
+        var color = viewModel.backgroundColor
+        
+        switch (viewModel.charactersValue) {
+        case 1...7:
+            color = Color.ui.weak
+            break
+        case 7...12:
+            color = Color.ui.mediocre
+            break
+        case 12...24:
+            color = Color.ui.strong
+            break
+        case 24...40:
+            color = Color.ui.veryStrong
+            break
+        default:
+            color = Color.ui.weak
+            break
+        }
+        
+        return color
+    }
+    
     var body: some View {
         VStack {
             AppLogo()
@@ -49,6 +73,7 @@ struct ContentView: View {
             
             Spacer()
         }
+        .background(calculateColor())
         .alert(viewModel.alertTitle, isPresented: $viewModel.showAlert) {
             Button("OK", role: .cancel) { }
         }
