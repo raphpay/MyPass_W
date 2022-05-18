@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 final class ContentViewViewModel: ObservableObject {
     @Published var generatedPassword: String = ""
@@ -53,6 +54,11 @@ final class ContentViewViewModel: ObservableObject {
     }
     
     func copyPassword() {
-        print("copyPassword")
+        if generatedPassword != "" {
+            UIPasteboard.general.string = generatedPassword
+            // Show a success alert
+        } else {
+            // Show an error alert
+        }
     }
 }
