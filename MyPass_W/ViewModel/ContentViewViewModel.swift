@@ -18,6 +18,7 @@ final class ContentViewViewModel: ObservableObject {
     @Published var showAlert: Bool = false
     @Published var alertTitle: String = ""
     @Published var backgroundColor: Color = .ui.strong
+    @Published var passwordStrength: PasswordStrenght = .weak
     
     func decreaseValue(_ valueType: ValueType) {
         switch valueType {
@@ -67,5 +68,30 @@ final class ContentViewViewModel: ObservableObject {
             showAlert.toggle()
             alertTitle = "No password to copy !"
         }
+    }
+    
+    
+    func calculateColor() -> Color {
+        var color = backgroundColor
+        
+        switch (charactersValue) {
+        case PasswordStrenght.weak.range:
+            color = PasswordStrenght.weak.color
+            break
+        case PasswordStrenght.mediocre.range:
+            color = PasswordStrenght.mediocre.color
+            break
+        case PasswordStrenght.strong.range:
+            color = PasswordStrenght.strong.color
+            break
+        case PasswordStrenght.veryStrong.range:
+            color = PasswordStrenght.veryStrong.color
+            break
+        default:
+            color = Color.ui.weak
+            break
+        }
+        
+        return color
     }
 }
