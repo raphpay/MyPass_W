@@ -20,22 +20,28 @@ struct ContentView: View {
     @State private var separatorRange: ClosedRange<Double> = 1...10
     
     func decreaseValue(_ valueType: ValueType) {
-        // TODO: Prevent value to go below 0 and over the max range
         switch valueType {
         case .characters:
-            charactersValue -= 1
+            if (charactersValue > 1) {
+                charactersValue -= 1
+            }
         case .separators:
-            separatorValue -= 1
+            if (separatorValue > 1) {
+                separatorValue -= 1
+            }
         }
     }
     
     func increaseValue(_ valueType: ValueType) {
-        // TODO: Prevent value to go below 0 and over the max range
         switch valueType {
         case .characters:
-            charactersValue += 1
+            if (charactersValue < 40) {
+                charactersValue += 1
+            }
         case .separators:
-            separatorValue += 1
+            if (separatorValue < 10) {
+                separatorValue += 1
+            }
         }
     }
     
