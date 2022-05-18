@@ -11,17 +11,17 @@ struct RangeSlider: View {
     
     // TODO: Simplify this component according to his type
     // TODO: Clean this component
+    @Environment(\.locale) var locale: Locale
     var type: ValueType = .characters
     @Binding var value: Double
     var range: ClosedRange<Double>
     var onDecrease: (() -> Void)
     var onIncrease: (() -> Void)
-    
-    let locale = Locale.current.languageCode
+
     
     var body: some View {
         VStack {
-            Text(type == .characters ? "characters-count \(Int(value))" : "separators-count \(Int(value))", tableName: locale == "en" ? "Plurals-en" : "Plurals-fr")
+            Text(type == .characters ? "characters-count \(Int(value))" : "separators-count \(Int(value))", tableName: locale.identifier == "fr" ? "Plurals-fr" : "Plurals-en")
                 .font(.custom(Fonts.secularOne.rawValue, size: 26))
                 .scaledToFit()
                 .minimumScaleFactor(0.7)
