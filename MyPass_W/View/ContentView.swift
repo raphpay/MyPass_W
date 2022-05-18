@@ -72,29 +72,13 @@ struct ContentView: View {
             Spacer()
                 .frame(height: 100)
             
-            // Buttons
-            Button {
+            RoundedButton(title: "Generate") {
                 generatePassword()
-            } label: {
-                Text("Generate")
-                    .font(.system(size: 25))
-                    .frame(width: 225, height: 55)
-                    .foregroundColor(.white)
-                    .background(.blue)
-                    .cornerRadius(10)
             }
             
-            Button {
+            RoundedButton(title: "Copy") {
                 copyPassword()
-            } label: {
-                Text("Copy")
-                    .font(.system(size: 25))
-                    .frame(width: 225, height: 55)
-                    .foregroundColor(.white)
-                    .background(.blue)
-                    .cornerRadius(10)
             }
-
             
             Spacer()
         }
