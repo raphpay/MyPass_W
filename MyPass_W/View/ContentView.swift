@@ -46,11 +46,11 @@ struct ContentView: View {
             Spacer()
                 .frame(height: 100)
             
-            RoundedButton(title: "Generate") {
+            RoundedButton(title: i18n.generate.translation) {
                 viewModel.generatePassword()
             }
             
-            RoundedButton(title: "Copy") {
+            RoundedButton(title: i18n.copy.translation) {
                 viewModel.copyPassword()
             }
             
