@@ -48,14 +48,7 @@ struct ContentView: View {
     // TODO: Create components
     var body: some View {
         VStack {
-            // App Logo Name
-            HStack {
-                Image(systemName: "lock.shield")
-                    .font(.system(size: 28))
-                Text("My Pass_W")
-                    .font(.system(size: 28))
-                Spacer()
-            }.padding()
+            AppLogo()
             
             // Generated Pass_W Text Field
             TextField("Here will be your generated password", text: $generatedPassword)

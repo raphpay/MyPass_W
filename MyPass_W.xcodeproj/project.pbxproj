@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		865B408528350FBB006B7ACF /* AppLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865B408428350FBB006B7ACF /* AppLogo.swift */; };
 		86B799DB2834149800B27498 /* MyPass_WApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B799DA2834149800B27498 /* MyPass_WApp.swift */; };
 		86B799DD2834149800B27498 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B799DC2834149800B27498 /* ContentView.swift */; };
 		86B799DF2834149900B27498 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86B799DE2834149900B27498 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		865B408428350FBB006B7ACF /* AppLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLogo.swift; sourceTree = "<group>"; };
 		86B799D72834149800B27498 /* MyPass_W.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPass_W.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86B799DA2834149800B27498 /* MyPass_WApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPass_WApp.swift; sourceTree = "<group>"; };
 		86B799DC2834149800B27498 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +34,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		865B408628350FD3006B7ACF /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				865B408428350FBB006B7ACF /* AppLogo.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		865B408728350FDA006B7ACF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				86B799DC2834149800B27498 /* ContentView.swift */,
+				865B408628350FD3006B7ACF /* Components */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		865B408828350FE6006B7ACF /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				86B799DA2834149800B27498 /* MyPass_WApp.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
 		86B799CE2834149800B27498 = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +78,8 @@
 		86B799D92834149800B27498 /* MyPass_W */ = {
 			isa = PBXGroup;
 			children = (
-				86B799DA2834149800B27498 /* MyPass_WApp.swift */,
-				86B799DC2834149800B27498 /* ContentView.swift */,
+				865B408828350FE6006B7ACF /* Support */,
+				865B408728350FDA006B7ACF /* View */,
 				86B799DE2834149900B27498 /* Assets.xcassets */,
 				86B799E02834149900B27498 /* Preview Content */,
 			);
@@ -139,6 +166,7 @@
 			files = (
 				86B799DD2834149800B27498 /* ContentView.swift in Sources */,
 				86B799DB2834149800B27498 /* MyPass_WApp.swift in Sources */,
+				865B408528350FBB006B7ACF /* AppLogo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
