@@ -20,6 +20,7 @@ struct ContentView: View {
     @State private var separatorRange: ClosedRange<Double> = 1...10
     
     func decreaseValue(_ valueType: ValueType) {
+        // TODO: Prevent value to go below 0 and over the max range
         switch valueType {
         case .characters:
             charactersValue -= 1
@@ -29,6 +30,7 @@ struct ContentView: View {
     }
     
     func increaseValue(_ valueType: ValueType) {
+        // TODO: Prevent value to go below 0 and over the max range
         switch valueType {
         case .characters:
             charactersValue += 1
@@ -52,49 +54,21 @@ struct ContentView: View {
             
             PasswordTextField(generatedPassword: $generatedPassword)
             
-            // Sliders
-            VStack {
-                Text("\(Int(charactersValue)) characters")
-                    .font(.system(size: 26))
-                HStack {
-                    Button {
-                        decreaseValue(.characters)
-                    } label: {
-                        Image(systemName: "minus")
-                    }
-                    Slider(value: $charactersValue, in: charactersRange)
-                    Button {
-                        increaseValue(.characters)
-                    } label: {
-                        Image(systemName: "plus")
-                    }
-                }
-            }.padding(.horizontal, 16)
-            
+            RangeSlider(value: $charactersValue, range: charactersRange) {
+                decreaseValue(.characters)
+            } onIncrease: {
+                increaseValue(.characters)
+            }
             
             Spacer()
                 .frame(height: 100)
             
-            VStack {
-                Text("Separator every \(Int(separatorValue)) characters")
-                    .font(.system(size: 26))
-                    .lineLimit(1)
-                HStack {
-                    Button {
-                        decreaseValue(.separators)
-                    } label: {
-                        Image(systemName: "minus")
-                    }
-                    Slider(value: $separatorValue, in: separatorRange)
-                    Button {
-                        increaseValue(.separators)
-                    } label: {
-                        Image(systemName: "plus")
-                    }
-                }
-            }.padding(.horizontal, 16)
-            
-            
+            RangeSlider(value: $separatorValue, range: separatorRange) {
+                decreaseValue(.separators)
+            } onIncrease: {
+                increaseValue(.separators)
+            }
+
             Spacer()
                 .frame(height: 100)
             
