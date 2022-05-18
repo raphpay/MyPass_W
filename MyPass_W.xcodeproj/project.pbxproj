@@ -11,6 +11,7 @@
 		865B408A28351033006B7ACF /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865B408928351033006B7ACF /* PasswordTextField.swift */; };
 		865B408C2835109F006B7ACF /* RangeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865B408B2835109F006B7ACF /* RangeSlider.swift */; };
 		865B408E283512D7006B7ACF /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865B408D283512D7006B7ACF /* RoundedButton.swift */; };
+		865B4092283514BD006B7ACF /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865B4091283514BD006B7ACF /* Fonts.swift */; };
 		86B799DB2834149800B27498 /* MyPass_WApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B799DA2834149800B27498 /* MyPass_WApp.swift */; };
 		86B799DD2834149800B27498 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B799DC2834149800B27498 /* ContentView.swift */; };
 		86B799DF2834149900B27498 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86B799DE2834149900B27498 /* Assets.xcassets */; };
@@ -22,6 +23,9 @@
 		865B408928351033006B7ACF /* PasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
 		865B408B2835109F006B7ACF /* RangeSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangeSlider.swift; sourceTree = "<group>"; };
 		865B408D283512D7006B7ACF /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		865B408F28351412006B7ACF /* SecularOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SecularOne-Regular.ttf"; sourceTree = "<group>"; };
+		865B409028351429006B7ACF /* MyPass-W-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "MyPass-W-Info.plist"; sourceTree = SOURCE_ROOT; };
+		865B4091283514BD006B7ACF /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		86B799D72834149800B27498 /* MyPass_W.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPass_W.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86B799DA2834149800B27498 /* MyPass_WApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPass_WApp.swift; sourceTree = "<group>"; };
 		86B799DC2834149800B27498 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -64,8 +68,17 @@
 			isa = PBXGroup;
 			children = (
 				86B799DA2834149800B27498 /* MyPass_WApp.swift */,
+				865B408F28351412006B7ACF /* SecularOne-Regular.ttf */,
 			);
 			path = Support;
+			sourceTree = "<group>";
+		};
+		865B4093283514DC006B7ACF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				865B4091283514BD006B7ACF /* Fonts.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		86B799CE2834149800B27498 = {
@@ -87,8 +100,10 @@
 		86B799D92834149800B27498 /* MyPass_W */ = {
 			isa = PBXGroup;
 			children = (
-				865B408828350FE6006B7ACF /* Support */,
+				865B409028351429006B7ACF /* MyPass-W-Info.plist */,
 				865B408728350FDA006B7ACF /* View */,
+				865B408828350FE6006B7ACF /* Support */,
+				865B4093283514DC006B7ACF /* Utils */,
 				86B799DE2834149900B27498 /* Assets.xcassets */,
 				86B799E02834149900B27498 /* Preview Content */,
 			);
@@ -173,6 +188,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				865B4092283514BD006B7ACF /* Fonts.swift in Sources */,
 				86B799DD2834149800B27498 /* ContentView.swift in Sources */,
 				865B408E283512D7006B7ACF /* RoundedButton.swift in Sources */,
 				86B799DB2834149800B27498 /* MyPass_WApp.swift in Sources */,
@@ -310,6 +326,7 @@
 				DEVELOPMENT_TEAM = N96T5K2D2H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "MyPass-W-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -339,6 +356,7 @@
 				DEVELOPMENT_TEAM = N96T5K2D2H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "MyPass-W-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

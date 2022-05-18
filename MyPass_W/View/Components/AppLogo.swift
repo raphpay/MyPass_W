@@ -11,9 +11,9 @@ struct AppLogo: View {
     var body: some View {
         HStack {
             Image(systemName: "lock.shield")
-                .font(.system(size: 28))
+                .font(.custom(Fonts.secularOne.rawValue, size: 28))
             Text("My Pass_W")
-                .font(.system(size: 28))
+                .font(.custom(Fonts.secularOne.rawValue, size: 28))
             Spacer()
         }.padding()
     }

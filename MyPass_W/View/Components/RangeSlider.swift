@@ -17,7 +17,7 @@ struct RangeSlider: View {
     var body: some View {
         VStack {
             Text("\(Int(value)) characters")
-                .font(.system(size: 26))
+                .font(.custom(Fonts.secularOne.rawValue, size: 26))
             HStack {
                 Button {
                     onDecrease()

@@ -17,7 +17,7 @@ struct RoundedButton: View {
             action()
         } label: {
             Text(title)
-                .font(.system(size: 25))
+                .font(.custom(Fonts.secularOne.rawValue, size: 25))
                 .frame(width: 225, height: 55)
                 .foregroundColor(.white)
                 .background(.blue)
