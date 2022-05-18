@@ -10,10 +10,12 @@ import UIKit
 
 final class ContentViewViewModel: ObservableObject {
     @Published var generatedPassword: String = ""
-    @Published var charactersValue: Double = 3
+    @Published var charactersValue: Double = 24
     @Published var charactersRange: ClosedRange<Double> = 1...40
     @Published var separatorValue: Double = 6
     @Published var separatorRange: ClosedRange<Double> = 1...10
+    @Published var showAlert: Bool = false
+    @Published var alertTitle: String = ""
     
     func decreaseValue(_ valueType: ValueType) {
         switch valueType {
@@ -57,8 +59,11 @@ final class ContentViewViewModel: ObservableObject {
         if generatedPassword != "" {
             UIPasteboard.general.string = generatedPassword
             // Show a success alert
+            showAlert.toggle()
+            alertTitle = "Password copied in clipboard"
         } else {
-            // Show an error alert
+            showAlert.toggle()
+            alertTitle = "No password to copy !"
         }
     }
 }
