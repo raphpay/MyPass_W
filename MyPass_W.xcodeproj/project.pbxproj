@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		865B408528350FBB006B7ACF /* AppLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865B408428350FBB006B7ACF /* AppLogo.swift */; };
+		865B408A28351033006B7ACF /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865B408928351033006B7ACF /* PasswordTextField.swift */; };
 		86B799DB2834149800B27498 /* MyPass_WApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B799DA2834149800B27498 /* MyPass_WApp.swift */; };
 		86B799DD2834149800B27498 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B799DC2834149800B27498 /* ContentView.swift */; };
 		86B799DF2834149900B27498 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86B799DE2834149900B27498 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 
 /* Begin PBXFileReference section */
 		865B408428350FBB006B7ACF /* AppLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLogo.swift; sourceTree = "<group>"; };
+		865B408928351033006B7ACF /* PasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
 		86B799D72834149800B27498 /* MyPass_W.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPass_W.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86B799DA2834149800B27498 /* MyPass_WApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPass_WApp.swift; sourceTree = "<group>"; };
 		86B799DC2834149800B27498 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -38,6 +40,7 @@
 			isa = PBXGroup;
 			children = (
 				865B408428350FBB006B7ACF /* AppLogo.swift */,
+				865B408928351033006B7ACF /* PasswordTextField.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -166,6 +169,7 @@
 			files = (
 				86B799DD2834149800B27498 /* ContentView.swift in Sources */,
 				86B799DB2834149800B27498 /* MyPass_WApp.swift in Sources */,
+				865B408A28351033006B7ACF /* PasswordTextField.swift in Sources */,
 				865B408528350FBB006B7ACF /* AppLogo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -50,12 +50,7 @@ struct ContentView: View {
         VStack {
             AppLogo()
             
-            // Generated Pass_W Text Field
-            TextField("Here will be your generated password", text: $generatedPassword)
-                .frame(height: 50)
-                .textFieldStyle(.roundedBorder)
-                .padding(.horizontal, 16)
-                .disableAutocorrection(true)
+            PasswordTextField(generatedPassword: $generatedPassword)
             
             // Sliders
             VStack {
