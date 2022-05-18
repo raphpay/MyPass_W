@@ -63,10 +63,10 @@ final class ContentViewViewModel: ObservableObject {
             UIPasteboard.general.string = generatedPassword
             // Show a success alert
             showAlert.toggle()
-            alertTitle = "Password copied in clipboard"
+            alertTitle = i18n.copied.translation
         } else {
             showAlert.toggle()
-            alertTitle = "No password to copy !"
+            alertTitle = i18n.notCopied.translation
         }
     }
     

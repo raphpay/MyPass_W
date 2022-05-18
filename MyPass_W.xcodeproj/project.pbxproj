@@ -17,8 +17,8 @@
 		867FC34828357708009476D0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 867FC34A28357708009476D0 /* Localizable.strings */; };
 		867FC34D28357893009476D0 /* i18n-Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867FC34C28357893009476D0 /* i18n-Enum.swift */; };
 		867FC34F28357ED2009476D0 /* Double+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867FC34E28357ED2009476D0 /* Double+Ext.swift */; };
-		867FC35528358504009476D0 /* Plurals-en.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 867FC35428358504009476D0 /* Plurals-en.stringsdict */; };
-		867FC35728358592009476D0 /* Plurals-fr.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 867FC35628358592009476D0 /* Plurals-fr.stringsdict */; };
+		867FC35528358504009476D0 /* Plurals-en_EN.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 867FC35428358504009476D0 /* Plurals-en_EN.stringsdict */; };
+		867FC35728358592009476D0 /* Plurals-fr_FR.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 867FC35628358592009476D0 /* Plurals-fr_FR.stringsdict */; };
 		86B799DB2834149800B27498 /* MyPass_WApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B799DA2834149800B27498 /* MyPass_WApp.swift */; };
 		86B799DD2834149800B27498 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B799DC2834149800B27498 /* ContentView.swift */; };
 		86B799DF2834149900B27498 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86B799DE2834149900B27498 /* Assets.xcassets */; };
@@ -42,8 +42,8 @@
 		867FC34B2835770B009476D0 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		867FC34C28357893009476D0 /* i18n-Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "i18n-Enum.swift"; sourceTree = "<group>"; };
 		867FC34E28357ED2009476D0 /* Double+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Ext.swift"; sourceTree = "<group>"; };
-		867FC35428358504009476D0 /* Plurals-en.stringsdict */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; path = "Plurals-en.stringsdict"; sourceTree = "<group>"; };
-		867FC35628358592009476D0 /* Plurals-fr.stringsdict */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; path = "Plurals-fr.stringsdict"; sourceTree = "<group>"; };
+		867FC35428358504009476D0 /* Plurals-en_EN.stringsdict */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; path = "Plurals-en_EN.stringsdict"; sourceTree = "<group>"; };
+		867FC35628358592009476D0 /* Plurals-fr_FR.stringsdict */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; path = "Plurals-fr_FR.stringsdict"; sourceTree = "<group>"; };
 		86B799D72834149800B27498 /* MyPass_W.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPass_W.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86B799DA2834149800B27498 /* MyPass_WApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPass_WApp.swift; sourceTree = "<group>"; };
 		86B799DC2834149800B27498 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -105,8 +105,9 @@
 				86E2193828353C280045A799 /* String+Ext.swift */,
 				867FC34C28357893009476D0 /* i18n-Enum.swift */,
 				867FC34A28357708009476D0 /* Localizable.strings */,
-				867FC35428358504009476D0 /* Plurals-en.stringsdict */,
-				867FC35628358592009476D0 /* Plurals-fr.stringsdict */,
+				867FC35428358504009476D0 /* Plurals-en_EN.stringsdict */,
+				867FC35628358592009476D0 /* Plurals-fr_FR.stringsdict */,
+				867FC35828358B8D009476D0 /* SwiftUISlider.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -217,9 +218,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				86B799E22834149900B27498 /* Preview Assets.xcassets in Resources */,
-				867FC35528358504009476D0 /* Plurals-en.stringsdict in Resources */,
+				867FC35528358504009476D0 /* Plurals-en_EN.stringsdict in Resources */,
 				867FC34828357708009476D0 /* Localizable.strings in Resources */,
-				867FC35728358592009476D0 /* Plurals-fr.stringsdict in Resources */,
+				867FC35728358592009476D0 /* Plurals-fr_FR.stringsdict in Resources */,
 				86B799DF2834149900B27498 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

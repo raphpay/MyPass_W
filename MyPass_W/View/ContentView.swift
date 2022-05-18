@@ -57,7 +57,7 @@ struct ContentView: View {
             Spacer()
         }
         .background(viewModel.calculateColor())
-        .alert(viewModel.alertTitle, isPresented: $viewModel.showAlert) {
+        .alert(LocalizedStringKey(viewModel.alertTitle), isPresented: $viewModel.showAlert) {
             Button("OK", role: .cancel) { }
         }
     }
@@ -67,9 +67,9 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             ContentView()
-                .environment(\.locale, .init(identifier: "en"))
+                .environment(\.locale, .init(identifier: "en_EN"))
             ContentView()
-                .environment(\.locale, .init(identifier: "fr"))
+                .environment(\.locale, .init(identifier: "fr_FR"))
         }
     }
 }
