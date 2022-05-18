@@ -18,6 +18,7 @@
 		86B799DD2834149800B27498 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B799DC2834149800B27498 /* ContentView.swift */; };
 		86B799DF2834149900B27498 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86B799DE2834149900B27498 /* Assets.xcassets */; };
 		86B799E22834149900B27498 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86B799E12834149900B27498 /* Preview Assets.xcassets */; };
+		86E2193928353C280045A799 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E2193828353C280045A799 /* String+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		86B799DC2834149800B27498 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		86B799DE2834149900B27498 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86B799E12834149900B27498 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		86E2193828353C280045A799 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 			children = (
 				865B4091283514BD006B7ACF /* Fonts.swift */,
 				865B40942835155B006B7ACF /* SFSymbols.swift */,
+				86E2193828353C280045A799 /* String+Ext.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				865B4092283514BD006B7ACF /* Fonts.swift in Sources */,
+				86E2193928353C280045A799 /* String+Ext.swift in Sources */,
 				86B799DD2834149800B27498 /* ContentView.swift in Sources */,
 				865B409728351709006B7ACF /* ContentViewViewModel.swift in Sources */,
 				865B408E283512D7006B7ACF /* RoundedButton.swift in Sources */,

@@ -41,7 +41,15 @@ final class ContentViewViewModel: ObservableObject {
     }
     
     func generatePassword() {
-        print("generatePassword")
+        var password = ""
+        for character in 1...(Int(charactersValue) + 1) {
+            if character.isMultiple(of: Int(separatorValue + 1)) {
+                password += "_"
+            } else {
+                password += password.random(length: 1)
+            }
+        }
+        generatedPassword = password
     }
     
     func copyPassword() {
