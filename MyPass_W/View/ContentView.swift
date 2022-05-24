@@ -21,20 +21,27 @@ struct ContentView: View {
             
             PasswordTextField(generatedPassword: $viewModel.generatedPassword)
             
-            RangeSlider(value: $viewModel.charactersValue, range: viewModel.charactersRange) {
-                viewModel.decreaseValue(.characters)
-            } onIncrease: {
-                viewModel.increaseValue(.characters)
-            }
             
-            Spacer()
-                .frame(height: 100)
-            
-            RangeSlider(value: $viewModel.separatorValue, range: viewModel.separatorRange) {
-                viewModel.decreaseValue(.separators)
-            } onIncrease: {
-                viewModel.increaseValue(.separators)
-            }
+            VStack {
+                Text(viewModel.calculateTitle())
+                    .font(.custom(Fonts.secularOne.rawValue, size: 30))
+                    .foregroundColor(.white)
+                
+                RangeSlider(value: $viewModel.charactersValue, range: viewModel.charactersRange) {
+                    viewModel.decreaseValue(.characters)
+                } onIncrease: {
+                    viewModel.increaseValue(.characters)
+                }
+                
+                Spacer()
+                    .frame(height: 100)
+                
+                RangeSlider(value: $viewModel.separatorValue, range: viewModel.separatorRange) {
+                    viewModel.decreaseValue(.separators)
+                } onIncrease: {
+                    viewModel.increaseValue(.separators)
+                }
+            }.padding(.top, 16)
 
             Spacer()
                 .frame(height: 100)
@@ -48,6 +55,10 @@ struct ContentView: View {
             }
             
             Spacer()
+        }
+        .background(viewModel.calculateColor())
+        .alert(viewModel.alertTitle, isPresented: $viewModel.showAlert) {
+            Button("OK", role: .cancel) { }
         }
     }
 }
