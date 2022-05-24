@@ -30,8 +30,9 @@ struct RangeSlider: View {
                 } label: {
                     Image(systemName: "minus")
                 }
-                Slider(value: $value, in: range)
-                    .tint(.black)
+                SwiftUISlider(minTrackColor: .black, maxTrackColor: .gray,
+                              minValue: Float(range.lowerBound), maxValue: Float(range.upperBound),
+                              value: $value)
                 Button {
                     onIncrease()
                 } label: {
