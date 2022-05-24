@@ -60,6 +60,9 @@ struct ContentView: View {
         .alert(LocalizedStringKey(viewModel.alertTitle), isPresented: $viewModel.showAlert) {
             Button("OK", role: .cancel) { }
         }
+        .onTapGesture {
+            hideKeyboard()
+        }
     }
 }
 
