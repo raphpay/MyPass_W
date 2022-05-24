@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  MyPass_W
+
+  Created by Raphaël Payet on 18/05/2022.
+  
+*/
+
+"i18n-generate" = "Generate";
+"i18n-copy" = "Copy";
+"i18n-textField" = "Here will be your generated password";
+"i18n-weak" = "Weak";
+"i18n-mediocre" = "Mediocre";
+"i18n-strong" = "Strong";
+"i18n-veryStrong" = "Very Strong";
+"i18n-copied" = "Password copied in clipboard";
+"i18n-not-copied" = "No password to copy !";

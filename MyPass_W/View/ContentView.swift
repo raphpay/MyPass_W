@@ -23,11 +23,11 @@ struct ContentView: View {
             
             
             VStack {
-                Text(viewModel.calculateTitle())
+                Text(LocalizedStringKey(viewModel.calculateTitle()))
                     .font(.custom(Fonts.secularOne.rawValue, size: 30))
                     .foregroundColor(.white)
                 
-                RangeSlider(value: $viewModel.charactersValue, range: viewModel.charactersRange) {
+                RangeSlider(type: .characters, value: $viewModel.charactersValue, range: viewModel.charactersRange) {
                     viewModel.decreaseValue(.characters)
                 } onIncrease: {
                     viewModel.increaseValue(.characters)
@@ -36,7 +36,7 @@ struct ContentView: View {
                 Spacer()
                     .frame(height: 100)
                 
-                RangeSlider(value: $viewModel.separatorValue, range: viewModel.separatorRange) {
+                RangeSlider(type: .separators, value: $viewModel.separatorValue, range: viewModel.separatorRange) {
                     viewModel.decreaseValue(.separators)
                 } onIncrease: {
                     viewModel.increaseValue(.separators)
@@ -46,18 +46,18 @@ struct ContentView: View {
             Spacer()
                 .frame(height: 100)
             
-            RoundedButton(title: "Generate") {
+            RoundedButton(title: i18n.generate.translation) {
                 viewModel.generatePassword()
             }
             
-            RoundedButton(title: "Copy") {
+            RoundedButton(title: i18n.copy.translation) {
                 viewModel.copyPassword()
             }
             
             Spacer()
         }
         .background(viewModel.calculateColor())
-        .alert(viewModel.alertTitle, isPresented: $viewModel.showAlert) {
+        .alert(LocalizedStringKey(viewModel.alertTitle), isPresented: $viewModel.showAlert) {
             Button("OK", role: .cancel) { }
         }
     }
@@ -65,6 +65,11 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Group {
+            ContentView()
+                .environment(\.locale, .init(identifier: "en_EN"))
+            ContentView()
+                .environment(\.locale, .init(identifier: "fr_FR"))
+        }
     }
 }

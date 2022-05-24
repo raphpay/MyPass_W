@@ -12,7 +12,7 @@ struct PasswordTextField: View {
     @Binding var generatedPassword: String
     
     var body: some View {
-        TextField("Here will be your generated password", text: $generatedPassword)
+        TextField(LocalizedStringKey(i18n.textfield.translation), text: $generatedPassword)
             .frame(height: 50)
             .font(.custom(Fonts.secularOne.rawValue, size: 20))
             .textFieldStyle(.roundedBorder)

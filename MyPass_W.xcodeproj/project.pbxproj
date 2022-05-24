@@ -14,6 +14,11 @@
 		865B4092283514BD006B7ACF /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865B4091283514BD006B7ACF /* Fonts.swift */; };
 		865B40952835155B006B7ACF /* SFSymbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865B40942835155B006B7ACF /* SFSymbols.swift */; };
 		865B409728351709006B7ACF /* ContentViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865B409628351709006B7ACF /* ContentViewViewModel.swift */; };
+		867FC34828357708009476D0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 867FC34A28357708009476D0 /* Localizable.strings */; };
+		867FC34D28357893009476D0 /* i18n-Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867FC34C28357893009476D0 /* i18n-Enum.swift */; };
+		867FC34F28357ED2009476D0 /* Double+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867FC34E28357ED2009476D0 /* Double+Ext.swift */; };
+		867FC35528358504009476D0 /* Plurals-en_EN.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 867FC35428358504009476D0 /* Plurals-en_EN.stringsdict */; };
+		867FC35728358592009476D0 /* Plurals-fr_FR.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 867FC35628358592009476D0 /* Plurals-fr_FR.stringsdict */; };
 		86B799DB2834149800B27498 /* MyPass_WApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B799DA2834149800B27498 /* MyPass_WApp.swift */; };
 		86B799DD2834149800B27498 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B799DC2834149800B27498 /* ContentView.swift */; };
 		86B799DF2834149900B27498 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86B799DE2834149900B27498 /* Assets.xcassets */; };
@@ -33,6 +38,12 @@
 		865B4091283514BD006B7ACF /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		865B40942835155B006B7ACF /* SFSymbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbols.swift; sourceTree = "<group>"; };
 		865B409628351709006B7ACF /* ContentViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewViewModel.swift; sourceTree = "<group>"; };
+		867FC34928357708009476D0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		867FC34B2835770B009476D0 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		867FC34C28357893009476D0 /* i18n-Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "i18n-Enum.swift"; sourceTree = "<group>"; };
+		867FC34E28357ED2009476D0 /* Double+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Ext.swift"; sourceTree = "<group>"; };
+		867FC35428358504009476D0 /* Plurals-en_EN.stringsdict */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; path = "Plurals-en_EN.stringsdict"; sourceTree = "<group>"; };
+		867FC35628358592009476D0 /* Plurals-fr_FR.stringsdict */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; path = "Plurals-fr_FR.stringsdict"; sourceTree = "<group>"; };
 		86B799D72834149800B27498 /* MyPass_W.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPass_W.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86B799DA2834149800B27498 /* MyPass_WApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPass_WApp.swift; sourceTree = "<group>"; };
 		86B799DC2834149800B27498 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -89,8 +100,14 @@
 				865B4091283514BD006B7ACF /* Fonts.swift */,
 				86E2193C283546850045A799 /* PasswordStrenght-Enum.swift */,
 				86E2193A2835431A0045A799 /* Color+Ext.swift */,
+				867FC34E28357ED2009476D0 /* Double+Ext.swift */,
 				865B40942835155B006B7ACF /* SFSymbols.swift */,
 				86E2193828353C280045A799 /* String+Ext.swift */,
+				867FC34C28357893009476D0 /* i18n-Enum.swift */,
+				867FC34A28357708009476D0 /* Localizable.strings */,
+				867FC35428358504009476D0 /* Plurals-en_EN.stringsdict */,
+				867FC35628358592009476D0 /* Plurals-fr_FR.stringsdict */,
+				867FC35828358B8D009476D0 /* SwiftUISlider.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -183,6 +200,7 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
 			);
 			mainGroup = 86B799CE2834149800B27498;
 			productRefGroup = 86B799D82834149800B27498 /* Products */;
@@ -200,6 +218,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				86B799E22834149900B27498 /* Preview Assets.xcassets in Resources */,
+				867FC35528358504009476D0 /* Plurals-en_EN.stringsdict in Resources */,
+				867FC34828357708009476D0 /* Localizable.strings in Resources */,
+				867FC35728358592009476D0 /* Plurals-fr_FR.stringsdict in Resources */,
 				86B799DF2834149900B27498 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -215,6 +236,7 @@
 				86E2193B2835431A0045A799 /* Color+Ext.swift in Sources */,
 				86E2193928353C280045A799 /* String+Ext.swift in Sources */,
 				86B799DD2834149800B27498 /* ContentView.swift in Sources */,
+				867FC34F28357ED2009476D0 /* Double+Ext.swift in Sources */,
 				865B409728351709006B7ACF /* ContentViewViewModel.swift in Sources */,
 				865B408E283512D7006B7ACF /* RoundedButton.swift in Sources */,
 				86B799DB2834149800B27498 /* MyPass_WApp.swift in Sources */,
@@ -222,11 +244,24 @@
 				865B408A28351033006B7ACF /* PasswordTextField.swift in Sources */,
 				865B408528350FBB006B7ACF /* AppLogo.swift in Sources */,
 				86E2193D283546850045A799 /* PasswordStrenght-Enum.swift in Sources */,
+				867FC34D28357893009476D0 /* i18n-Enum.swift in Sources */,
 				865B408C2835109F006B7ACF /* RangeSlider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		867FC34A28357708009476D0 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				867FC34928357708009476D0 /* en */,
+				867FC34B2835770B009476D0 /* fr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		86B799E32834149900B27498 /* Debug */ = {
