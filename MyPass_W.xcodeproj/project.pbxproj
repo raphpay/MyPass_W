@@ -19,6 +19,7 @@
 		867FC34F28357ED2009476D0 /* Double+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867FC34E28357ED2009476D0 /* Double+Ext.swift */; };
 		867FC35528358504009476D0 /* Plurals-en_EN.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 867FC35428358504009476D0 /* Plurals-en_EN.stringsdict */; };
 		867FC35728358592009476D0 /* Plurals-fr_FR.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 867FC35628358592009476D0 /* Plurals-fr_FR.stringsdict */; };
+		86A1DA6A283CD02A00C636DD /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A1DA69283CD02A00C636DD /* View+Ext.swift */; };
 		86B799DB2834149800B27498 /* MyPass_WApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B799DA2834149800B27498 /* MyPass_WApp.swift */; };
 		86B799DD2834149800B27498 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B799DC2834149800B27498 /* ContentView.swift */; };
 		86B799DF2834149900B27498 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86B799DE2834149900B27498 /* Assets.xcassets */; };
@@ -44,6 +45,7 @@
 		867FC34E28357ED2009476D0 /* Double+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Ext.swift"; sourceTree = "<group>"; };
 		867FC35428358504009476D0 /* Plurals-en_EN.stringsdict */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; path = "Plurals-en_EN.stringsdict"; sourceTree = "<group>"; };
 		867FC35628358592009476D0 /* Plurals-fr_FR.stringsdict */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; path = "Plurals-fr_FR.stringsdict"; sourceTree = "<group>"; };
+		86A1DA69283CD02A00C636DD /* View+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Ext.swift"; sourceTree = "<group>"; };
 		86B799D72834149800B27498 /* MyPass_W.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPass_W.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86B799DA2834149800B27498 /* MyPass_WApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPass_WApp.swift; sourceTree = "<group>"; };
 		86B799DC2834149800B27498 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -101,13 +103,13 @@
 				86E2193C283546850045A799 /* PasswordStrenght-Enum.swift */,
 				86E2193A2835431A0045A799 /* Color+Ext.swift */,
 				867FC34E28357ED2009476D0 /* Double+Ext.swift */,
+				86A1DA69283CD02A00C636DD /* View+Ext.swift */,
 				865B40942835155B006B7ACF /* SFSymbols.swift */,
 				86E2193828353C280045A799 /* String+Ext.swift */,
 				867FC34C28357893009476D0 /* i18n-Enum.swift */,
 				867FC34A28357708009476D0 /* Localizable.strings */,
 				867FC35428358504009476D0 /* Plurals-en_EN.stringsdict */,
 				867FC35628358592009476D0 /* Plurals-fr_FR.stringsdict */,
-				867FC35828358B8D009476D0 /* SwiftUISlider.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -234,6 +236,7 @@
 			files = (
 				865B4092283514BD006B7ACF /* Fonts.swift in Sources */,
 				86E2193B2835431A0045A799 /* Color+Ext.swift in Sources */,
+				86A1DA6A283CD02A00C636DD /* View+Ext.swift in Sources */,
 				86E2193928353C280045A799 /* String+Ext.swift in Sources */,
 				86B799DD2834149800B27498 /* ContentView.swift in Sources */,
 				867FC34F28357ED2009476D0 /* Double+Ext.swift in Sources */,
