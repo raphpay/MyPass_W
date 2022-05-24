@@ -19,42 +19,45 @@ struct ContentView: View {
         VStack {
             AppLogo()
             
-            PasswordTextField(generatedPassword: $viewModel.generatedPassword)
-            
-            
-            VStack {
-                Text(LocalizedStringKey(viewModel.calculateTitle()))
-                    .font(.custom(Fonts.secularOne.rawValue, size: 30))
-                    .foregroundColor(.white)
+            ScrollView {
+                PasswordTextField(generatedPassword: $viewModel.generatedPassword)
                 
-                RangeSlider(type: .characters, value: $viewModel.charactersValue, range: viewModel.charactersRange) {
-                    viewModel.decreaseValue(.characters)
-                } onIncrease: {
-                    viewModel.increaseValue(.characters)
-                }
-                
+                VStack {
+                    Text(LocalizedStringKey(viewModel.calculateTitle()))
+                        .font(.custom(Fonts.secularOne.rawValue, size: 30))
+                        .foregroundColor(.white)
+                    
+                    RangeSlider(type: .characters, value: $viewModel.charactersValue, range: viewModel.charactersRange) {
+                        viewModel.decreaseValue(.characters)
+                    } onIncrease: {
+                        viewModel.increaseValue(.characters)
+                    }
+                    
+                    Spacer()
+                        .frame(height: 100)
+                    
+                    RangeSlider(type: .separators, value: $viewModel.separatorValue, range: viewModel.separatorRange) {
+                        viewModel.decreaseValue(.separators)
+                    } onIncrease: {
+                        viewModel.increaseValue(.separators)
+                    }
+                }.padding(.top, 16)
+
                 Spacer()
                     .frame(height: 100)
                 
-                RangeSlider(type: .separators, value: $viewModel.separatorValue, range: viewModel.separatorRange) {
-                    viewModel.decreaseValue(.separators)
-                } onIncrease: {
-                    viewModel.increaseValue(.separators)
+                VStack {
+                    RoundedButton(title: i18n.generate.translation) {
+                        viewModel.generatePassword()
+                    }
+                    
+                    RoundedButton(title: i18n.copy.translation) {
+                        viewModel.copyPassword()
+                    }
                 }
-            }.padding(.top, 16)
+                .padding(.bottom)
 
-            Spacer()
-                .frame(height: 100)
-            
-            RoundedButton(title: i18n.generate.translation) {
-                viewModel.generatePassword()
             }
-            
-            RoundedButton(title: i18n.copy.translation) {
-                viewModel.copyPassword()
-            }
-            
-            Spacer()
         }
         .background(viewModel.calculateColor())
         .alert(LocalizedStringKey(viewModel.alertTitle), isPresented: $viewModel.showAlert) {
