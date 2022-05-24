@@ -22,6 +22,7 @@ struct RoundedButton: View {
                 .foregroundColor(.white)
                 .background(.blue)
                 .cornerRadius(10)
+                .shadow(color: .black.opacity(0.5), radius: 10, x: 0, y: 5)
         }
 
     }
