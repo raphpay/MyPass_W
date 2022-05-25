@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  GeneratorView.swift
 //  MyPass_W
 //
 //  Created by Raphaël Payet on 17/05/2022.
@@ -11,7 +11,7 @@ enum ValueType {
     case characters, separators
 }
 
-struct ContentView: View {
+struct GeneratorView: View {
     
     @StateObject var viewModel = ContentViewViewModel()
     
@@ -64,7 +64,7 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            ContentView()
+            GeneratorView()
                 .environment(\.locale, .init(identifier: "en_EN"))
 //            ContentView()
 //                .environment(\.locale, .init(identifier: "fr_FR"))
