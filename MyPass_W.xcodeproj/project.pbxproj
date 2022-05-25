@@ -13,7 +13,7 @@
 		865B408E283512D7006B7ACF /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865B408D283512D7006B7ACF /* RoundedButton.swift */; };
 		865B4092283514BD006B7ACF /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865B4091283514BD006B7ACF /* Fonts.swift */; };
 		865B40952835155B006B7ACF /* SFSymbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865B40942835155B006B7ACF /* SFSymbols.swift */; };
-		865B409728351709006B7ACF /* ContentViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865B409628351709006B7ACF /* ContentViewViewModel.swift */; };
+		865B409728351709006B7ACF /* GeneratorViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865B409628351709006B7ACF /* GeneratorViewViewModel.swift */; };
 		867FC34828357708009476D0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 867FC34A28357708009476D0 /* Localizable.strings */; };
 		867FC34D28357893009476D0 /* i18n-Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867FC34C28357893009476D0 /* i18n-Enum.swift */; };
 		867FC34F28357ED2009476D0 /* Double+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867FC34E28357ED2009476D0 /* Double+Ext.swift */; };
@@ -39,7 +39,7 @@
 		865B409028351429006B7ACF /* MyPass-W-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "MyPass-W-Info.plist"; sourceTree = SOURCE_ROOT; };
 		865B4091283514BD006B7ACF /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		865B40942835155B006B7ACF /* SFSymbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbols.swift; sourceTree = "<group>"; };
-		865B409628351709006B7ACF /* ContentViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewViewModel.swift; sourceTree = "<group>"; };
+		865B409628351709006B7ACF /* GeneratorViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratorViewViewModel.swift; sourceTree = "<group>"; };
 		867FC34928357708009476D0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		867FC34B2835770B009476D0 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		867FC34C28357893009476D0 /* i18n-Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "i18n-Enum.swift"; sourceTree = "<group>"; };
@@ -120,7 +120,7 @@
 		865B40982835170F006B7ACF /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				865B409628351709006B7ACF /* ContentViewViewModel.swift */,
+				865B409628351709006B7ACF /* GeneratorViewViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -251,7 +251,7 @@
 				86E2193928353C280045A799 /* String+Ext.swift in Sources */,
 				86B799DD2834149800B27498 /* GeneratorView.swift in Sources */,
 				867FC34F28357ED2009476D0 /* Double+Ext.swift in Sources */,
-				865B409728351709006B7ACF /* ContentViewViewModel.swift in Sources */,
+				865B409728351709006B7ACF /* GeneratorViewViewModel.swift in Sources */,
 				865B408E283512D7006B7ACF /* RoundedButton.swift in Sources */,
 				86B799DB2834149800B27498 /* MyPass_WApp.swift in Sources */,
 				865B40952835155B006B7ACF /* SFSymbols.swift in Sources */,

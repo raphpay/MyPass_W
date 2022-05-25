@@ -1,5 +1,5 @@
 //
-//  ContentViewViewModel.swift
+//  GeneratorViewViewModel.swift
 //  MyPass_W
 //
 //  Created by Raphaël Payet on 18/05/2022.
@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 import SwiftUI
 
-final class ContentViewViewModel: ObservableObject {
+final class GeneratorViewViewModel: ObservableObject {
     @Published var generatedPassword: String = ""
     @Published var charactersValue: Double = 24
     @Published var charactersRange: ClosedRange<Double> = 1...40

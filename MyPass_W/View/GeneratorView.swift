@@ -13,7 +13,7 @@ enum ValueType {
 
 struct GeneratorView: View {
     
-    @StateObject var viewModel = ContentViewViewModel()
+    @StateObject var viewModel = GeneratorViewViewModel()
     
     var body: some View {
         VStack {
