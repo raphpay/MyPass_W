@@ -32,6 +32,11 @@ struct TabBar: View {
 
 struct TabView_Previews: PreviewProvider {
     static var previews: some View {
-        TabBar()
+        Group {
+            TabBar()
+                .environment(\.locale, .init(identifier: "en_EN"))
+            TabBar()
+                .environment(\.locale, .init(identifier: "fr_FR"))
+        }
     }
 }

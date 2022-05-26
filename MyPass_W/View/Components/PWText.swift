@@ -9,12 +9,12 @@ import SwiftUI
 
 struct PWText: View {
     
-    var text: String
+    var text: LocalizedStringKey
     var fontSize: CGFloat = 20
     var tableName: String?
     
     var body: some View {
-        Text(LocalizedStringKey(text), tableName: tableName)
+        Text(text, tableName: tableName)
             .font(.custom(Fonts.secularOne.rawValue, size: fontSize))
             .scaledToFit()
             .minimumScaleFactor(0.7)

@@ -11,21 +11,22 @@ struct MoreView: View {
     
     @State private var showingSheet = false
     
+    
     var body: some View {
         NavigationView {
             Form {
                 Section {
-                    FormButton(title: "Verify password strength", icon: "network.badge.shield.half.filled") {
+                    FormButton(title: i18n.verifyStrength.translation, icon: "network.badge.shield.half.filled") {
                         showingSheet.toggle()
                     }
                 }
                 
                 Section {
-                    FormButton(title: "Rate the app", icon: "star.bubble.fill") {
+                    FormButton(title: i18n.rate.translation, icon: "star.bubble.fill") {
                         print("button")
                     }
                     
-                    FormButton(title: "Share the app", icon: "square.and.arrow.up") {
+                    FormButton(title: i18n.share.translation, icon: "square.and.arrow.up") {
                         print("button")
                     }
                     
@@ -35,17 +36,17 @@ struct MoreView: View {
                     NavigationLink {
                         Text("Screen 2")
                     } label: {
-                        Text("Verify password strength")
+                        Text(i18n.about.translation)
                     }
                     
                     NavigationLink {
                         Text("Screen 2")
                     } label: {
-                        Text("Donate")
+                        Text(i18n.donate.translation)
                     }
                 }
             }
-            .navigationTitle(LocalizedStringKey(i18n.more.translation))
+            .navigationTitle(i18n.more.translation)
             .sheet(isPresented: $showingSheet) {
                 PasswordStrengthView()
             }

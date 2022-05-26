@@ -16,7 +16,7 @@ final class GeneratorViewViewModel: ObservableObject {
     @Published var separatorValue: Double = 6
     @Published var separatorRange: ClosedRange<Double> = 1...10
     @Published var showAlert: Bool = false
-    @Published var alertTitle: String = ""
+    @Published var alertTitle: LocalizedStringKey = ""
     @Published var backgroundColor: Color = .ui.strong
     @Published var passwordStrength: PasswordStrength = .weak
     
@@ -95,8 +95,8 @@ final class GeneratorViewViewModel: ObservableObject {
         return color
     }
     
-    func calculateTitle() -> String {
-        var title: String
+    func calculateTitle() -> LocalizedStringKey {
+        var title: LocalizedStringKey
         
         switch (charactersValue) {
         case PasswordStrength.weak.range:

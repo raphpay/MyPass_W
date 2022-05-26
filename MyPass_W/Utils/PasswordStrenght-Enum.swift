@@ -11,7 +11,7 @@ import SwiftUI
 enum PasswordStrength {
     case weak, mediocre, strong, veryStrong
     
-    var title: String {
+    var title: LocalizedStringKey {
         switch self {
         case .weak:
             return i18n.weak.translation

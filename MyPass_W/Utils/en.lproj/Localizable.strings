@@ -16,3 +16,8 @@
 "i18n-copied" = "Password copied in clipboard";
 "i18n-not-copied" = "No password to copy !";
 "i18n-more" = "More";
+"i18-verify-password-strength" = "Verify password strength";
+"i18-rate" = "Rate the app";
+"i18n-share" = "Share the app";
+"i18n-about" = "About the developer";
+"i18n-donate" = "Donate";

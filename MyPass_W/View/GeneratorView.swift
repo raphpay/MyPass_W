@@ -51,7 +51,7 @@ struct GeneratorView: View {
             Spacer()
         }
         .background(viewModel.calculateColor())
-        .alert(LocalizedStringKey(viewModel.alertTitle), isPresented: $viewModel.showAlert) {
+        .alert(viewModel.alertTitle, isPresented: $viewModel.showAlert) {
             Button("OK", role: .cancel) { }
         }
         .onTapGesture {

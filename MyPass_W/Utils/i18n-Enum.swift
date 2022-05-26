@@ -6,35 +6,50 @@
 //
 
 import Foundation
+import SwiftUI
 
 enum i18n {
-    case generate, textfield, weak, mediocre, strong, veryStrong
+    case generate
+    case textfield, weak, mediocre, strong, veryStrong
     case copy, copied, notCopied
     case more
+    case verifyStrength
+    case rate, share
+    case about
+    case donate
     
-    var translation: String {
+    var translation: LocalizedStringKey {
         switch self {
         case .generate:
-            // TODO: Convert this simple return into LocalisedString
-            return "i18n-generate"
+            return LocalizedStringKey("i18n-generate")
         case .copy:
-            return "i18n-copy"
+            return LocalizedStringKey("i18n-copy")
         case .copied:
-            return "i18n-copied"
+            return LocalizedStringKey("i18n-copied")
         case .notCopied:
-            return "i18n-not-copied"
+            return LocalizedStringKey("i18n-not-copied")
         case .textfield:
-            return "i18n-textField"
+            return LocalizedStringKey("i18n-textField")
         case .weak:
-            return "i18n-weak"
+            return LocalizedStringKey("i18n-weak")
         case .mediocre:
-            return "i18n-mediocre"
+            return LocalizedStringKey("i18n-mediocre")
         case .strong:
-            return "i18n-strong"
+            return LocalizedStringKey("i18n-strong")
         case .veryStrong:
-            return "i18n-veryStrong"
+            return LocalizedStringKey("i18n-veryStrong")
         case .more:
-            return "i18n-more"
+            return LocalizedStringKey("i18n-more")
+        case .verifyStrength:
+            return LocalizedStringKey("i18-verify-password-strength")
+        case .rate:
+            return LocalizedStringKey("i18-rate")
+        case .share:
+            return LocalizedStringKey("i18n-share")
+        case .about:
+            return LocalizedStringKey("i18n-about")
+        case .donate:
+            return LocalizedStringKey("i18n-donate")
         }
     }
 }

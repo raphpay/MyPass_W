@@ -9,7 +9,7 @@ import SwiftUI
 
 struct PasswordTextField: View {
     
-    var title: LocalizedStringKey = LocalizedStringKey(i18n.textfield.translation)
+    var title: LocalizedStringKey = i18n.textfield.translation
     @Binding var generatedPassword: String
     
     var body: some View {
