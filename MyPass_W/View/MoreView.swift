@@ -16,17 +16,17 @@ struct MoreView: View {
         NavigationView {
             Form {
                 Section {
-                    FormButton(title: i18n.verifyStrength.translation, icon: "network.badge.shield.half.filled") {
+                    FormButton(title: i18n.verifyStrength.translation, icon: SFSymbols.networkShield.rawValue) {
                         showingSheet.toggle()
                     }
                 }
                 
                 Section {
-                    FormButton(title: i18n.rate.translation, icon: "star.bubble.fill") {
+                    FormButton(title: i18n.rate.translation, icon: SFSymbols.starBubble.rawValue) {
                         print("button")
                     }
                     
-                    FormButton(title: i18n.share.translation, icon: "square.and.arrow.up") {
+                    FormButton(title: i18n.share.translation, icon: SFSymbols.share.rawValue) {
                         print("button")
                     }
                     

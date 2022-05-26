@@ -10,4 +10,7 @@ import SwiftUI
 
 enum SFSymbols: String {
     case lockShield = "lock.shield"
+    case networkShield = "network.badge.shield.half.filled"
+    case starBubble = "star.bubble.fill"
+    case share = "square.and.arrow.up"
 }
