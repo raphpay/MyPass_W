@@ -13,6 +13,9 @@ struct MoreView: View {
     @State private var showingSheet = false
     @State private var showAlert = false
     
+    // TODO: Get the real url when app is first published
+    let appShareURL = "https://itunes.apple.com/us/app/keynote/id361285480?mt=8"
+    
     var body: some View {
         NavigationView {
             Form {
@@ -28,7 +31,7 @@ struct MoreView: View {
                     }
                     
                     FormButton(title: i18n.share.translation, icon: SFSymbols.share.rawValue) {
-                        print("button")
+                        shareSheet()
                     }
                     
                 }
@@ -60,6 +63,23 @@ struct MoreView: View {
     
     func askForReview() {
         ReviewHandler.requestReview()
+    }
+    
+    func shareSheet() {
+        guard let urlShare = URL(string: appShareURL) else { return }
+        
+//        if <ios15
+//        let activityVC = UIActivityViewController(activityItems: [urlShare], applicationActivities: nil)
+//        UIApplication.shared.windows.first?.rootViewController?.present(activityVC, animated: true)
+        
+        let activityView = UIActivityViewController(activityItems: [urlShare], applicationActivities: nil)
+
+        let allScenes = UIApplication.shared.connectedScenes
+        let scene = allScenes.first { $0.activationState == .foregroundActive }
+        
+        if let windowScene = scene as? UIWindowScene {
+            windowScene.keyWindow?.rootViewController?.present(activityView, animated: true, completion: nil)
+        }
     }
 }
 
