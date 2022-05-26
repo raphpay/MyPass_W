@@ -14,7 +14,7 @@ struct PasswordStrengthView: View {
     @State private var passwordStrength: PasswordStrength = .none
         
     var body: some View {
-        VStack {
+        ScrollView {
             HStack {
                 Spacer()
                 

@@ -55,4 +55,19 @@ enum PasswordStrength {
             return Color.black
         }
     }
+    
+    var infos: LocalizedStringKey {
+        switch self {
+        case .weak:
+            return i18n.infoWeak.translation
+        case .mediocre:
+            return i18n.infoMediocre.translation
+        case .strong:
+            return i18n.infoStrong.translation
+        case .veryStrong:
+            return i18n.infoVeryStrong.translation
+        case .none:
+            return ""
+        }
+    }
 }

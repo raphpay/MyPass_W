@@ -16,8 +16,6 @@ struct PWText: View {
     var body: some View {
         Text(text, tableName: tableName)
             .font(.custom(Fonts.secularOne.rawValue, size: fontSize))
-            .scaledToFit()
-            .minimumScaleFactor(0.7)
     }
 }
 
