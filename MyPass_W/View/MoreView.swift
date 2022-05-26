@@ -8,12 +8,15 @@
 import SwiftUI
 
 struct MoreView: View {
+    
+    @State private var showingSheet = false
+    
     var body: some View {
         NavigationView {
             Form {
                 Section {
                     FormButton(title: "Verify password strength", icon: "network.badge.shield.half.filled") {
-                        print("button")
+                        showingSheet.toggle()
                     }
                 }
                 
@@ -43,6 +46,9 @@ struct MoreView: View {
                 }
             }
             .navigationTitle(LocalizedStringKey(i18n.more.translation))
+            .sheet(isPresented: $showingSheet) {
+                PasswordStrengthView()
+            }
         }
     }
 }

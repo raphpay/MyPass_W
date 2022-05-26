@@ -1,5 +1,5 @@
 //
-//  PasswordStrenght-Enum.swift
+//  PasswordStrength-Enum.swift
 //  MyPass_W
 //
 //  Created by Raphaël Payet on 18/05/2022.
@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-enum PasswordStrenght {
+enum PasswordStrength {
     case weak, mediocre, strong, veryStrong
     
     var title: String {
