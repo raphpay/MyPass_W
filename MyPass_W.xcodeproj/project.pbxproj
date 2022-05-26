@@ -25,6 +25,8 @@
 		86B799DD2834149800B27498 /* GeneratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B799DC2834149800B27498 /* GeneratorView.swift */; };
 		86B799DF2834149900B27498 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86B799DE2834149900B27498 /* Assets.xcassets */; };
 		86B799E22834149900B27498 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86B799E12834149900B27498 /* Preview Assets.xcassets */; };
+		86CA7E62283EBD8300400DDA /* MoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CA7E61283EBD8300400DDA /* MoreView.swift */; };
+		86CA7E64283EC01B00400DDA /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CA7E63283EC01B00400DDA /* TabBar.swift */; };
 		86E2193928353C280045A799 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E2193828353C280045A799 /* String+Ext.swift */; };
 		86E2193B2835431A0045A799 /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E2193A2835431A0045A799 /* Color+Ext.swift */; };
 		86E2193D283546850045A799 /* PasswordStrenght-Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E2193C283546850045A799 /* PasswordStrenght-Enum.swift */; };
@@ -53,6 +55,8 @@
 		86B799DC2834149800B27498 /* GeneratorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratorView.swift; sourceTree = "<group>"; };
 		86B799DE2834149900B27498 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86B799E12834149900B27498 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		86CA7E61283EBD8300400DDA /* MoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreView.swift; sourceTree = "<group>"; };
+		86CA7E63283EC01B00400DDA /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		86E2193828353C280045A799 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		86E2193A2835431A0045A799 /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
 		86E2193C283546850045A799 /* PasswordStrenght-Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PasswordStrenght-Enum.swift"; sourceTree = "<group>"; };
@@ -85,6 +89,8 @@
 			isa = PBXGroup;
 			children = (
 				86B799DC2834149800B27498 /* GeneratorView.swift */,
+				86CA7E63283EC01B00400DDA /* TabBar.swift */,
+				86CA7E61283EBD8300400DDA /* MoreView.swift */,
 				865B408628350FD3006B7ACF /* Components */,
 			);
 			path = View;
@@ -255,10 +261,12 @@
 				865B408E283512D7006B7ACF /* RoundedButton.swift in Sources */,
 				86B799DB2834149800B27498 /* MyPass_WApp.swift in Sources */,
 				865B40952835155B006B7ACF /* SFSymbols.swift in Sources */,
+				86CA7E64283EC01B00400DDA /* TabBar.swift in Sources */,
 				865B408A28351033006B7ACF /* PasswordTextField.swift in Sources */,
 				865B408528350FBB006B7ACF /* AppLogo.swift in Sources */,
 				86E2193D283546850045A799 /* PasswordStrenght-Enum.swift in Sources */,
 				867FC34D28357893009476D0 /* i18n-Enum.swift in Sources */,
+				86CA7E62283EBD8300400DDA /* MoreView.swift in Sources */,
 				86A1DA6C283CD68300C636DD /* SwiftUISlider.swift in Sources */,
 				865B408C2835109F006B7ACF /* RangeSlider.swift in Sources */,
 			);

@@ -11,7 +11,7 @@ import SwiftUI
 struct MyPass_WApp: App {
     var body: some Scene {
         WindowGroup {
-            GeneratorView()
+            TabBar()
         }
     }
 }

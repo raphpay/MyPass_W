@@ -61,7 +61,7 @@ struct GeneratorView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct GeneratorView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             GeneratorView()

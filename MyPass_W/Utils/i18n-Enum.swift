@@ -10,6 +10,7 @@ import Foundation
 enum i18n {
     case generate, textfield, weak, mediocre, strong, veryStrong
     case copy, copied, notCopied
+    case more
     
     var translation: String {
         switch self {
@@ -31,6 +32,8 @@ enum i18n {
             return "i18n-strong"
         case .veryStrong:
             return "i18n-veryStrong"
+        case .more:
+            return "i18n-more"
         }
     }
 }
