@@ -21,6 +21,7 @@
 		867FC35728358592009476D0 /* Plurals-fr_FR.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 867FC35628358592009476D0 /* Plurals-fr_FR.stringsdict */; };
 		868C908E2840127700035F21 /* PasswordStrengthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868C908D2840127700035F21 /* PasswordStrengthViewModel.swift */; };
 		868C90902840154D00035F21 /* ReviewHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868C908F2840154D00035F21 /* ReviewHandler.swift */; };
+		868C909428401A2D00035F21 /* MoreViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868C909328401A2D00035F21 /* MoreViewViewModel.swift */; };
 		868F2C1C283FBD5900517D1F /* FormButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868F2C1B283FBD5900517D1F /* FormButton.swift */; };
 		868F2C1E283FBEDD00517D1F /* PasswordStrengthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868F2C1D283FBEDD00517D1F /* PasswordStrengthView.swift */; };
 		868F2C20283FC3E400517D1F /* StrengthCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868F2C1F283FC3E400517D1F /* StrengthCard.swift */; };
@@ -56,6 +57,7 @@
 		867FC35628358592009476D0 /* Plurals-fr_FR.stringsdict */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; path = "Plurals-fr_FR.stringsdict"; sourceTree = "<group>"; };
 		868C908D2840127700035F21 /* PasswordStrengthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordStrengthViewModel.swift; sourceTree = "<group>"; };
 		868C908F2840154D00035F21 /* ReviewHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewHandler.swift; sourceTree = "<group>"; };
+		868C909328401A2D00035F21 /* MoreViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewViewModel.swift; sourceTree = "<group>"; };
 		868F2C1B283FBD5900517D1F /* FormButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormButton.swift; sourceTree = "<group>"; };
 		868F2C1D283FBEDD00517D1F /* PasswordStrengthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordStrengthView.swift; sourceTree = "<group>"; };
 		868F2C1F283FC3E400517D1F /* StrengthCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrengthCard.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 			children = (
 				865B409628351709006B7ACF /* GeneratorViewViewModel.swift */,
 				868C908D2840127700035F21 /* PasswordStrengthViewModel.swift */,
+				868C909328401A2D00035F21 /* MoreViewViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				868C909428401A2D00035F21 /* MoreViewViewModel.swift in Sources */,
 				865B4092283514BD006B7ACF /* Fonts.swift in Sources */,
 				86E2193B2835431A0045A799 /* Color+Ext.swift in Sources */,
 				86A1DA6A283CD02A00C636DD /* View+Ext.swift in Sources */,

@@ -6,32 +6,27 @@
 //
 
 import SwiftUI
-import StoreKit
 
 struct MoreView: View {
     
-    @State private var showingSheet = false
-    @State private var showAlert = false
-    
-    // TODO: Get the real url when app is first published
-    let appShareURL = "https://itunes.apple.com/us/app/keynote/id361285480?mt=8"
+    @StateObject private var viewModel = MoreViewViewModel()
     
     var body: some View {
         NavigationView {
             Form {
                 Section {
                     FormButton(title: i18n.verifyStrength.translation, icon: SFSymbols.networkShield.rawValue) {
-                        showingSheet.toggle()
+                        viewModel.showingSheet.toggle()
                     }
                 }
                 
                 Section {
                     FormButton(title: i18n.rate.translation, icon: SFSymbols.starBubble.rawValue) {
-                        showAlert.toggle()
+                        viewModel.showAlert.toggle()
                     }
                     
                     FormButton(title: i18n.share.translation, icon: SFSymbols.share.rawValue) {
-                        shareSheet()
+                        viewModel.shareSheet()
                     }
                     
                 }
@@ -51,34 +46,13 @@ struct MoreView: View {
                 }
             }
             .navigationTitle(i18n.more.translation)
-            .sheet(isPresented: $showingSheet) {
+            .sheet(isPresented: $viewModel.showingSheet) {
                 PasswordStrengthView()
             }
-            .alert("Do you like the app ?", isPresented: $showAlert) {
+            .alert("Do you like the app ?", isPresented: $viewModel.showAlert) {
                 Button("No", role: .destructive) { }
-                Button("Yes") { askForReview() }
+                Button("Yes") { viewModel.askForReview() }
             }
-        }
-    }
-    
-    func askForReview() {
-        ReviewHandler.requestReview()
-    }
-    
-    func shareSheet() {
-        guard let urlShare = URL(string: appShareURL) else { return }
-        
-//        if <ios15
-//        let activityVC = UIActivityViewController(activityItems: [urlShare], applicationActivities: nil)
-//        UIApplication.shared.windows.first?.rootViewController?.present(activityVC, animated: true)
-        
-        let activityView = UIActivityViewController(activityItems: [urlShare], applicationActivities: nil)
-
-        let allScenes = UIApplication.shared.connectedScenes
-        let scene = allScenes.first { $0.activationState == .foregroundActive }
-        
-        if let windowScene = scene as? UIWindowScene {
-            windowScene.keyWindow?.rootViewController?.present(activityView, animated: true, completion: nil)
         }
     }
 }
