@@ -12,8 +12,7 @@ struct AppLogo: View {
         HStack {
             Image(systemName: SFSymbols.lockShield.rawValue)
                 .font(.custom(Fonts.secularOne.rawValue, size: 28))
-            Text("My Pass_W")
-                .font(.custom(Fonts.secularOne.rawValue, size: 28))
+            PWText(text: "My Pass_W", fontSize: 28)
             Spacer()
         }.padding()
             .foregroundColor(.white)

@@ -22,8 +22,7 @@ struct GeneratorView: View {
             PasswordTextField(generatedPassword: $viewModel.generatedPassword)
             
             VStack {
-                Text(LocalizedStringKey(viewModel.calculateTitle()))
-                    .font(.custom(Fonts.secularOne.rawValue, size: 30))
+                PWText(text: viewModel.calculateTitle(), fontSize: 30)
                     .foregroundColor(.white)
                 
                 RangeSlider(type: .characters, value: $viewModel.charactersValue, range: viewModel.charactersRange) {
@@ -66,8 +65,8 @@ struct GeneratorView_Previews: PreviewProvider {
         Group {
             GeneratorView()
                 .environment(\.locale, .init(identifier: "en_EN"))
-//            ContentView()
-//                .environment(\.locale, .init(identifier: "fr_FR"))
+            GeneratorView()
+                .environment(\.locale, .init(identifier: "fr_FR"))
         }
     }
 }

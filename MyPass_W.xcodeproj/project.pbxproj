@@ -22,6 +22,7 @@
 		868F2C1C283FBD5900517D1F /* FormButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868F2C1B283FBD5900517D1F /* FormButton.swift */; };
 		868F2C1E283FBEDD00517D1F /* PasswordStrengthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868F2C1D283FBEDD00517D1F /* PasswordStrengthView.swift */; };
 		868F2C20283FC3E400517D1F /* StrengthCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868F2C1F283FC3E400517D1F /* StrengthCard.swift */; };
+		868F2C22283FC59500517D1F /* PWText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868F2C21283FC59500517D1F /* PWText.swift */; };
 		86A1DA6A283CD02A00C636DD /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A1DA69283CD02A00C636DD /* View+Ext.swift */; };
 		86A1DA6C283CD68300C636DD /* SwiftUISlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A1DA6B283CD68300C636DD /* SwiftUISlider.swift */; };
 		86B799DB2834149800B27498 /* MyPass_WApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B799DA2834149800B27498 /* MyPass_WApp.swift */; };
@@ -54,6 +55,7 @@
 		868F2C1B283FBD5900517D1F /* FormButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormButton.swift; sourceTree = "<group>"; };
 		868F2C1D283FBEDD00517D1F /* PasswordStrengthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordStrengthView.swift; sourceTree = "<group>"; };
 		868F2C1F283FC3E400517D1F /* StrengthCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrengthCard.swift; sourceTree = "<group>"; };
+		868F2C21283FC59500517D1F /* PWText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWText.swift; sourceTree = "<group>"; };
 		86A1DA69283CD02A00C636DD /* View+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Ext.swift"; sourceTree = "<group>"; };
 		86A1DA6B283CD68300C636DD /* SwiftUISlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUISlider.swift; sourceTree = "<group>"; };
 		86B799D72834149800B27498 /* MyPass_W.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPass_W.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,6 +91,7 @@
 				865B408D283512D7006B7ACF /* RoundedButton.swift */,
 				868F2C1B283FBD5900517D1F /* FormButton.swift */,
 				86A1DA6D283CD77900C636DD /* UIKit */,
+				868F2C21283FC59500517D1F /* PWText.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 				86B799DD2834149800B27498 /* GeneratorView.swift in Sources */,
 				867FC34F28357ED2009476D0 /* Double+Ext.swift in Sources */,
 				865B409728351709006B7ACF /* GeneratorViewViewModel.swift in Sources */,
+				868F2C22283FC59500517D1F /* PWText.swift in Sources */,
 				865B408E283512D7006B7ACF /* RoundedButton.swift in Sources */,
 				86B799DB2834149800B27498 /* MyPass_WApp.swift in Sources */,
 				865B40952835155B006B7ACF /* SFSymbols.swift in Sources */,

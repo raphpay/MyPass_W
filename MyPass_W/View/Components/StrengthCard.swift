@@ -15,10 +15,8 @@ struct StrengthCard: View {
         HStack {
             VStack(alignment: .leading) {
                 // TODO: Create a text component with custom font
-                Text(LocalizedStringKey(strength.title))
-                    .bold()
-                    .font(.custom(Fonts.secularOne.rawValue, size: 25))
-                Text("Infos about strength")
+                PWText(text: strength.title, fontSize: 25)
+                PWText(text: "Infos about strength")
             }
             .padding(.horizontal)
             .padding(.vertical, 8)
