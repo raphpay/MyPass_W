@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 enum PasswordStrength {
-    case weak, mediocre, strong, veryStrong
+    case weak, mediocre, strong, veryStrong, none
     
     var title: LocalizedStringKey {
         switch self {
@@ -21,19 +21,23 @@ enum PasswordStrength {
             return i18n.strong.translation
         case .veryStrong:
             return i18n.veryStrong.translation
+        case .none:
+            return ""
         }
     }
     
     var range: ClosedRange<Double> {
         switch self {
         case .weak:
-            return 1...7
+            return 1...8
         case .mediocre:
-            return 7...12
+            return 8...12
         case .strong:
             return 12...24
         case .veryStrong:
             return 24...40
+        case .none:
+            return 0...1
         }
     }
     
@@ -47,6 +51,8 @@ enum PasswordStrength {
             return Color.ui.strong
         case .veryStrong:
             return Color.ui.veryStrong
+        case .none:
+            return Color.black
         }
     }
 }
