@@ -6,11 +6,12 @@
 //
 
 import SwiftUI
+import StoreKit
 
 struct MoreView: View {
     
     @State private var showingSheet = false
-    
+    @State private var showAlert = false
     
     var body: some View {
         NavigationView {
@@ -23,7 +24,7 @@ struct MoreView: View {
                 
                 Section {
                     FormButton(title: i18n.rate.translation, icon: SFSymbols.starBubble.rawValue) {
-                        print("button")
+                        showAlert.toggle()
                     }
                     
                     FormButton(title: i18n.share.translation, icon: SFSymbols.share.rawValue) {
@@ -50,7 +51,15 @@ struct MoreView: View {
             .sheet(isPresented: $showingSheet) {
                 PasswordStrengthView()
             }
+            .alert("Do you like the app ?", isPresented: $showAlert) {
+                Button("No", role: .destructive) { }
+                Button("Yes") { askForReview() }
+            }
         }
+    }
+    
+    func askForReview() {
+        ReviewHandler.requestReview()
     }
 }
 

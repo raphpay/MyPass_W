@@ -20,6 +20,7 @@
 		867FC35528358504009476D0 /* Plurals-en_EN.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 867FC35428358504009476D0 /* Plurals-en_EN.stringsdict */; };
 		867FC35728358592009476D0 /* Plurals-fr_FR.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 867FC35628358592009476D0 /* Plurals-fr_FR.stringsdict */; };
 		868C908E2840127700035F21 /* PasswordStrengthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868C908D2840127700035F21 /* PasswordStrengthViewModel.swift */; };
+		868C90902840154D00035F21 /* ReviewHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868C908F2840154D00035F21 /* ReviewHandler.swift */; };
 		868F2C1C283FBD5900517D1F /* FormButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868F2C1B283FBD5900517D1F /* FormButton.swift */; };
 		868F2C1E283FBEDD00517D1F /* PasswordStrengthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868F2C1D283FBEDD00517D1F /* PasswordStrengthView.swift */; };
 		868F2C20283FC3E400517D1F /* StrengthCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868F2C1F283FC3E400517D1F /* StrengthCard.swift */; };
@@ -54,6 +55,7 @@
 		867FC35428358504009476D0 /* Plurals-en_EN.stringsdict */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; path = "Plurals-en_EN.stringsdict"; sourceTree = "<group>"; };
 		867FC35628358592009476D0 /* Plurals-fr_FR.stringsdict */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; path = "Plurals-fr_FR.stringsdict"; sourceTree = "<group>"; };
 		868C908D2840127700035F21 /* PasswordStrengthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordStrengthViewModel.swift; sourceTree = "<group>"; };
+		868C908F2840154D00035F21 /* ReviewHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewHandler.swift; sourceTree = "<group>"; };
 		868F2C1B283FBD5900517D1F /* FormButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormButton.swift; sourceTree = "<group>"; };
 		868F2C1D283FBEDD00517D1F /* PasswordStrengthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordStrengthView.swift; sourceTree = "<group>"; };
 		868F2C1F283FC3E400517D1F /* StrengthCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrengthCard.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				867FC34A28357708009476D0 /* Localizable.strings */,
 				867FC35428358504009476D0 /* Plurals-en_EN.stringsdict */,
 				867FC35628358592009476D0 /* Plurals-fr_FR.stringsdict */,
+				868C908F2840154D00035F21 /* ReviewHandler.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 				868F2C1C283FBD5900517D1F /* FormButton.swift in Sources */,
 				86CA7E64283EC01B00400DDA /* TabBar.swift in Sources */,
 				865B408A28351033006B7ACF /* PasswordTextField.swift in Sources */,
+				868C90902840154D00035F21 /* ReviewHandler.swift in Sources */,
 				865B408528350FBB006B7ACF /* AppLogo.swift in Sources */,
 				868C908E2840127700035F21 /* PasswordStrengthViewModel.swift in Sources */,
 				868F2C1E283FBEDD00517D1F /* PasswordStrengthView.swift in Sources */,
