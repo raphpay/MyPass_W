@@ -15,6 +15,7 @@ enum i18n {
     var translation: String {
         switch self {
         case .generate:
+            // TODO: Convert this simple return into LocalisedString
             return "i18n-generate"
         case .copy:
             return "i18n-copy"

@@ -9,7 +9,33 @@ import SwiftUI
 
 struct MoreView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            Form {
+                Section {
+                    Text("Verify password strength")
+                }
+                
+                Section {
+                    Text("Rate the app")
+                    Text("Share the app")
+                }
+                
+                Section {
+                    NavigationLink {
+                        Text("Screen 2")
+                    } label: {
+                        Text("Verify password strength")
+                    }
+                    
+                    NavigationLink {
+                        Text("Screen 2")
+                    } label: {
+                        Text("Donate")
+                    }
+                }
+            }
+            .navigationTitle(LocalizedStringKey(i18n.more.translation))
+        }
     }
 }
 
