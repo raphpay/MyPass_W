@@ -10,8 +10,7 @@ import SwiftUI
 struct PasswordStrengthView: View {
     
     @Environment(\.dismiss) var dismiss
-    @State private var password: String = ""
-    @State private var passwordStrength: PasswordStrength = .none
+    @StateObject private var viewModel = PasswordStrengthViewModel()
         
     var body: some View {
         ScrollView {
@@ -21,6 +20,7 @@ struct PasswordStrengthView: View {
                 Button {
                     dismiss()
                 } label: {
+                    // TODO: Convert thos as an enum property
                     Image(systemName: "xmark.circle.fill")
                         .font(.title)
                 }
@@ -29,19 +29,21 @@ struct PasswordStrengthView: View {
             }
             .padding(.top, 20)
             
-            PasswordTextField(title: "Verify your password", generatedPassword: $password)
-                .onChange(of: password) { _ in
+            // TODO: i18n
+            PasswordTextField(title: "Verify your password", generatedPassword: $viewModel.password)
+                .onChange(of: viewModel.password) { _ in
                     withAnimation {
-                        checkPassword()
+                        viewModel.checkPassword()
                     }
                 }
             
-            PWText(text: passwordStrength.title)
+            PWText(text: viewModel.passwordStrength.title)
                 .transition(.opacity)
             
             Button {
-                checkPassword()
+                viewModel.checkPassword()
             } label: {
+                // TODO: i18n
                 Text("Verify")
             }
 
@@ -52,36 +54,6 @@ struct PasswordStrengthView: View {
             StrengthCard(strength: .veryStrong)
             
             Spacer()
-        }
-    }
-    
-    func checkPassword() {
-        let passwordLength = password.count
-        var containsSymbols = false
-        var containsUppercase = false
-        
-        for character in password {
-            if character.isUppercase {
-                containsUppercase = true
-            }
-            
-            if character.isSymbol() {
-                containsSymbols = true
-            }
-        }
-        
-        if containsSymbols && containsUppercase {
-            if PasswordStrength.weak.range.contains(Double(passwordLength)) {
-                passwordStrength = .weak
-            } else if PasswordStrength.mediocre.range.contains(Double(passwordLength)) {
-                passwordStrength = .mediocre
-            } else if PasswordStrength.strong.range.contains(Double(passwordLength)) {
-                passwordStrength = .strong
-            } else if PasswordStrength.veryStrong.range.contains(Double(passwordLength)) {
-                passwordStrength = .veryStrong
-            }
-        } else {
-            passwordStrength = .weak
         }
     }
 }
