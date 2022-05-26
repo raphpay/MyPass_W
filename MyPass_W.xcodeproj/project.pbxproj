@@ -19,6 +19,7 @@
 		867FC34F28357ED2009476D0 /* Double+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867FC34E28357ED2009476D0 /* Double+Ext.swift */; };
 		867FC35528358504009476D0 /* Plurals-en_EN.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 867FC35428358504009476D0 /* Plurals-en_EN.stringsdict */; };
 		867FC35728358592009476D0 /* Plurals-fr_FR.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 867FC35628358592009476D0 /* Plurals-fr_FR.stringsdict */; };
+		868F2C1C283FBD5900517D1F /* FormButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868F2C1B283FBD5900517D1F /* FormButton.swift */; };
 		86A1DA6A283CD02A00C636DD /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A1DA69283CD02A00C636DD /* View+Ext.swift */; };
 		86A1DA6C283CD68300C636DD /* SwiftUISlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A1DA6B283CD68300C636DD /* SwiftUISlider.swift */; };
 		86B799DB2834149800B27498 /* MyPass_WApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B799DA2834149800B27498 /* MyPass_WApp.swift */; };
@@ -48,6 +49,7 @@
 		867FC34E28357ED2009476D0 /* Double+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Ext.swift"; sourceTree = "<group>"; };
 		867FC35428358504009476D0 /* Plurals-en_EN.stringsdict */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; path = "Plurals-en_EN.stringsdict"; sourceTree = "<group>"; };
 		867FC35628358592009476D0 /* Plurals-fr_FR.stringsdict */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; path = "Plurals-fr_FR.stringsdict"; sourceTree = "<group>"; };
+		868F2C1B283FBD5900517D1F /* FormButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormButton.swift; sourceTree = "<group>"; };
 		86A1DA69283CD02A00C636DD /* View+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Ext.swift"; sourceTree = "<group>"; };
 		86A1DA6B283CD68300C636DD /* SwiftUISlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUISlider.swift; sourceTree = "<group>"; };
 		86B799D72834149800B27498 /* MyPass_W.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPass_W.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,6 +82,7 @@
 				865B408928351033006B7ACF /* PasswordTextField.swift */,
 				865B408B2835109F006B7ACF /* RangeSlider.swift */,
 				865B408D283512D7006B7ACF /* RoundedButton.swift */,
+				868F2C1B283FBD5900517D1F /* FormButton.swift */,
 				86A1DA6D283CD77900C636DD /* UIKit */,
 			);
 			path = Components;
@@ -261,6 +264,7 @@
 				865B408E283512D7006B7ACF /* RoundedButton.swift in Sources */,
 				86B799DB2834149800B27498 /* MyPass_WApp.swift in Sources */,
 				865B40952835155B006B7ACF /* SFSymbols.swift in Sources */,
+				868F2C1C283FBD5900517D1F /* FormButton.swift in Sources */,
 				86CA7E64283EC01B00400DDA /* TabBar.swift in Sources */,
 				865B408A28351033006B7ACF /* PasswordTextField.swift in Sources */,
 				865B408528350FBB006B7ACF /* AppLogo.swift in Sources */,

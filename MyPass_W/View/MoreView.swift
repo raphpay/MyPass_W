@@ -12,12 +12,20 @@ struct MoreView: View {
         NavigationView {
             Form {
                 Section {
-                    Text("Verify password strength")
+                    FormButton(title: "Verify password strength", icon: "network.badge.shield.half.filled") {
+                        print("button")
+                    }
                 }
                 
                 Section {
-                    Text("Rate the app")
-                    Text("Share the app")
+                    FormButton(title: "Rate the app", icon: "star.bubble.fill") {
+                        print("button")
+                    }
+                    
+                    FormButton(title: "Share the app", icon: "square.and.arrow.up") {
+                        print("button")
+                    }
+                    
                 }
                 
                 Section {
