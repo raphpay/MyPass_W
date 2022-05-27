@@ -9,8 +9,6 @@ import SwiftUI
 
 struct AboutView: View {
     
-    
-    
     var body: some View {
         ScrollView {
             
@@ -42,7 +40,8 @@ struct AboutView: View {
             
             Spacer()
             
-        }.navigationTitle("About")
+        }
+        .navigationTitle("About")
     }
 }
 

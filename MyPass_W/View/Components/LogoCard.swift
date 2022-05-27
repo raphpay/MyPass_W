@@ -26,7 +26,7 @@ enum Logo {
         case .github:
             return "https://github.com/raphpay"
         case .linkedIn:
-            return "www.linkedin.com/in/raphael-payet"
+            return "https://www.linkedin.com/in/raphael-payet"
         case .instagram:
             return "https://www.instagram.com/raphbmx/"
         }
@@ -37,9 +37,12 @@ struct LogoCard: View {
     
     var logo: Logo = .github
     
+    @State private var showSafari: Bool = false
+    @State private var websiteToShow: String = ""
+    
     var body: some View {
         Button {
-            goTo()
+            showSafari.toggle()
         } label: {
             VStack {
                 Image(logo.name)
@@ -51,25 +54,14 @@ struct LogoCard: View {
             .tint(.black)
         }
         .padding()
-    }
-    
-    func goTo() {
-        switch logo {
-        case .github:
-            // Go to my github
-            break
-        case .linkedIn:
-            // Go to my linkedin
-            break
-        case .instagram:
-            // Go to my instagram
-            break
-        }
+        .fullScreenCover(isPresented: $showSafari, content: {
+            SFSafariViewWrapper(url: URL(string: logo.link)!)
+        })
     }
 }
 
 struct LogoCard_Previews: PreviewProvider {
     static var previews: some View {
-        LogoCard()
+        LogoCard(logo: .github)
     }
 }
