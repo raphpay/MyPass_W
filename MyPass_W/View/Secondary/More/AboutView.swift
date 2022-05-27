@@ -13,7 +13,7 @@ struct AboutView: View {
         ScrollView {
             
             HStack {
-                PWText(text: "Where to find me ?", fontSize: 25)
+                PWText(text: i18n.questionFindMe.translation, fontSize: 25)
                 
                 Spacer()
             }
@@ -31,8 +31,8 @@ struct AboutView: View {
                 .frame(height: 100)
             
             VStack(alignment: .leading) {
-                Text("About Me")
-                Text("A short resumee of myself")
+                PWText(text: i18n.aboutMe.translation)
+                PWText(text: i18n.myResume.translation)
             }
             .padding()
             .background(Color.ui.lightGray)
@@ -41,7 +41,7 @@ struct AboutView: View {
             Spacer()
             
         }
-        .navigationTitle("About")
+        .navigationTitle(i18n.about.translation)
     }
 }
 

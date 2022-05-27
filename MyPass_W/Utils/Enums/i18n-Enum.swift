@@ -15,9 +15,11 @@ enum i18n {
     case more
     case verifyStrength
     case rate, share
-    case about
+    case aboutDev, about
     case donate
     case infoWeak, infoMediocre, infoStrong, infoVeryStrong
+    case questionLike, no, yes, questionFindMe
+    case aboutMe, myResume
     
     var translation: LocalizedStringKey {
         switch self {
@@ -47,8 +49,8 @@ enum i18n {
             return LocalizedStringKey("i18-rate")
         case .share:
             return LocalizedStringKey("i18n-share")
-        case .about:
-            return LocalizedStringKey("i18n-about")
+        case .aboutDev:
+            return LocalizedStringKey("i18n-about-dev")
         case .donate:
             return LocalizedStringKey("i18n-donate")
         case .infoWeak:
@@ -59,6 +61,20 @@ enum i18n {
             return LocalizedStringKey("i18n-password-info-strong")
         case .infoVeryStrong:
             return LocalizedStringKey("i18n-password-info-very-strong")
+        case .questionLike:
+            return LocalizedStringKey("i18n-question-like")
+        case .questionFindMe:
+            return LocalizedStringKey("i18n-question-find-me")
+        case .no:
+            return LocalizedStringKey("i18n-no")
+        case .yes:
+            return LocalizedStringKey("i18n-yes")
+        case .aboutMe:
+            return LocalizedStringKey("i18n-about-me")
+        case .myResume:
+            return LocalizedStringKey("i18n-my-resume")
+        case .about:
+            return LocalizedStringKey("i18n-about")
         }
     }
 }

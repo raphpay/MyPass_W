@@ -35,11 +35,11 @@ struct MoreView: View {
                     NavigationLink {
                         AboutView()
                     } label: {
-                        Text(i18n.about.translation)
+                        Text(i18n.aboutDev.translation)
                     }
                     
                     NavigationLink {
-                        Text("Screen 2")
+                        DonateView()
                     } label: {
                         Text(i18n.donate.translation)
                     }
@@ -49,9 +49,9 @@ struct MoreView: View {
             .sheet(isPresented: $viewModel.showingSheet) {
                 PasswordStrengthView()
             }
-            .alert("Do you like the app ?", isPresented: $viewModel.showAlert) {
-                Button("No", role: .destructive) { }
-                Button("Yes") { viewModel.askForReview() }
+            .alert(i18n.questionLike.translation, isPresented: $viewModel.showAlert) {
+                Button(i18n.no.translation, role: .destructive) { }
+                Button(i18n.yes.translation) { viewModel.askForReview() }
             }
         }
     }

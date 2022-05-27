@@ -18,6 +18,7 @@
 		8673F5152840E9F900EB28BB /* LogoCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8673F5142840E9F900EB28BB /* LogoCard.swift */; };
 		8673F5172840ED0200EB28BB /* SFSafariViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8673F5162840ED0200EB28BB /* SFSafariViewWrapper.swift */; };
 		8673F5192840EFE300EB28BB /* Logo-Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8673F5182840EFE300EB28BB /* Logo-Enum.swift */; };
+		8673F5282840F1A000EB28BB /* DonateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8673F5272840F1A000EB28BB /* DonateView.swift */; };
 		867FC34828357708009476D0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 867FC34A28357708009476D0 /* Localizable.strings */; };
 		867FC34D28357893009476D0 /* i18n-Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867FC34C28357893009476D0 /* i18n-Enum.swift */; };
 		867FC34F28357ED2009476D0 /* Double+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867FC34E28357ED2009476D0 /* Double+Ext.swift */; };
@@ -57,6 +58,7 @@
 		8673F5142840E9F900EB28BB /* LogoCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoCard.swift; sourceTree = "<group>"; };
 		8673F5162840ED0200EB28BB /* SFSafariViewWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSafariViewWrapper.swift; sourceTree = "<group>"; };
 		8673F5182840EFE300EB28BB /* Logo-Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Logo-Enum.swift"; sourceTree = "<group>"; };
+		8673F5272840F1A000EB28BB /* DonateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonateView.swift; sourceTree = "<group>"; };
 		867FC34928357708009476D0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		867FC34B2835770B009476D0 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		867FC34C28357893009476D0 /* i18n-Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "i18n-Enum.swift"; sourceTree = "<group>"; };
@@ -238,6 +240,7 @@
 			children = (
 				8673F5122840E54600EB28BB /* AboutView.swift */,
 				868F2C1D283FBEDD00517D1F /* PasswordStrengthView.swift */,
+				8673F5272840F1A000EB28BB /* DonateView.swift */,
 			);
 			path = More;
 			sourceTree = "<group>";
@@ -399,6 +402,7 @@
 				867FC34F28357ED2009476D0 /* Double+Ext.swift in Sources */,
 				865B409728351709006B7ACF /* GeneratorViewViewModel.swift in Sources */,
 				868F2C22283FC59500517D1F /* PWText.swift in Sources */,
+				8673F5282840F1A000EB28BB /* DonateView.swift in Sources */,
 				865B408E283512D7006B7ACF /* RoundedButton.swift in Sources */,
 				86B799DB2834149800B27498 /* MyPass_WApp.swift in Sources */,
 				865B40952835155B006B7ACF /* SFSymbols-Enum.swift in Sources */,
