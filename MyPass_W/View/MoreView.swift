@@ -33,7 +33,7 @@ struct MoreView: View {
                 
                 Section {
                     NavigationLink {
-                        Text("Screen 2")
+                        AboutView()
                     } label: {
                         Text(i18n.about.translation)
                     }
