@@ -9,10 +9,6 @@ import SwiftUI
 
 struct TabBar: View {
     
-    init() {
-        UITabBar.appearance().barTintColor = .black
-    }
-    
     var body: some View {
         TabView {
             GeneratorView()

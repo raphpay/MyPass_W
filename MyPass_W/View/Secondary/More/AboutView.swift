@@ -27,16 +27,12 @@ struct AboutView: View {
                 LogoCard(logo: .instagram)
             }
             
-            Spacer()
-                .frame(height: 100)
-            
-            VStack(alignment: .leading) {
-                PWText(text: i18n.aboutMe.translation)
+            Section {
+                PWText(text: i18n.aboutMe.translation, fontSize: 23)
+                    .padding(16)
                 PWText(text: i18n.myResume.translation)
+                    .padding(16)
             }
-            .padding()
-            .background(Color.ui.lightGray)
-            .cornerRadius(10)
             
             Spacer()
             
