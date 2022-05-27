@@ -12,20 +12,25 @@ struct AboutView: View {
     
     
     var body: some View {
-        VStack {
-            
-            Text("Where to find me ?")
+        ScrollView {
             
             HStack {
-                VStack {
-                    Image("github")
-                        .resizable()
-                        .frame(width: 55, height: 55)
-                    Text("GitHub")
-                }
+                PWText(text: "Where to find me ?", fontSize: 25)
                 
-                // Add other links
+                Spacer()
             }
+            .padding(.leading)
+            
+            HStack(spacing: 40) {
+                LogoCard(logo: .linkedIn)
+                
+                LogoCard(logo: .github)
+                
+                LogoCard(logo: .instagram)
+            }
+            
+            Spacer()
+                .frame(height: 100)
             
             VStack(alignment: .leading) {
                 Text("About Me")
@@ -34,6 +39,8 @@ struct AboutView: View {
             .padding()
             .background(Color.ui.lightGray)
             .cornerRadius(10)
+            
+            Spacer()
             
         }.navigationTitle("About")
     }
