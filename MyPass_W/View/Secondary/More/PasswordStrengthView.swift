@@ -17,7 +17,6 @@ struct PasswordStrengthView: View {
             
             DismissButton { dismiss() }
             
-            // TODO: i18n
             PasswordTextField(title: i18n.verifyStrength.translation, generatedPassword: $viewModel.password)
                 .onChange(of: viewModel.password) { _ in
                     withAnimation {
