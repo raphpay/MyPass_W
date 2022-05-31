@@ -14,20 +14,8 @@ struct PasswordStrengthView: View {
         
     var body: some View {
         ScrollView {
-            HStack {
-                Spacer()
-                
-                Button {
-                    dismiss()
-                } label: {
-                    // TODO: Convert thos as an enum property
-                    Image(systemName: "xmark.circle.fill")
-                        .font(.title)
-                }
-                .tint(.black)
-                .padding(.trailing, 16)
-            }
-            .padding(.top, 20)
+            
+            DismissButton { dismiss() }
             
             // TODO: i18n
             PasswordTextField(title: "Verify your password", generatedPassword: $viewModel.password)
