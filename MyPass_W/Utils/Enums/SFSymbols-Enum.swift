@@ -13,4 +13,5 @@ enum SFSymbols: String {
     case networkShield = "network.badge.shield.half.filled"
     case starBubble = "star.bubble.fill"
     case share = "square.and.arrow.up"
+    case close = "xmark"
 }

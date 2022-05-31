@@ -33,6 +33,7 @@
 		868F2C22283FC59500517D1F /* PWText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868F2C21283FC59500517D1F /* PWText.swift */; };
 		86A1DA6A283CD02A00C636DD /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A1DA69283CD02A00C636DD /* View+Ext.swift */; };
 		86A1DA6C283CD68300C636DD /* SwiftUISlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A1DA6B283CD68300C636DD /* SwiftUISlider.swift */; };
+		86B1DD042846321D000F4704 /* DismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B1DD032846321D000F4704 /* DismissButton.swift */; };
 		86B799DB2834149800B27498 /* MyPass_WApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B799DA2834149800B27498 /* MyPass_WApp.swift */; };
 		86B799DD2834149800B27498 /* GeneratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B799DC2834149800B27498 /* GeneratorView.swift */; };
 		86B799DF2834149900B27498 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86B799DE2834149900B27498 /* Assets.xcassets */; };
@@ -74,6 +75,7 @@
 		868F2C21283FC59500517D1F /* PWText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWText.swift; sourceTree = "<group>"; };
 		86A1DA69283CD02A00C636DD /* View+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Ext.swift"; sourceTree = "<group>"; };
 		86A1DA6B283CD68300C636DD /* SwiftUISlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUISlider.swift; sourceTree = "<group>"; };
+		86B1DD032846321D000F4704 /* DismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissButton.swift; sourceTree = "<group>"; };
 		86B799D72834149800B27498 /* MyPass_W.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPass_W.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86B799DA2834149800B27498 /* MyPass_WApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPass_WApp.swift; sourceTree = "<group>"; };
 		86B799DC2834149800B27498 /* GeneratorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratorView.swift; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 			children = (
 				865B408928351033006B7ACF /* PasswordTextField.swift */,
 				868F2C21283FC59500517D1F /* PWText.swift */,
+				86B1DD032846321D000F4704 /* DismissButton.swift */,
 			);
 			path = Atoms;
 			sourceTree = "<group>";
@@ -415,6 +418,7 @@
 				868C908E2840127700035F21 /* PasswordStrengthViewModel.swift in Sources */,
 				868F2C1E283FBEDD00517D1F /* PasswordStrengthView.swift in Sources */,
 				86E2193D283546850045A799 /* PasswordStrenght-Enum.swift in Sources */,
+				86B1DD042846321D000F4704 /* DismissButton.swift in Sources */,
 				867FC34D28357893009476D0 /* i18n-Enum.swift in Sources */,
 				86CA7E62283EBD8300400DDA /* MoreView.swift in Sources */,
 				86A1DA6C283CD68300C636DD /* SwiftUISlider.swift in Sources */,
