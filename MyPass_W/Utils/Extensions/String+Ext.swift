@@ -13,3 +13,14 @@ extension String {
       return String((0..<length).map{ _ in letters.randomElement()! })
     }
 }
+
+extension String.Element {    
+    func isSymbol() -> Bool {
+        let symbols = "!£$%&/()=?^;:ç°§*,.-_€@#"
+        if symbols.contains(self) {
+            return true
+        }
+        
+        return false
+    }
+}

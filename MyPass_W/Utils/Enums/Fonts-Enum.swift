@@ -1,5 +1,5 @@
 //
-//  Fonts.swift
+//  Fonts-Enum.swift
 //  MyPass_W
 //
 //  Created by Raphaël Payet on 18/05/2022.

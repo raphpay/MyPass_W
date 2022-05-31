@@ -9,10 +9,11 @@ import SwiftUI
 
 struct PasswordTextField: View {
     
+    var title: LocalizedStringKey = i18n.textfield.translation
     @Binding var generatedPassword: String
     
     var body: some View {
-        TextField(LocalizedStringKey(i18n.textfield.translation), text: $generatedPassword)
+        TextField(title, text: $generatedPassword)
             .frame(height: 50)
             .font(.custom(Fonts.secularOne.rawValue, size: 20))
             .textFieldStyle(.roundedBorder)

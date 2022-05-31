@@ -1,0 +1,34 @@
+/* 
+  Localizable.strings
+  MyPass_W
+
+  Created by Raphaël Payet on 18/05/2022.
+  
+*/
+
+"i18n-generate" = "Generate";
+"i18n-copy" = "Copy";
+"i18n-textField" = "Here will be your generated password";
+"i18n-weak" = "Weak";
+"i18n-mediocre" = "Mediocre";
+"i18n-strong" = "Strong";
+"i18n-veryStrong" = "Very Strong";
+"i18n-copied" = "Password copied in clipboard";
+"i18n-not-copied" = "No password to copy !";
+"i18n-more" = "More";
+"i18-verify-password-strength" = "Verify password strength";
+"i18-rate" = "Rate the app";
+"i18n-share" = "Share the app";
+"i18n-about-dev" = "About the developer";
+"i18n-donate" = "Donate";
+"i18n-password-info-weak" = "Contains 1 to 7 characters, or don't contains any symbols, or UPPERCASED letter";
+"i18n-password-info-mediocre" = "Contains 8 to 12 characters, and contains at least one symbol and one UPPERCASED letter";
+"i18n-password-info-strong" = "Contains 12 to 24 characters, and contains at least one symbol and one UPPERCASED letter";
+"i18n-password-info-very-strong" = "Contains 24 to 40 characters, and contains at least one symbol and one UPPERCASED letter";
+"i18n-question-like" = "Do you like the app ?";
+"i18n-question-find-me" = "Where to find me ?";
+"i18n-no" = "No";
+"i18n-yes" = "Yes";
+"i18n-about-me" = "About me";
+"i18n-my-resume" = "I started to learn iOS development alongside my school studies, but rapidly switch from side-learning to full-learning. I’m now employed in a French start-up but still loves to code my own apps !";
+"i18n-about" = "About";

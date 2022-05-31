@@ -1,5 +1,5 @@
 //
-//  ContentViewViewModel.swift
+//  GeneratorViewViewModel.swift
 //  MyPass_W
 //
 //  Created by Raphaël Payet on 18/05/2022.
@@ -9,16 +9,16 @@ import Foundation
 import UIKit
 import SwiftUI
 
-final class ContentViewViewModel: ObservableObject {
+final class GeneratorViewViewModel: ObservableObject {
     @Published var generatedPassword: String = ""
     @Published var charactersValue: Double = 24
     @Published var charactersRange: ClosedRange<Double> = 1...40
     @Published var separatorValue: Double = 6
     @Published var separatorRange: ClosedRange<Double> = 1...10
     @Published var showAlert: Bool = false
-    @Published var alertTitle: String = ""
+    @Published var alertTitle: LocalizedStringKey = ""
     @Published var backgroundColor: Color = .ui.strong
-    @Published var passwordStrength: PasswordStrenght = .weak
+    @Published var passwordStrength: PasswordStrength = .weak
     
     func decreaseValue(_ valueType: ValueType) {
         switch valueType {
@@ -75,17 +75,17 @@ final class ContentViewViewModel: ObservableObject {
         var color = backgroundColor
         
         switch (charactersValue) {
-        case PasswordStrenght.weak.range:
-            color = PasswordStrenght.weak.color
+        case PasswordStrength.weak.range:
+            color = PasswordStrength.weak.color
             break
-        case PasswordStrenght.mediocre.range:
-            color = PasswordStrenght.mediocre.color
+        case PasswordStrength.mediocre.range:
+            color = PasswordStrength.mediocre.color
             break
-        case PasswordStrenght.strong.range:
-            color = PasswordStrenght.strong.color
+        case PasswordStrength.strong.range:
+            color = PasswordStrength.strong.color
             break
-        case PasswordStrenght.veryStrong.range:
-            color = PasswordStrenght.veryStrong.color
+        case PasswordStrength.veryStrong.range:
+            color = PasswordStrength.veryStrong.color
             break
         default:
             color = Color.ui.weak
@@ -95,24 +95,24 @@ final class ContentViewViewModel: ObservableObject {
         return color
     }
     
-    func calculateTitle() -> String {
-        var title: String
+    func calculateTitle() -> LocalizedStringKey {
+        var title: LocalizedStringKey
         
         switch (charactersValue) {
-        case PasswordStrenght.weak.range:
-            title = PasswordStrenght.weak.title
+        case PasswordStrength.weak.range:
+            title = PasswordStrength.weak.title
             break
-        case PasswordStrenght.mediocre.range:
-            title = PasswordStrenght.mediocre.title
+        case PasswordStrength.mediocre.range:
+            title = PasswordStrength.mediocre.title
             break
-        case PasswordStrenght.strong.range:
-            title = PasswordStrenght.strong.title
+        case PasswordStrength.strong.range:
+            title = PasswordStrength.strong.title
             break
-        case PasswordStrenght.veryStrong.range:
-            title = PasswordStrenght.veryStrong.title
+        case PasswordStrength.veryStrong.range:
+            title = PasswordStrength.veryStrong.title
             break
         default:
-            title = PasswordStrenght.weak.title
+            title = PasswordStrength.weak.title
             break
         }
         

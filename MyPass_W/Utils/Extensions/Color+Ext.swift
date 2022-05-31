@@ -16,5 +16,6 @@ extension Color {
         let mediocre = Color("Mediocre")
         let strong = Color("Strong")
         let veryStrong = Color("Very-Strong")
+        let lightGray = Color("LightGray")
     }
 }
