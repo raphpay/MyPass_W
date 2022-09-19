@@ -64,6 +64,7 @@ final class GeneratorViewViewModel: ObservableObject {
             // Show a success alert
             showAlert.toggle()
             alertTitle = i18n.copied.translation
+            generatedPassword = ""
         } else {
             showAlert.toggle()
             alertTitle = i18n.notCopied.translation
