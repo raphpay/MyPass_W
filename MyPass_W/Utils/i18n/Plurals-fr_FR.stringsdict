@@ -2,36 +2,36 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>characters-count %lld</key>
+	<key>character-count %lld</key>
 	<dict>
 		<key>NSStringLocalizedFormatKey</key>
-		<string>%#@characters@</string>
-		<key>characters</key>
+		<string>%#@character@</string>
+		<key>character</key>
 		<dict>
 			<key>NSStringFormatSpecTypeKey</key>
 			<string>NSStringPluralRuleType</string>
 			<key>NSStringFormatValueTypeKey</key>
 			<string>lld</string>
 			<key>one</key>
-			<string>%lld caractère</string>
+			<string>%lld Caractère</string>
 			<key>other</key>
-			<string>%lld caractères</string>
+			<string>%lld Caractères</string>
 		</dict>
 	</dict>
-	<key>separators-count %lld</key>
+	<key>separator-count %lld</key>
 	<dict>
 		<key>NSStringLocalizedFormatKey</key>
-		<string>%#@separators@</string>
-		<key>separators</key>
+		<string>%#@separator@</string>
+		<key>separator</key>
 		<dict>
 			<key>NSStringFormatSpecTypeKey</key>
 			<string>NSStringPluralRuleType</string>
 			<key>NSStringFormatValueTypeKey</key>
 			<string>lld</string>
 			<key>one</key>
-			<string>1 séparateur à chaque caractère</string>
+			<string>%lld Séparateur</string>
 			<key>other</key>
-			<string>1 séparateur tous les %lld séparateurs</string>
+			<string>Séparateurs</string>
 		</dict>
 	</dict>
 </dict>
