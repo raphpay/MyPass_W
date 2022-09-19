@@ -10,7 +10,6 @@ import SwiftUI
 struct FormButton: View {
     
     var title: LocalizedStringKey
-    // TODO: Create an enum for SFSymbols icons
     var icon: String
     var action: (() -> Void)
     

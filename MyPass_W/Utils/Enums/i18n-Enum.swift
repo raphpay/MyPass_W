@@ -13,7 +13,7 @@ enum i18n {
     case textfield, weak, mediocre, strong, veryStrong
     case copy, copied, notCopied
     case more
-    case verifyStrength
+    case verifyStrength, verify
     case rate, share
     case aboutDev, about
     case donate
@@ -45,6 +45,8 @@ enum i18n {
             return LocalizedStringKey("i18n-more")
         case .verifyStrength:
             return LocalizedStringKey("i18-verify-password-strength")
+        case .verify:
+            return LocalizedStringKey("i18-verify")
         case .rate:
             return LocalizedStringKey("i18-rate")
         case .share:

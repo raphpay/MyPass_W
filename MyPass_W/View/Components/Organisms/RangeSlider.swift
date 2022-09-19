@@ -20,7 +20,11 @@ struct RangeSlider: View {
     
     var body: some View {
         VStack {
-            PWText(text: type == .characters ? "characters-count \(Int(value))" : "separators-count \(Int(value))", fontSize: 26, tableName: "Plurals-\(locale.identifier)")
+            PWText(text: type == .characters ? "character-count \(Int(value))" : "separator-count \(Int(value))", tableName: "Plurals-\(locale.identifier)")
+                .onAppear {
+                    print(locale)
+                }
+
             HStack {
                 Button {
                     onDecrease()

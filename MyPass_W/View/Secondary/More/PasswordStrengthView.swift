@@ -17,8 +17,7 @@ struct PasswordStrengthView: View {
             
             DismissButton { dismiss() }
             
-            // TODO: i18n
-            PasswordTextField(title: "Verify your password", generatedPassword: $viewModel.password)
+            PasswordTextField(title: i18n.verifyStrength.translation, generatedPassword: $viewModel.password)
                 .onChange(of: viewModel.password) { _ in
                     withAnimation {
                         viewModel.checkPassword()
@@ -31,8 +30,7 @@ struct PasswordStrengthView: View {
             Button {
                 viewModel.checkPassword()
             } label: {
-                // TODO: i18n
-                Text("Verify")
+                PWText(text: i18n.verify.translation)
             }
 
             
