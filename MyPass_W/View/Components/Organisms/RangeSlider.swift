@@ -21,9 +21,6 @@ struct RangeSlider: View {
     var body: some View {
         VStack {
             PWText(text: type == .characters ? "character-count \(Int(value))" : "separator-count \(Int(value))", tableName: "Plurals-\(locale.identifier)")
-                .onAppear {
-                    print(locale)
-                }
 
             HStack {
                 Button {
