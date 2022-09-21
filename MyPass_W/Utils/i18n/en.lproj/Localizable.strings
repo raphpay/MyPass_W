@@ -20,7 +20,8 @@
 "i18n-rate" = "Rate the app";
 "i18n-share" = "Share the app";
 "i18n-about-dev" = "About the developer";
-"i18n-donate" = "Donate";
+"i18n-donate" = "Tips";
+"i18n-donate-description" = "A small action from you, a big support for me";
 "i18n-password-info-weak" = "Contains 1 to 7 characters, or don't contains any symbols, or UPPERCASED letter";
 "i18n-password-info-mediocre" = "Contains 8 to 12 characters, and contains at least one symbol and one UPPERCASED letter";
 "i18n-password-info-strong" = "Contains 12 to 24 characters, and contains at least one symbol and one UPPERCASED letter";
@@ -33,3 +34,6 @@
 "i18n-my-resume" = "I started to learn iOS development alongside my school studies, but rapidly switch from side-learning to full-learning. I’m now employed in a French start-up but still loves to code my own apps !";
 "i18n-about" = "About";
 "i18n-verify" = "Verify";
+"i18n-buy-coffee" = "Buy me a coffee";
+"i18n-buy-beer" = "Buy me a beer";
+"i18n-buy-burger" = "Buy me a burger";

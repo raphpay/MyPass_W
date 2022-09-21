@@ -10,10 +10,26 @@ import SwiftUI
 struct DonateView: View {
     var body: some View {
         VStack {
-            Text("Donate")
-            Text("This screen is still in development !")
+            PWText(text: "i18n-donate-description", fontSize: 18)
+                .multilineTextAlignment(.center)
+                .padding(.top, 30)
+            
+            Spacer()
+                .frame(height: 100)
+            
+            DonationButton(icon: "☕️", text: "i18n-buy-coffee", price: 0.99) {
+                //
+            }
+            DonationButton(icon: "🍺", text: "i18n-buy-beer", price: 3.99) {
+                //
+            }
+            DonationButton(icon: "🍔", text: "i18n-buy-burger", price: 7.99) {
+                //
+            }
+            
+            Spacer()
         }
-        .navigationTitle("Donate")
+        .navigationTitle(Text("i18n-donate"))
     }
 }
 

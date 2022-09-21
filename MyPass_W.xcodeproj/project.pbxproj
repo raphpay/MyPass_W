@@ -24,6 +24,7 @@
 		867FC34828357708009476D0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 867FC34A28357708009476D0 /* Localizable.strings */; };
 		867FC34D28357893009476D0 /* i18n-Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867FC34C28357893009476D0 /* i18n-Enum.swift */; };
 		867FC34F28357ED2009476D0 /* Double+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867FC34E28357ED2009476D0 /* Double+Ext.swift */; };
+		868560D228DBA11D0028C0E4 /* DonationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868560D128DBA11D0028C0E4 /* DonationButton.swift */; };
 		868C908E2840127700035F21 /* PasswordStrengthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868C908D2840127700035F21 /* PasswordStrengthViewModel.swift */; };
 		868C90902840154D00035F21 /* ReviewHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868C908F2840154D00035F21 /* ReviewHandler.swift */; };
 		868C909428401A2D00035F21 /* MoreViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868C909328401A2D00035F21 /* MoreViewViewModel.swift */; };
@@ -66,6 +67,7 @@
 		867FC34B2835770B009476D0 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		867FC34C28357893009476D0 /* i18n-Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "i18n-Enum.swift"; sourceTree = "<group>"; };
 		867FC34E28357ED2009476D0 /* Double+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Ext.swift"; sourceTree = "<group>"; };
+		868560D128DBA11D0028C0E4 /* DonationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationButton.swift; sourceTree = "<group>"; };
 		868C908D2840127700035F21 /* PasswordStrengthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordStrengthViewModel.swift; sourceTree = "<group>"; };
 		868C908F2840154D00035F21 /* ReviewHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewHandler.swift; sourceTree = "<group>"; };
 		868C909328401A2D00035F21 /* MoreViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewViewModel.swift; sourceTree = "<group>"; };
@@ -207,6 +209,7 @@
 				868F2C1F283FC3E400517D1F /* StrengthCard.swift */,
 				865B408D283512D7006B7ACF /* RoundedButton.swift */,
 				868F2C1B283FBD5900517D1F /* FormButton.swift */,
+				868560D128DBA11D0028C0E4 /* DonationButton.swift */,
 				8673F5142840E9F900EB28BB /* LogoCard.swift */,
 			);
 			path = Molecules;
@@ -401,6 +404,7 @@
 				8673F5132840E54600EB28BB /* AboutView.swift in Sources */,
 				86E2193928353C280045A799 /* String+Ext.swift in Sources */,
 				86B799DD2834149800B27498 /* GeneratorView.swift in Sources */,
+				868560D228DBA11D0028C0E4 /* DonationButton.swift in Sources */,
 				8673F5152840E9F900EB28BB /* LogoCard.swift in Sources */,
 				867FC34F28357ED2009476D0 /* Double+Ext.swift in Sources */,
 				865B409728351709006B7ACF /* GeneratorViewViewModel.swift in Sources */,

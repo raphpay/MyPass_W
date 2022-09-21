@@ -20,7 +20,8 @@
 "i18n-rate" = "Noter l'app";
 "i18n-share" = "Partager l'app";
 "i18n-about-dev" = "A propos du developpeur";
-"i18n-donate" = "Supporter le développeur";
+"i18n-donate" = "Tips";
+"i18n-donate-description" = "Une petite action pour vous, un grand soutien pour moi";
 "i18n-password-info-weak" = "Contient 1 à 7 caractères, ou ne contient pas de symbole, ou de lettres en MAJUSCULE";
 "i18n-password-info-mediocre" = "Contient 8 à 12 caractères, et contient au moins un symbole et au moins une lettre en MAJUSCULE";
 "i18n-password-info-strong" = "Contient 12 à 24 caractères, et contient au moins un symbole et au moins une lettre en MAJUSCULE";
@@ -33,3 +34,6 @@
 "i18n-my-resume" = "J’ai commencé à apprendre le développement iOS à coté de mes études, mais j’ai rapidement switché d’un simple hobbie à un réel apprentissage. Je suis maintenant employé dans une start-up française, mais j’adore toujours autant créé mes propres apps !  ";
 "i18n-about" = "A propos";
 "i18n-verify" = "Vérifier";
+"i18n-buy-coffee" = "Payez-moi un café";
+"i18n-buy-beer" = "Payez-moi une bière";
+"i18n-buy-burger" = "Payez-moi un burger";
