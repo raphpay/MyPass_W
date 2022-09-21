@@ -44,11 +44,11 @@ enum i18n {
         case .more:
             return LocalizedStringKey("i18n-more")
         case .verifyStrength:
-            return LocalizedStringKey("i18-verify-password-strength")
+            return LocalizedStringKey("i18n-verify-password-strength")
         case .verify:
-            return LocalizedStringKey("i18-verify")
+            return LocalizedStringKey("i18n-verify")
         case .rate:
-            return LocalizedStringKey("i18-rate")
+            return LocalizedStringKey("i18n-rate")
         case .share:
             return LocalizedStringKey("i18n-share")
         case .aboutDev:

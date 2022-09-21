@@ -16,8 +16,8 @@
 "i18n-copied" = "Mot de passe copié dans le presse-papier";
 "i18n-not-copied" = "Aucun mot de passe à copier !";
 "i18n-more" = "Plus";
-"i18-verify-password-strength" = "Verifier la force du mot de passe";
-"i18-rate" = "Noter l'app";
+"i18n-verify-password-strength" = "Verifier la force du mot de passe";
+"i18n-rate" = "Noter l'app";
 "i18n-share" = "Partager l'app";
 "i18n-about-dev" = "A propos du developpeur";
 "i18n-donate" = "Supporter le développeur";
@@ -32,4 +32,4 @@
 "i18n-about-me" = "A propos de moi";
 "i18n-my-resume" = "J’ai commencé à apprendre le développement iOS à coté de mes études, mais j’ai rapidement switché d’un simple hobbie à un réel apprentissage. Je suis maintenant employé dans une start-up française, mais j’adore toujours autant créé mes propres apps !  ";
 "i18n-about" = "A propos";
-"i18-verify" = "Vérifier";
+"i18n-verify" = "Vérifier";
