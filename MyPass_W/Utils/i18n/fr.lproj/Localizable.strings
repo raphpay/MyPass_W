@@ -24,7 +24,7 @@
 "i18n-password-info-weak" = "Contient 1 à 7 caractères, ou ne contient pas de symbole, ou de lettres en MAJUSCULE";
 "i18n-password-info-mediocre" = "Contient 8 à 12 caractères, et contient au moins un symbole et au moins une lettre en MAJUSCULE";
 "i18n-password-info-strong" = "Contient 12 à 24 caractères, et contient au moins un symbole et au moins une lettre en MAJUSCULE";
-"i18n-password-info-very-strong" = "Contient 8 à 12 caractères, et contient au moins un symbole et au moins une lettre en MAJUSCULE";
+"i18n-password-info-very-strong" = "Contient plus de 24 caractères, et contient au moins un symbole et au moins une lettre en MAJUSCULE";
 "i18n-question-like" = "Vous aimez l'app ?";
 "i18n-question-find-me" = "Où me trouver ?";
 "i18n-no" = "Non";
