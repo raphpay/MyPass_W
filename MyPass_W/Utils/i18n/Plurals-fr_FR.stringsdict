@@ -31,7 +31,7 @@
 			<key>one</key>
 			<string>%lld Séparateur</string>
 			<key>other</key>
-			<string>Séparateurs</string>
+			<string>%lld Séparateurs</string>
 		</dict>
 	</dict>
 </dict>
