@@ -75,6 +75,6 @@ struct MoreView: View {
 struct MoreView_Previews: PreviewProvider {
     static var previews: some View {
         MoreView()
-            .previewInterfaceOrientation(.landscapeLeft)
+            .previewInterfaceOrientation(.portrait)
     }
 }

@@ -21,7 +21,6 @@ struct PasswordStrengthView: View {
     
     var body: some View {
         ScrollView {
-            
             if !isIPad { DismissButton { dismiss() } }
             
             PasswordTextField(title: i18n.verifyStrength.translation, generatedPassword: $viewModel.password)
@@ -53,6 +52,7 @@ struct PasswordStrengthView: View {
             
             Spacer()
         }
+        .navigationTitle(i18n.verifyStrength.translation)
     }
 }
 
