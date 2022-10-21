@@ -11,7 +11,7 @@ import SwiftUI
 
 final class GeneratorViewViewModel: ObservableObject {
     @Published var generatedPassword: String = ""
-    @Published var charactersValue: Double = 24
+    @Published var charactersValue: Double = 25
     @Published var charactersRange: ClosedRange<Double> = 1...40
     @Published var separatorValue: Double = 6
     @Published var separatorRange: ClosedRange<Double> = 1...10
