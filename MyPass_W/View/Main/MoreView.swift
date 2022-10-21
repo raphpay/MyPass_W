@@ -10,13 +10,28 @@ import SwiftUI
 struct MoreView: View {
     
     @StateObject private var viewModel = MoreViewViewModel()
+    var isIPad: Bool {
+        if UIDevice.current.localizedModel == "iPad" {
+             return true
+        } else {
+             return false
+        }
+    }
     
     var body: some View {
         NavigationView {
             Form {
                 Section {
-                    FormButton(title: i18n.verifyStrength.translation, icon: SFSymbols.networkShield.rawValue) {
-                        viewModel.showingSheet.toggle()
+                    if isIPad {
+                        NavigationLink {
+                            PasswordStrengthView()
+                        } label: {
+                            Text(i18n.verifyStrength.translation)
+                        }
+                    } else {
+                        FormButton(title: i18n.verifyStrength.translation, icon: SFSymbols.networkShield.rawValue) {
+                            viewModel.showingSheet.toggle()
+                        }
                     }
                 }
                 
@@ -60,5 +75,6 @@ struct MoreView: View {
 struct MoreView_Previews: PreviewProvider {
     static var previews: some View {
         MoreView()
+            .previewInterfaceOrientation(.landscapeLeft)
     }
 }
