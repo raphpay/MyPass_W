@@ -14,6 +14,13 @@ enum ValueType {
 struct GeneratorView: View {
     
     @StateObject var viewModel = GeneratorViewViewModel()
+    var isIPad: Bool {
+        if UIDevice.current.localizedModel == "iPad" {
+             return true
+        } else {
+             return false
+        }
+    }
     
     var body: some View {
         VStack {
@@ -37,12 +44,13 @@ struct GeneratorView: View {
                     viewModel.increaseValue(.separators)
                 }
             }.padding(.top, 16)
-
+            
             Spacer()
             
             RoundedButton(title: i18n.generate.translation) {
                 viewModel.generatePassword()
             }
+            .padding(.bottom, 20)
             
             RoundedButton(title: i18n.copy.translation) {
                 viewModel.copyPassword()
@@ -50,6 +58,7 @@ struct GeneratorView: View {
             
             Spacer()
         }
+        .padding(.horizontal, isIPad ? 100 : 0)
         .background(viewModel.calculateColor())
         .alert(viewModel.alertTitle, isPresented: $viewModel.showAlert) {
             Button("OK", role: .cancel) { }
@@ -65,8 +74,9 @@ struct GeneratorView_Previews: PreviewProvider {
         Group {
             GeneratorView()
                 .environment(\.locale, .init(identifier: "en_EN"))
+                .previewInterfaceOrientation(.portrait)
             GeneratorView()
-                .environment(\.locale, .init(identifier: "fr_FR"))
+                .previewDevice(PreviewDevice(rawValue: "iPhone 14"))
         }
     }
 }
