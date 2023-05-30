@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		607845E52A26153C006FCFCD /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607845E42A26153C006FCFCD /* LoginView.swift */; };
+		607845E82A26154A006FCFCD /* Registration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607845E72A26154A006FCFCD /* Registration.swift */; };
+		607845EA2A261550006FCFCD /* PasswordList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607845E92A261550006FCFCD /* PasswordList.swift */; };
+		607845ED2A26155A006FCFCD /* PasswordDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607845EC2A26155A006FCFCD /* PasswordDetails.swift */; };
+		607845EF2A261565006FCFCD /* PasswordEdition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607845EE2A261565006FCFCD /* PasswordEdition.swift */; };
 		865B408528350FBB006B7ACF /* AppLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865B408428350FBB006B7ACF /* AppLogo.swift */; };
 		865B408A28351033006B7ACF /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865B408928351033006B7ACF /* PasswordTextField.swift */; };
 		865B408C2835109F006B7ACF /* RangeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865B408B2835109F006B7ACF /* RangeSlider.swift */; };
@@ -46,6 +51,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		607845E42A26153C006FCFCD /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		607845E72A26154A006FCFCD /* Registration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registration.swift; sourceTree = "<group>"; };
+		607845E92A261550006FCFCD /* PasswordList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordList.swift; sourceTree = "<group>"; };
+		607845EC2A26155A006FCFCD /* PasswordDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordDetails.swift; sourceTree = "<group>"; };
+		607845EE2A261565006FCFCD /* PasswordEdition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordEdition.swift; sourceTree = "<group>"; };
 		861347DE2902CC0C00AE18CB /* MyPass_W.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyPass_W.entitlements; sourceTree = "<group>"; };
 		865B408428350FBB006B7ACF /* AppLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLogo.swift; sourceTree = "<group>"; };
 		865B408928351033006B7ACF /* PasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
@@ -100,6 +110,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		607845E62A261541006FCFCD /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				607845E42A26153C006FCFCD /* LoginView.swift */,
+				607845E72A26154A006FCFCD /* Registration.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		607845EB2A261552006FCFCD /* Passwords */ = {
+			isa = PBXGroup;
+			children = (
+				607845E92A261550006FCFCD /* PasswordList.swift */,
+				607845EC2A26155A006FCFCD /* PasswordDetails.swift */,
+				607845EE2A261565006FCFCD /* PasswordEdition.swift */,
+			);
+			path = Passwords;
+			sourceTree = "<group>";
+		};
 		865B408628350FD3006B7ACF /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -227,6 +256,8 @@
 				86CA7E63283EC01B00400DDA /* TabBar.swift */,
 				86B799DC2834149800B27498 /* GeneratorView.swift */,
 				86CA7E61283EBD8300400DDA /* MoreView.swift */,
+				607845EB2A261552006FCFCD /* Passwords */,
+				607845E62A261541006FCFCD /* Authentication */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -397,6 +428,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				868C909428401A2D00035F21 /* MoreViewViewModel.swift in Sources */,
+				607845E82A26154A006FCFCD /* Registration.swift in Sources */,
+				607845ED2A26155A006FCFCD /* PasswordDetails.swift in Sources */,
 				865B4092283514BD006B7ACF /* Fonts-Enum.swift in Sources */,
 				86E2193B2835431A0045A799 /* Color+Ext.swift in Sources */,
 				86A1DA6A283CD02A00C636DD /* View+Ext.swift in Sources */,
@@ -409,6 +442,7 @@
 				868F2C22283FC59500517D1F /* PWText.swift in Sources */,
 				8673F5282840F1A000EB28BB /* DonateView.swift in Sources */,
 				865B408E283512D7006B7ACF /* RoundedButton.swift in Sources */,
+				607845EF2A261565006FCFCD /* PasswordEdition.swift in Sources */,
 				86B799DB2834149800B27498 /* MyPass_WApp.swift in Sources */,
 				865B40952835155B006B7ACF /* SFSymbols-Enum.swift in Sources */,
 				868F2C1C283FBD5900517D1F /* FormButton.swift in Sources */,
@@ -417,6 +451,7 @@
 				8673F5192840EFE300EB28BB /* Logo-Enum.swift in Sources */,
 				868C90902840154D00035F21 /* ReviewHandler.swift in Sources */,
 				865B408528350FBB006B7ACF /* AppLogo.swift in Sources */,
+				607845EA2A261550006FCFCD /* PasswordList.swift in Sources */,
 				868C908E2840127700035F21 /* PasswordStrengthViewModel.swift in Sources */,
 				868F2C1E283FBEDD00517D1F /* PasswordStrengthView.swift in Sources */,
 				86E2193D283546850045A799 /* PasswordStrenght-Enum.swift in Sources */,
@@ -426,6 +461,7 @@
 				86A1DA6C283CD68300C636DD /* SwiftUISlider.swift in Sources */,
 				865B408C2835109F006B7ACF /* RangeSlider.swift in Sources */,
 				868F2C20283FC3E400517D1F /* StrengthCard.swift in Sources */,
+				607845E52A26153C006FCFCD /* LoginView.swift in Sources */,
 				8673F5172840ED0200EB28BB /* SFSafariViewWrapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
