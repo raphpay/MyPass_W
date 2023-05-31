@@ -48,7 +48,7 @@ struct LoginView: View {
             .padding()
         }
         .fullScreenCover(isPresented: $navigateToLogoutView) {
-            TestLogoutView(authViewModel: authViewModel)
+            LogoutView(authViewModel: authViewModel)
         }
     }
 }
