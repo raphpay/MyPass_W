@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		60042A432A2799F8001E2137 /* MPWTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60042A422A2799F8001E2137 /* MPWTextField.swift */; };
+		60042A452A279AAC001E2137 /* MPWSecureTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60042A442A279AAC001E2137 /* MPWSecureTextField.swift */; };
 		607845E52A26153C006FCFCD /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607845E42A26153C006FCFCD /* LoginView.swift */; };
 		607845E82A26154A006FCFCD /* Registration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607845E72A26154A006FCFCD /* Registration.swift */; };
 		607845EA2A261550006FCFCD /* PasswordList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607845E92A261550006FCFCD /* PasswordList.swift */; };
@@ -65,6 +66,7 @@
 
 /* Begin PBXFileReference section */
 		60042A422A2799F8001E2137 /* MPWTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPWTextField.swift; sourceTree = "<group>"; };
+		60042A442A279AAC001E2137 /* MPWSecureTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPWSecureTextField.swift; sourceTree = "<group>"; };
 		607845E42A26153C006FCFCD /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		607845E72A26154A006FCFCD /* Registration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registration.swift; sourceTree = "<group>"; };
 		607845E92A261550006FCFCD /* PasswordList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordList.swift; sourceTree = "<group>"; };
@@ -271,6 +273,7 @@
 			children = (
 				865B408428350FBB006B7ACF /* AppLogo.swift */,
 				60042A422A2799F8001E2137 /* MPWTextField.swift */,
+				60042A442A279AAC001E2137 /* MPWSecureTextField.swift */,
 				868F2C1F283FC3E400517D1F /* StrengthCard.swift */,
 				865B408D283512D7006B7ACF /* RoundedButton.swift */,
 				868F2C1B283FBD5900517D1F /* FormButton.swift */,
@@ -487,6 +490,7 @@
 				86E2193B2835431A0045A799 /* Color+Ext.swift in Sources */,
 				86A1DA6A283CD02A00C636DD /* View+Ext.swift in Sources */,
 				8673F5132840E54600EB28BB /* AboutView.swift in Sources */,
+				60042A452A279AAC001E2137 /* MPWSecureTextField.swift in Sources */,
 				86E2193928353C280045A799 /* String+Ext.swift in Sources */,
 				86B799DD2834149800B27498 /* GeneratorView.swift in Sources */,
 				8673F5152840E9F900EB28BB /* LogoCard.swift in Sources */,

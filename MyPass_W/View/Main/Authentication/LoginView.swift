@@ -15,14 +15,8 @@ struct LoginView: View {
 
     var body: some View {
         VStack {
-            TextField("Email", text: $email)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-                .padding()
-                .autocapitalization(.none)
-
-            SecureField("Password", text: $password)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-                .padding()
+            MPWTextField(placeholder: "Email", value: $email)
+            MPWSecureTextField(placeholder: "Password", value: $password)
 
             Button("Log In") {
                 authViewModel.signIn(email: email, password: password) { success in
