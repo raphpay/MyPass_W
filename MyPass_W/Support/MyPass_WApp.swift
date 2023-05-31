@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct MyPass_WApp: App {
+    
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    
     var body: some Scene {
         WindowGroup {
-            TabBar()
+            AuthenticationContentView()
         }
     }
 }
