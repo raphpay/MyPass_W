@@ -51,12 +51,9 @@ struct LoginView: View {
                 )
                 .hidden()
                 
-                // TODO: Convert this text into a button
-                PWText(text: "Create an account", fontSize: 20, color: .secondary, underlined: true)
-                    .padding(.top)
-                    .onTapGesture {
-                        isRegistrationActive = true
-                    }
+                PWTextButton {
+                    isRegistrationActive = true
+                }
                 
                 Spacer()
             }

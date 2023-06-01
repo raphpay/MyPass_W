@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		60042A432A2799F8001E2137 /* PWTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60042A422A2799F8001E2137 /* PWTextField.swift */; };
 		60042A452A279AAC001E2137 /* PWSecureTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60042A442A279AAC001E2137 /* PWSecureTextField.swift */; };
+		6047BE542A28EE2D00D3AB18 /* PWTextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6047BE532A28EE2D00D3AB18 /* PWTextButton.swift */; };
 		606D298B2A28C1510073037F /* PWLoginBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606D298A2A28C1510073037F /* PWLoginBackground.swift */; };
 		607845E52A26153C006FCFCD /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607845E42A26153C006FCFCD /* LoginView.swift */; };
 		607845E82A26154A006FCFCD /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607845E72A26154A006FCFCD /* RegistrationView.swift */; };
@@ -68,6 +69,7 @@
 /* Begin PBXFileReference section */
 		60042A422A2799F8001E2137 /* PWTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWTextField.swift; sourceTree = "<group>"; };
 		60042A442A279AAC001E2137 /* PWSecureTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWSecureTextField.swift; sourceTree = "<group>"; };
+		6047BE532A28EE2D00D3AB18 /* PWTextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWTextButton.swift; sourceTree = "<group>"; };
 		606D298A2A28C1510073037F /* PWLoginBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWLoginBackground.swift; sourceTree = "<group>"; };
 		607845E42A26153C006FCFCD /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		607845E72A26154A006FCFCD /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
@@ -266,6 +268,7 @@
 				865B408928351033006B7ACF /* PasswordTextField.swift */,
 				606D298A2A28C1510073037F /* PWLoginBackground.swift */,
 				868F2C21283FC59500517D1F /* PWText.swift */,
+				6047BE532A28EE2D00D3AB18 /* PWTextButton.swift */,
 				86B1DD032846321D000F4704 /* DismissButton.swift */,
 			);
 			path = Atoms;
@@ -487,6 +490,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				868C909428401A2D00035F21 /* MoreViewViewModel.swift in Sources */,
+				6047BE542A28EE2D00D3AB18 /* PWTextButton.swift in Sources */,
 				607845E82A26154A006FCFCD /* RegistrationView.swift in Sources */,
 				607845ED2A26155A006FCFCD /* PasswordDetails.swift in Sources */,
 				865B4092283514BD006B7ACF /* Fonts-Enum.swift in Sources */,
