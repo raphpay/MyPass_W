@@ -16,7 +16,7 @@ struct LoginView: View {
     var body: some View {
         ZStack {
             VStack {
-                LoginBackground()
+                PWLoginBackground()
                 
                 PWText(text: "My Pass_W", fontSize: 25)
                 PWText(text: "Access your account", fontSize: 16, color: .secondary)
@@ -55,23 +55,5 @@ struct LoginView: View {
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
         LoginView(authViewModel: AuthViewModel())
-    }
-}
-
-// TODO: Extract subview into another folder
-struct LoginBackground: View {
-    
-    let iconSize: CGFloat = 90
-    
-    var body: some View {
-        ZStack {
-            Image(Assets.loginBackground.name)
-                .resizable()
-                .frame(height: 275)
-            
-            Image(Assets.appIcon.name)
-                .resizable()
-                .frame(width: iconSize, height: iconSize)
-        }
     }
 }
