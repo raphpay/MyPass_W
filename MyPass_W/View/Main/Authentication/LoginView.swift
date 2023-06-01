@@ -12,17 +12,22 @@ struct LoginView: View {
     @State private var password: String = ""
     @ObservedObject var authViewModel: AuthViewModel
     @State private var navigateToLogoutView = false
+    @State private var isRegistrationActive = false
 
     var body: some View {
         ZStack {
             VStack {
                 PWLoginBackground()
                 
-                PWText(text: "My Pass_W", fontSize: 25)
-                PWText(text: "Access your account", fontSize: 16, color: .secondary)
+                VStack {
+                    PWText(text: "My Pass_W", fontSize: 25)
+                    PWText(text: "Access your account", fontSize: 16, color: .secondary)
+                }
                 
-                PWTextField(placeholder: "Email", value: $email, keyboardType: .emailAddress)
-                PWSecureTextField(placeholder: "Password", value: $password)
+                VStack {
+                    PWTextField(placeholder: "Email", value: $email, keyboardType: .emailAddress)
+                    PWSecureTextField(placeholder: "Password", value: $password)
+                }
                 
                 Spacer()
                     .frame(height: 50)
@@ -39,11 +44,18 @@ struct LoginView: View {
                 
                 PWText(text: "or", fontSize: 16, color: .secondary)
                     .padding(.top)
+                NavigationLink(
+                    destination: RegistrationView(authViewModel: authViewModel),
+                    isActive: $isRegistrationActive,
+                    label: { EmptyView() }
+                )
+                .hidden()
+                
                 // TODO: Convert this text into a button
                 PWText(text: "Create an account", fontSize: 20, color: .secondary, underlined: true)
                     .padding(.top)
                     .onTapGesture {
-                        print("Create an account")
+                        isRegistrationActive = true
                     }
                 
                 Spacer()
