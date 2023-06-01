@@ -7,6 +7,19 @@
 
 import Foundation
 
+enum Assets {
+    case loginBackground, appIcon
+    
+    var name: String {
+        switch self {
+        case .loginBackground:
+            return "Login_Background_image"
+        case .appIcon:
+            return "AppIcon_Login"
+        }
+    }
+}
+
 enum Logo {
     case github, linkedIn, instagram
     

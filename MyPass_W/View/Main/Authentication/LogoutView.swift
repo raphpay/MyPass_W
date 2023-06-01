@@ -9,18 +9,18 @@ import SwiftUI
 
 struct LogoutView: View {
     @ObservedObject var authViewModel: AuthViewModel
-    @State private var navigateToLogoutView = false
+    @State private var navigateToLoginView = false
 
     var body: some View {
         Button("Log Out") {
             let logoutResult = authViewModel.signOut()
             if (logoutResult) {
-                navigateToLogoutView = true
+                navigateToLoginView = true
             }
         }
         .padding()
-        .fullScreenCover(isPresented: $navigateToLogoutView) {
-            TestLoginView(authViewModel: authViewModel)
+        .fullScreenCover(isPresented: $navigateToLoginView) {
+            LoginView(authViewModel: authViewModel)
         }
     }
 }

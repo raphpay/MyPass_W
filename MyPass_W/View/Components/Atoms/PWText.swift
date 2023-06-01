@@ -12,10 +12,14 @@ struct PWText: View {
     var text: LocalizedStringKey
     var fontSize: CGFloat = 20
     var tableName: String?
+    var color: Color = .primary
+    var underlined: Bool = false
     
     var body: some View {
         Text(text, tableName: tableName)
             .font(.custom(Fonts.secularOne.rawValue, size: fontSize))
+            .underline(underlined)
+            .foregroundColor(color)
     }
 }
 
