@@ -11,7 +11,8 @@ struct RegistrationView: View {
     // TODO: Pass info through navigation to enter the email and password
     @State private var email: String = ""
     @State private var password: String = ""
-    @State private var passwordConfirmation: String = ""
+    // TODO: Add password confirmation logic
+//    @State private var passwordConfirmation: String = ""
     @ObservedObject var authViewModel: AuthViewModel
     @State private var navigateToLogoutView = false
 
@@ -30,8 +31,13 @@ struct RegistrationView: View {
                     .frame(height: 50)
                 
                 RoundedButton(title: "Create account", action: {
-                    // Sign in action
-                    print("Create account")
+                    authViewModel.createUser(email: email, password: password) { success in
+                        if (success) {
+                            navigateToLogoutView = true
+                        } else {
+                            // Show error
+                        }
+                    }
                 }, color: .black)
                 
                 Spacer()
