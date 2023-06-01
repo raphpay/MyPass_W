@@ -28,8 +28,13 @@ struct LoginView: View {
                     .frame(height: 50)
                 
                 RoundedButton(title: "Sign In", action: {
-                    // Sign in action
-                    print("Sign in")
+                    authViewModel.signIn(email: email, password: password) { success in
+                        if (success) {
+                            navigateToLogoutView = true
+                        } else {
+                            // Show error
+                        }
+                    }
                 }, color: .black)
                 
                 PWText(text: "or", fontSize: 16, color: .secondary)
