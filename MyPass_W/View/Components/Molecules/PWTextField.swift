@@ -1,5 +1,5 @@
 //
-//  MPWTextField.swift
+//  PWTextField.swift
 //  MyPass_W
 //
 //  Created by Personal on 31/05/2023.
@@ -7,10 +7,11 @@
 
 import SwiftUI
 
-struct MPWTextField: View {
+struct PWTextField: View {
     
     let placeholder: String
     @Binding var value: String
+    var keyboardType: UIKeyboardType = .default
     
     var body: some View {
         TextField(placeholder, text: $value)
@@ -18,11 +19,13 @@ struct MPWTextField: View {
             .padding()
             .autocapitalization(.none)
             .disableAutocorrection(true)
+            .frame(height: 50)
+            .keyboardType(keyboardType)
     }
 }
 
-struct MPWTextField_Previews: PreviewProvider {
+struct PWTextField_Previews: PreviewProvider {
     static var previews: some View {
-        MPWTextField(placeholder: "Email", value: .constant(""))
+        PWTextField(placeholder: "Email", value: .constant(""))
     }
 }

@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		60042A432A2799F8001E2137 /* MPWTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60042A422A2799F8001E2137 /* MPWTextField.swift */; };
-		60042A452A279AAC001E2137 /* MPWSecureTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60042A442A279AAC001E2137 /* MPWSecureTextField.swift */; };
+		60042A432A2799F8001E2137 /* PWTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60042A422A2799F8001E2137 /* PWTextField.swift */; };
+		60042A452A279AAC001E2137 /* PWSecureTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60042A442A279AAC001E2137 /* PWSecureTextField.swift */; };
 		607845E52A26153C006FCFCD /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607845E42A26153C006FCFCD /* LoginView.swift */; };
 		607845E82A26154A006FCFCD /* Registration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607845E72A26154A006FCFCD /* Registration.swift */; };
 		607845EA2A261550006FCFCD /* PasswordList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607845E92A261550006FCFCD /* PasswordList.swift */; };
@@ -38,7 +38,7 @@
 		8673F5132840E54600EB28BB /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8673F5122840E54600EB28BB /* AboutView.swift */; };
 		8673F5152840E9F900EB28BB /* LogoCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8673F5142840E9F900EB28BB /* LogoCard.swift */; };
 		8673F5172840ED0200EB28BB /* SFSafariViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8673F5162840ED0200EB28BB /* SFSafariViewWrapper.swift */; };
-		8673F5192840EFE300EB28BB /* Logo-Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8673F5182840EFE300EB28BB /* Logo-Enum.swift */; };
+		8673F5192840EFE300EB28BB /* Images-Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8673F5182840EFE300EB28BB /* Images-Enum.swift */; };
 		8673F5282840F1A000EB28BB /* DonateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8673F5272840F1A000EB28BB /* DonateView.swift */; };
 		867FC34828357708009476D0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 867FC34A28357708009476D0 /* Localizable.strings */; };
 		867FC34D28357893009476D0 /* i18n-Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867FC34C28357893009476D0 /* i18n-Enum.swift */; };
@@ -65,8 +65,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		60042A422A2799F8001E2137 /* MPWTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPWTextField.swift; sourceTree = "<group>"; };
-		60042A442A279AAC001E2137 /* MPWSecureTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPWSecureTextField.swift; sourceTree = "<group>"; };
+		60042A422A2799F8001E2137 /* PWTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWTextField.swift; sourceTree = "<group>"; };
+		60042A442A279AAC001E2137 /* PWSecureTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWSecureTextField.swift; sourceTree = "<group>"; };
 		607845E42A26153C006FCFCD /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		607845E72A26154A006FCFCD /* Registration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registration.swift; sourceTree = "<group>"; };
 		607845E92A261550006FCFCD /* PasswordList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordList.swift; sourceTree = "<group>"; };
@@ -92,7 +92,7 @@
 		8673F5122840E54600EB28BB /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		8673F5142840E9F900EB28BB /* LogoCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoCard.swift; sourceTree = "<group>"; };
 		8673F5162840ED0200EB28BB /* SFSafariViewWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSafariViewWrapper.swift; sourceTree = "<group>"; };
-		8673F5182840EFE300EB28BB /* Logo-Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Logo-Enum.swift"; sourceTree = "<group>"; };
+		8673F5182840EFE300EB28BB /* Images-Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Images-Enum.swift"; sourceTree = "<group>"; };
 		8673F5272840F1A000EB28BB /* DonateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonateView.swift; sourceTree = "<group>"; };
 		867FC34928357708009476D0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		867FC34B2835770B009476D0 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -223,7 +223,7 @@
 				865B40942835155B006B7ACF /* SFSymbols-Enum.swift */,
 				865B4091283514BD006B7ACF /* Fonts-Enum.swift */,
 				86E2193C283546850045A799 /* PasswordStrenght-Enum.swift */,
-				8673F5182840EFE300EB28BB /* Logo-Enum.swift */,
+				8673F5182840EFE300EB28BB /* Images-Enum.swift */,
 				867FC34C28357893009476D0 /* i18n-Enum.swift */,
 			);
 			path = Enums;
@@ -272,8 +272,8 @@
 			isa = PBXGroup;
 			children = (
 				865B408428350FBB006B7ACF /* AppLogo.swift */,
-				60042A422A2799F8001E2137 /* MPWTextField.swift */,
-				60042A442A279AAC001E2137 /* MPWSecureTextField.swift */,
+				60042A422A2799F8001E2137 /* PWTextField.swift */,
+				60042A442A279AAC001E2137 /* PWSecureTextField.swift */,
 				868F2C1F283FC3E400517D1F /* StrengthCard.swift */,
 				865B408D283512D7006B7ACF /* RoundedButton.swift */,
 				868F2C1B283FBD5900517D1F /* FormButton.swift */,
@@ -490,7 +490,7 @@
 				86E2193B2835431A0045A799 /* Color+Ext.swift in Sources */,
 				86A1DA6A283CD02A00C636DD /* View+Ext.swift in Sources */,
 				8673F5132840E54600EB28BB /* AboutView.swift in Sources */,
-				60042A452A279AAC001E2137 /* MPWSecureTextField.swift in Sources */,
+				60042A452A279AAC001E2137 /* PWSecureTextField.swift in Sources */,
 				86E2193928353C280045A799 /* String+Ext.swift in Sources */,
 				86B799DD2834149800B27498 /* GeneratorView.swift in Sources */,
 				8673F5152840E9F900EB28BB /* LogoCard.swift in Sources */,
@@ -498,7 +498,7 @@
 				865B409728351709006B7ACF /* GeneratorViewViewModel.swift in Sources */,
 				868F2C22283FC59500517D1F /* PWText.swift in Sources */,
 				607846762A261B3B006FCFCD /* AppDelegate.swift in Sources */,
-				60042A432A2799F8001E2137 /* MPWTextField.swift in Sources */,
+				60042A432A2799F8001E2137 /* PWTextField.swift in Sources */,
 				8673F5282840F1A000EB28BB /* DonateView.swift in Sources */,
 				865B408E283512D7006B7ACF /* RoundedButton.swift in Sources */,
 				607845EF2A261565006FCFCD /* PasswordEdition.swift in Sources */,
@@ -507,7 +507,7 @@
 				868F2C1C283FBD5900517D1F /* FormButton.swift in Sources */,
 				86CA7E64283EC01B00400DDA /* TabBar.swift in Sources */,
 				865B408A28351033006B7ACF /* PasswordTextField.swift in Sources */,
-				8673F5192840EFE300EB28BB /* Logo-Enum.swift in Sources */,
+				8673F5192840EFE300EB28BB /* Images-Enum.swift in Sources */,
 				868C90902840154D00035F21 /* ReviewHandler.swift in Sources */,
 				865B408528350FBB006B7ACF /* AppLogo.swift in Sources */,
 				607846782A261BA9006FCFCD /* AuthenticationContentView.swift in Sources */,

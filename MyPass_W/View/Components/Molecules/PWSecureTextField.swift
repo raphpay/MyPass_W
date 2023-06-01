@@ -1,5 +1,5 @@
 //
-//  MPWSecureTextField.swift
+//  PWSecureTextField.swift
 //  MyPass_W
 //
 //  Created by Personal on 31/05/2023.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MPWSecureTextField: View {
+struct PWSecureTextField: View {
     
     let placeholder: String
     @Binding var value: String
@@ -20,8 +20,8 @@ struct MPWSecureTextField: View {
     }
 }
 
-struct MPWSecureTextField_Previews: PreviewProvider {
+struct PWSecureTextField_Previews: PreviewProvider {
     static var previews: some View {
-        MPWSecureTextField(placeholder: "Password", value: .constant(""))
+        PWSecureTextField(placeholder: "Password", value: .constant(""))
     }
 }
