@@ -27,6 +27,7 @@
 		607846762A261B3B006FCFCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607846752A261B3B006FCFCD /* AppDelegate.swift */; };
 		607846782A261BA9006FCFCD /* AuthenticationContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607846772A261BA9006FCFCD /* AuthenticationContentView.swift */; };
 		6078467F2A261C02006FCFCD /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6078467E2A261C02006FCFCD /* AuthViewModel.swift */; };
+		60A4DAC52A2A3E4400AC106F /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A4DAC42A2A3E4400AC106F /* KeychainHelper.swift */; };
 		60CEDAC52A276B1C007C02D7 /* LogoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CEDAC42A276B1C007C02D7 /* LogoutView.swift */; };
 		865B408528350FBB006B7ACF /* AppLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865B408428350FBB006B7ACF /* AppLogo.swift */; };
 		865B408A28351033006B7ACF /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865B408928351033006B7ACF /* PasswordTextField.swift */; };
@@ -80,6 +81,7 @@
 		607846752A261B3B006FCFCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		607846772A261BA9006FCFCD /* AuthenticationContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationContentView.swift; sourceTree = "<group>"; };
 		6078467E2A261C02006FCFCD /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		60A4DAC42A2A3E4400AC106F /* KeychainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
 		60CEDAC42A276B1C007C02D7 /* LogoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutView.swift; sourceTree = "<group>"; };
 		861347DE2902CC0C00AE18CB /* MyPass_W.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyPass_W.entitlements; sourceTree = "<group>"; };
 		865B408428350FBB006B7ACF /* AppLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLogo.swift; sourceTree = "<group>"; };
@@ -333,6 +335,7 @@
 				865B409628351709006B7ACF /* GeneratorViewViewModel.swift */,
 				868C909328401A2D00035F21 /* MoreViewViewModel.swift */,
 				6078467E2A261C02006FCFCD /* AuthViewModel.swift */,
+				60A4DAC42A2A3E4400AC106F /* KeychainHelper.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -509,6 +512,7 @@
 				8673F5282840F1A000EB28BB /* DonateView.swift in Sources */,
 				865B408E283512D7006B7ACF /* RoundedButton.swift in Sources */,
 				607845EF2A261565006FCFCD /* PasswordEdition.swift in Sources */,
+				60A4DAC52A2A3E4400AC106F /* KeychainHelper.swift in Sources */,
 				86B799DB2834149800B27498 /* MyPass_WApp.swift in Sources */,
 				865B40952835155B006B7ACF /* SFSymbols-Enum.swift in Sources */,
 				868F2C1C283FBD5900517D1F /* FormButton.swift in Sources */,
