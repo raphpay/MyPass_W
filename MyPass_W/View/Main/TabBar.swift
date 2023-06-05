@@ -9,6 +9,8 @@ import SwiftUI
 
 struct TabBar: View {
     
+    @ObservedObject var authViewModel: AuthViewModel
+    
     var body: some View {
         TabView {
             GeneratorView()
@@ -17,7 +19,7 @@ struct TabBar: View {
                 }
             
             
-            MoreView()
+            MoreView(authViewModel: authViewModel)
                 .tabItem {
                     Label("i18n-more", systemImage: "ellipsis.bubble")
                 }
@@ -29,9 +31,9 @@ struct TabBar: View {
 struct TabView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            TabBar()
+            TabBar(authViewModel: AuthViewModel())
                 .environment(\.locale, .init(identifier: "en_EN"))
-            TabBar()
+            TabBar(authViewModel: AuthViewModel())
                 .environment(\.locale, .init(identifier: "fr_FR"))
         }
     }

@@ -35,7 +35,8 @@ struct LoginView: View {
                 RoundedButton(title: "Sign In", action: {
                     authViewModel.signIn(email: email, password: password) { success in
                         if (success) {
-                            navigateToLogoutView = true
+                            // TODO: Remove the navigation logic
+//                            navigateToLogoutView = true
                         } else {
                             // Show error
                         }
@@ -60,7 +61,7 @@ struct LoginView: View {
             .edgesIgnoringSafeArea(.all)
         }
         .fullScreenCover(isPresented: $navigateToLogoutView) {
-            LogoutView(authViewModel: authViewModel)
+//            TabBar(authViewModel: authViewModel)
         }
     }
 }
