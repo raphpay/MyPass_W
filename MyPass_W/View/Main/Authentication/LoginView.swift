@@ -11,7 +11,6 @@ struct LoginView: View {
     @State private var email: String = ""
     @State private var password: String = ""
     @ObservedObject var authViewModel: AuthViewModel
-    @State private var navigateToLogoutView = false
     @State private var isRegistrationActive = false
 
     var body: some View {
@@ -34,12 +33,7 @@ struct LoginView: View {
                 
                 RoundedButton(title: "Sign In", action: {
                     authViewModel.signIn(email: email, password: password) { success in
-                        if (success) {
-                            // TODO: Remove the navigation logic
-//                            navigateToLogoutView = true
-                        } else {
-                            // Show error
-                        }
+                        print("Sign in result", success)
                     }
                 }, color: .black)
                 
@@ -59,9 +53,6 @@ struct LoginView: View {
                 Spacer()
             }
             .edgesIgnoringSafeArea(.all)
-        }
-        .fullScreenCover(isPresented: $navigateToLogoutView) {
-//            TabBar(authViewModel: authViewModel)
         }
     }
 }
