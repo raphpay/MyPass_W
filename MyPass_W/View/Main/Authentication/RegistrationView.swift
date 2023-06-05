@@ -14,7 +14,6 @@ struct RegistrationView: View {
     // TODO: Add password confirmation logic
 //    @State private var passwordConfirmation: String = ""
     @ObservedObject var authViewModel: AuthViewModel
-    @State private var navigateToLogoutView = false
 
     var body: some View {
         ZStack {
@@ -32,20 +31,13 @@ struct RegistrationView: View {
                 
                 RoundedButton(title: "Create account", action: {
                     authViewModel.createUser(email: email, password: password) { success in
-                        if (success) {
-                            navigateToLogoutView = true
-                        } else {
-                            // Show error
-                        }
+                        print("Registration complete with:", success)
                     }
                 }, color: .black)
                 
                 Spacer()
             }
             .edgesIgnoringSafeArea(.all)
-        }
-        .fullScreenCover(isPresented: $navigateToLogoutView) {
-            LogoutView(authViewModel: authViewModel)
         }
     }
 }

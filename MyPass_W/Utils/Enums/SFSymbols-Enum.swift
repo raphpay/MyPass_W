@@ -14,4 +14,5 @@ enum SFSymbols: String {
     case starBubble = "star.bubble.fill"
     case share = "square.and.arrow.up"
     case close = "xmark"
+    case openDoor = "door.right.hand.open"
 }
