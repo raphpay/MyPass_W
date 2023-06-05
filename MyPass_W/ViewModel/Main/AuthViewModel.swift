@@ -40,15 +40,12 @@ class AuthViewModel: ObservableObject {
         }
     }
 
-    func signOut() -> Bool {
-        var result = false
+    func signOut() {
         do {
             try Auth.auth().signOut()
             isLoggedIn = false
-            result = true
         } catch {
             print("Error signing out: \(error.localizedDescription)")
         }
-        return result
     }
 }

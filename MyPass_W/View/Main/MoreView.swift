@@ -64,8 +64,7 @@ struct MoreView: View {
                 Section {
                     FormButton(title: "Log out",
                                icon: SFSymbols.openDoor.rawValue) {
-                        // TODO: Remove the result of the signout method?
-                        let _ = authViewModel.signOut()
+                        authViewModel.signOut()
                     }
                 }
             }
