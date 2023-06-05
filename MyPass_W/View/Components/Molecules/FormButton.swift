@@ -11,6 +11,7 @@ struct FormButton: View {
     
     var title: LocalizedStringKey
     var icon: String
+    var foregroundColor: Color = .black
     var action: (() -> Void)
     
     var body: some View {
@@ -18,8 +19,8 @@ struct FormButton: View {
             action()
         } label: {
             Label(title, systemImage: icon)
+                .foregroundColor(foregroundColor)
         }
-        .tint(.black)
     }
 }
 

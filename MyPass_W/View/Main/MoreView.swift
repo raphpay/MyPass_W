@@ -63,7 +63,8 @@ struct MoreView: View {
                 
                 Section {
                     FormButton(title: "Log out",
-                               icon: SFSymbols.openDoor.rawValue) {
+                               icon: SFSymbols.openDoor.rawValue,
+                               foregroundColor: .red) {
                         authViewModel.signOut()
                     }
                 }
