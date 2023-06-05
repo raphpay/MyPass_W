@@ -28,7 +28,6 @@
 		607846782A261BA9006FCFCD /* AuthenticationContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607846772A261BA9006FCFCD /* AuthenticationContentView.swift */; };
 		6078467F2A261C02006FCFCD /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6078467E2A261C02006FCFCD /* AuthViewModel.swift */; };
 		60A4DAC52A2A3E4400AC106F /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A4DAC42A2A3E4400AC106F /* KeychainHelper.swift */; };
-		60CEDAC52A276B1C007C02D7 /* LogoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CEDAC42A276B1C007C02D7 /* LogoutView.swift */; };
 		865B408528350FBB006B7ACF /* AppLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865B408428350FBB006B7ACF /* AppLogo.swift */; };
 		865B408A28351033006B7ACF /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865B408928351033006B7ACF /* PasswordTextField.swift */; };
 		865B408C2835109F006B7ACF /* RangeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865B408B2835109F006B7ACF /* RangeSlider.swift */; };
@@ -82,7 +81,6 @@
 		607846772A261BA9006FCFCD /* AuthenticationContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationContentView.swift; sourceTree = "<group>"; };
 		6078467E2A261C02006FCFCD /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		60A4DAC42A2A3E4400AC106F /* KeychainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
-		60CEDAC42A276B1C007C02D7 /* LogoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutView.swift; sourceTree = "<group>"; };
 		861347DE2902CC0C00AE18CB /* MyPass_W.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyPass_W.entitlements; sourceTree = "<group>"; };
 		865B408428350FBB006B7ACF /* AppLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLogo.swift; sourceTree = "<group>"; };
 		865B408928351033006B7ACF /* PasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
@@ -149,7 +147,6 @@
 			children = (
 				607846772A261BA9006FCFCD /* AuthenticationContentView.swift */,
 				607845E42A26153C006FCFCD /* LoginView.swift */,
-				60CEDAC42A276B1C007C02D7 /* LogoutView.swift */,
 				607845E72A26154A006FCFCD /* RegistrationView.swift */,
 			);
 			path = Authentication;
@@ -535,7 +532,6 @@
 				606D298B2A28C1510073037F /* PWLoginBackground.swift in Sources */,
 				868F2C20283FC3E400517D1F /* StrengthCard.swift in Sources */,
 				607845E52A26153C006FCFCD /* LoginView.swift in Sources */,
-				60CEDAC52A276B1C007C02D7 /* LogoutView.swift in Sources */,
 				8673F5172840ED0200EB28BB /* SFSafariViewWrapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
