@@ -14,7 +14,8 @@ struct AuthenticationContentView: View {
         NavigationView {
             if authViewModel.isLoggedIn {
                 // Navigate to the main screen
-                TabBar(authViewModel: authViewModel)
+//                TabBar(authViewModel: authViewModel)
+                PasswordList()
             } else {
                 LoginView(authViewModel: authViewModel)
             }
