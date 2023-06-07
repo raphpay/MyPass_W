@@ -15,4 +15,8 @@ enum SFSymbols: String {
     case share = "square.and.arrow.up"
     case close = "xmark"
     case openDoor = "door.right.hand.open"
+    case settings = "gearshape"
+    case plus = "plus"
+    case search = "magnifyingglass"
+    case copy = "square.on.square"
 }
