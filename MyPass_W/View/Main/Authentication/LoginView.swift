@@ -31,11 +31,11 @@ struct LoginView: View {
                 Spacer()
                     .frame(height: 50)
                 
-                RoundedButton(title: "Sign In", action: {
+                RoundedButton(title: "Sign in", color: .black) {
                     authViewModel.signIn(email: email, password: password) { success in
                         print("Sign in result", success)
                     }
-                }, color: .black)
+                }
                 
                 PWText(text: "or", fontSize: 16, color: .secondary)
                     .padding(.top)

@@ -10,17 +10,25 @@ import SwiftUI
 struct PWLoginBackground: View {
     
     let iconSize: CGFloat = 90
+    var showIcon = true
     
     var body: some View {
-        ZStack {
-            Image(Assets.loginBackground.name)
-                .resizable()
-                .frame(height: 275)
+        VStack {
+            ZStack {
+                Image(Assets.loginBackground.name)
+                    .resizable()
+                    .frame(height: 275)
+                
+                if (showIcon) {
+                    Image(Assets.appIcon.name)
+                        .resizable()
+                        .frame(width: iconSize, height: iconSize)
+                }
+            }
             
-            Image(Assets.appIcon.name)
-                .resizable()
-                .frame(width: iconSize, height: iconSize)
+            Spacer()
         }
+        .edgesIgnoringSafeArea(.all)
     }
 }
 
