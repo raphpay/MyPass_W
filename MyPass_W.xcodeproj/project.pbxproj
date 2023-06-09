@@ -12,6 +12,9 @@
 		601386E82A32F4C100C05497 /* ScreenNavigation-Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601386E72A32F4C100C05497 /* ScreenNavigation-Enum.swift */; };
 		601386EA2A32F4EA00C05497 /* SettingsButtonLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601386E92A32F4EA00C05497 /* SettingsButtonLabel.swift */; };
 		601386EC2A32F51200C05497 /* InlineButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601386EB2A32F51200C05497 /* InlineButton.swift */; };
+		601386EF2A32F8AB00C05497 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 601386EE2A32F8AB00C05497 /* Realm */; };
+		601386F12A32F8AB00C05497 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 601386F02A32F8AB00C05497 /* RealmSwift */; };
+		601386F32A32F8D800C05497 /* Credential.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601386F22A32F8D800C05497 /* Credential.swift */; };
 		6047BE542A28EE2D00D3AB18 /* PWTextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6047BE532A28EE2D00D3AB18 /* PWTextButton.swift */; };
 		606D298B2A28C1510073037F /* PWLoginBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606D298A2A28C1510073037F /* PWLoginBackground.swift */; };
 		607845E52A26153C006FCFCD /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607845E42A26153C006FCFCD /* LoginView.swift */; };
@@ -75,6 +78,7 @@
 		601386E72A32F4C100C05497 /* ScreenNavigation-Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScreenNavigation-Enum.swift"; sourceTree = "<group>"; };
 		601386E92A32F4EA00C05497 /* SettingsButtonLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsButtonLabel.swift; sourceTree = "<group>"; };
 		601386EB2A32F51200C05497 /* InlineButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InlineButton.swift; sourceTree = "<group>"; };
+		601386F22A32F8D800C05497 /* Credential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credential.swift; sourceTree = "<group>"; };
 		6047BE532A28EE2D00D3AB18 /* PWTextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWTextButton.swift; sourceTree = "<group>"; };
 		606D298A2A28C1510073037F /* PWLoginBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWLoginBackground.swift; sourceTree = "<group>"; };
 		607845E42A26153C006FCFCD /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -138,9 +142,11 @@
 				6078466C2A261A88006FCFCD /* FirebaseAnalyticsSwift in Frameworks */,
 				607846722A261A88006FCFCD /* FirebaseAuthCombine-Community in Frameworks */,
 				607846702A261A88006FCFCD /* FirebaseAuth in Frameworks */,
+				601386F12A32F8AB00C05497 /* RealmSwift in Frameworks */,
 				607846742A261A88006FCFCD /* FirebaseCrashlytics in Frameworks */,
 				607846682A261A88006FCFCD /* FirebaseAnalytics in Frameworks */,
 				6078466A2A261A88006FCFCD /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
+				601386EF2A32F8AB00C05497 /* Realm in Frameworks */,
 				6078466E2A261A88006FCFCD /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -148,6 +154,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		601386F42A32F8DD00C05497 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				601386F22A32F8D800C05497 /* Credential.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		607845E62A261541006FCFCD /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
@@ -393,6 +407,7 @@
 				861347DE2902CC0C00AE18CB /* MyPass_W.entitlements */,
 				865B409028351429006B7ACF /* MyPass-W-Info.plist */,
 				607845F02A261788006FCFCD /* GoogleService-Info.plist */,
+				601386F42A32F8DD00C05497 /* Model */,
 				865B40982835170F006B7ACF /* ViewModel */,
 				865B408728350FDA006B7ACF /* View */,
 				865B408828350FE6006B7ACF /* Support */,
@@ -435,6 +450,8 @@
 				6078466F2A261A88006FCFCD /* FirebaseAuth */,
 				607846712A261A88006FCFCD /* FirebaseAuthCombine-Community */,
 				607846732A261A88006FCFCD /* FirebaseCrashlytics */,
+				601386EE2A32F8AB00C05497 /* Realm */,
+				601386F02A32F8AB00C05497 /* RealmSwift */,
 			);
 			productName = MyPass_W;
 			productReference = 86B799D72834149800B27498 /* MyPass_W.app */;
@@ -467,6 +484,7 @@
 			mainGroup = 86B799CE2834149800B27498;
 			packageReferences = (
 				607846662A261A88006FCFCD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				601386ED2A32F8AB00C05497 /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
 			productRefGroup = 86B799D82834149800B27498 /* Products */;
 			projectDirPath = "";
@@ -510,6 +528,7 @@
 				86E2193928353C280045A799 /* String+Ext.swift in Sources */,
 				86B799DD2834149800B27498 /* GeneratorView.swift in Sources */,
 				601386EA2A32F4EA00C05497 /* SettingsButtonLabel.swift in Sources */,
+				601386F32A32F8D800C05497 /* Credential.swift in Sources */,
 				8673F5152840E9F900EB28BB /* LogoCard.swift in Sources */,
 				867FC34F28357ED2009476D0 /* Double+Ext.swift in Sources */,
 				865B409728351709006B7ACF /* GeneratorViewViewModel.swift in Sources */,
@@ -767,6 +786,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		601386ED2A32F8AB00C05497 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		607846662A261A88006FCFCD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -778,6 +805,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		601386EE2A32F8AB00C05497 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 601386ED2A32F8AB00C05497 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		601386F02A32F8AB00C05497 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 601386ED2A32F8AB00C05497 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
 		607846672A261A88006FCFCD /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 607846662A261A88006FCFCD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;

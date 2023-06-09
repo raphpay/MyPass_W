@@ -6,10 +6,55 @@
 //
 
 import SwiftUI
+import RealmSwift
 
 struct PasswordEdition: View {
+    
+    @Environment(\.presentationMode) var presentation
+    // TODO: Add this to PasswordList instead
+    @ObservedResults(Credential.self) var credentials
+    
+    @State private var website: String = ""
+    @State private var username: String = ""
+    @State private var password: String = ""
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            PWTextField(placeholder: "Website", value: $website)
+            PWTextField(placeholder: "Username", value: $username)
+            PWSecureTextField(placeholder: "Password", value: $password)
+            
+            ForEach(credentials) { credential in
+                Text(credential.username)
+            }
+            
+            RoundedButton(title: "Save password") {
+                // Save password into Realm
+                saveCredentials()
+                // Go back
+                self.presentation.wrappedValue.dismiss()
+            }
+        }
+    }
+    
+    func saveCredentials() {
+        do {
+            let realm = try Realm()
+            
+            // TODO: Block writing if no value
+            // TODO: Encrypt password
+            try realm.write {
+                let entry = Credential(website: website, username: username, password: password)
+                realm.add(entry)
+            }
+            
+            website = ""
+            username = ""
+            password = ""
+            
+        } catch let error as NSError {
+            print("Failed to save entry: \(error.localizedDescription)")
+        }
     }
 }
 
@@ -18,3 +63,4 @@ struct PasswordEdition_Previews: PreviewProvider {
         PasswordEdition()
     }
 }
+
