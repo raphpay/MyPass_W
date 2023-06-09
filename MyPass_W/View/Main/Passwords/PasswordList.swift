@@ -9,23 +9,36 @@ import SwiftUI
 
 struct PasswordList: View {
     
+    @ObservedObject var authViewModel: AuthViewModel
+    @State private var screenSelection: String?
+    
     var body: some View {
-        // TODO: Review the Login UI
         ZStack {
+            // TODO: Review the Login UI
             PWLoginBackground(showIcon: false)
             VStack() {
                 HStack {
                     Spacer()
+                    NavigationLink(destination: MoreView(authViewModel: authViewModel),
+                                   tag: ScreenNavigation.moreView.rawValue,
+                                   selection: $screenSelection) {
+                        EmptyView()
+                    }
                     Button {
-                        //
+                        screenSelection = ScreenNavigation.moreView.rawValue
                     } label: {
                         SettingsButtonLabel()
                     }
                 }
+                Spacer()
                 
-                ScrollView {
-                    scrollViewContent
+                NavigationLink(destination: PasswordEdition(), tag: ScreenNavigation.passwordEditionView.rawValue, selection: $screenSelection) {
+                    EmptyView()
                 }
+                RoundedButton(title: "Save password") {
+                    screenSelection = ScreenNavigation.passwordEditionView.rawValue
+                }
+
             }
             .padding(.horizontal)
         }
@@ -82,44 +95,6 @@ struct PasswordList: View {
 
 struct PasswordList_Previews: PreviewProvider {
     static var previews: some View {
-        PasswordList()
-    }
-}
-
-// TODO: Create separate files
-struct SettingsButtonLabel: View {
-    
-    let settingsButtonSize: CGFloat = 50
-    
-    var body: some View {
-        ZStack {
-            Circle()
-                .foregroundColor(.gray)
-                .frame(width: settingsButtonSize)
-            
-            Image(systemName: SFSymbols.settings.rawValue)
-                .resizable()
-                .frame(width: settingsButtonSize / 2, height: settingsButtonSize / 2)
-        }
-        .tint(.black)
-    }
-}
-
-
-
-struct InlineButton: View {
-    
-    var icon: String
-    var action: (() -> Void)?
-    
-    var body: some View {
-        Button {
-            action?()
-        } label: {
-            Image(systemName: icon)
-                .resizable()
-                .frame(width: 25, height: 25)
-        }
-        .padding(.horizontal, 4)
+        PasswordList(authViewModel: AuthViewModel())
     }
 }

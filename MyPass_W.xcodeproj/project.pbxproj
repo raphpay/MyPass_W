@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		60042A432A2799F8001E2137 /* PWTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60042A422A2799F8001E2137 /* PWTextField.swift */; };
 		60042A452A279AAC001E2137 /* PWSecureTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60042A442A279AAC001E2137 /* PWSecureTextField.swift */; };
+		601386E82A32F4C100C05497 /* ScreenNavigation-Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601386E72A32F4C100C05497 /* ScreenNavigation-Enum.swift */; };
+		601386EA2A32F4EA00C05497 /* SettingsButtonLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601386E92A32F4EA00C05497 /* SettingsButtonLabel.swift */; };
+		601386EC2A32F51200C05497 /* InlineButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601386EB2A32F51200C05497 /* InlineButton.swift */; };
 		6047BE542A28EE2D00D3AB18 /* PWTextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6047BE532A28EE2D00D3AB18 /* PWTextButton.swift */; };
 		606D298B2A28C1510073037F /* PWLoginBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606D298A2A28C1510073037F /* PWLoginBackground.swift */; };
 		607845E52A26153C006FCFCD /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607845E42A26153C006FCFCD /* LoginView.swift */; };
@@ -69,6 +72,9 @@
 /* Begin PBXFileReference section */
 		60042A422A2799F8001E2137 /* PWTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWTextField.swift; sourceTree = "<group>"; };
 		60042A442A279AAC001E2137 /* PWSecureTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWSecureTextField.swift; sourceTree = "<group>"; };
+		601386E72A32F4C100C05497 /* ScreenNavigation-Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScreenNavigation-Enum.swift"; sourceTree = "<group>"; };
+		601386E92A32F4EA00C05497 /* SettingsButtonLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsButtonLabel.swift; sourceTree = "<group>"; };
+		601386EB2A32F51200C05497 /* InlineButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InlineButton.swift; sourceTree = "<group>"; };
 		6047BE532A28EE2D00D3AB18 /* PWTextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWTextButton.swift; sourceTree = "<group>"; };
 		606D298A2A28C1510073037F /* PWLoginBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWLoginBackground.swift; sourceTree = "<group>"; };
 		607845E42A26153C006FCFCD /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -224,6 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				865B40942835155B006B7ACF /* SFSymbols-Enum.swift */,
+				601386E72A32F4C100C05497 /* ScreenNavigation-Enum.swift */,
 				865B4091283514BD006B7ACF /* Fonts-Enum.swift */,
 				86E2193C283546850045A799 /* PasswordStrenght-Enum.swift */,
 				8673F5182840EFE300EB28BB /* Images-Enum.swift */,
@@ -269,6 +276,7 @@
 				868F2C21283FC59500517D1F /* PWText.swift */,
 				6047BE532A28EE2D00D3AB18 /* PWTextButton.swift */,
 				86B1DD032846321D000F4704 /* DismissButton.swift */,
+				601386EB2A32F51200C05497 /* InlineButton.swift */,
 			);
 			path = Atoms;
 			sourceTree = "<group>";
@@ -283,6 +291,7 @@
 				865B408D283512D7006B7ACF /* RoundedButton.swift */,
 				868F2C1B283FBD5900517D1F /* FormButton.swift */,
 				8673F5142840E9F900EB28BB /* LogoCard.swift */,
+				601386E92A32F4EA00C05497 /* SettingsButtonLabel.swift */,
 			);
 			path = Molecules;
 			sourceTree = "<group>";
@@ -500,6 +509,7 @@
 				60042A452A279AAC001E2137 /* PWSecureTextField.swift in Sources */,
 				86E2193928353C280045A799 /* String+Ext.swift in Sources */,
 				86B799DD2834149800B27498 /* GeneratorView.swift in Sources */,
+				601386EA2A32F4EA00C05497 /* SettingsButtonLabel.swift in Sources */,
 				8673F5152840E9F900EB28BB /* LogoCard.swift in Sources */,
 				867FC34F28357ED2009476D0 /* Double+Ext.swift in Sources */,
 				865B409728351709006B7ACF /* GeneratorViewViewModel.swift in Sources */,
@@ -516,6 +526,7 @@
 				86CA7E64283EC01B00400DDA /* TabBar.swift in Sources */,
 				865B408A28351033006B7ACF /* PasswordTextField.swift in Sources */,
 				8673F5192840EFE300EB28BB /* Images-Enum.swift in Sources */,
+				601386EC2A32F51200C05497 /* InlineButton.swift in Sources */,
 				868C90902840154D00035F21 /* ReviewHandler.swift in Sources */,
 				865B408528350FBB006B7ACF /* AppLogo.swift in Sources */,
 				607846782A261BA9006FCFCD /* AuthenticationContentView.swift in Sources */,
@@ -526,6 +537,7 @@
 				86E2193D283546850045A799 /* PasswordStrenght-Enum.swift in Sources */,
 				86B1DD042846321D000F4704 /* DismissButton.swift in Sources */,
 				867FC34D28357893009476D0 /* i18n-Enum.swift in Sources */,
+				601386E82A32F4C100C05497 /* ScreenNavigation-Enum.swift in Sources */,
 				86CA7E62283EBD8300400DDA /* MoreView.swift in Sources */,
 				86A1DA6C283CD68300C636DD /* SwiftUISlider.swift in Sources */,
 				865B408C2835109F006B7ACF /* RangeSlider.swift in Sources */,
