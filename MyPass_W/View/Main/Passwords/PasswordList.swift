@@ -6,11 +6,13 @@
 //
 
 import SwiftUI
+import RealmSwift
 
 struct PasswordList: View {
     
     @ObservedObject var authViewModel: AuthViewModel
     @State private var screenSelection: String?
+    @ObservedResults(Credential.self) var credentials
     
     var body: some View {
         ZStack {
@@ -30,6 +32,13 @@ struct PasswordList: View {
                         SettingsButtonLabel()
                     }
                 }
+                
+                ScrollView {
+                    ForEach(credentials) { credential in
+                        Text(credential.website)
+                    }
+                }
+                
                 Spacer()
                 
                 NavigationLink(destination: PasswordEdition(), tag: ScreenNavigation.passwordEditionView.rawValue, selection: $screenSelection) {
