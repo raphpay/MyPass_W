@@ -8,5 +8,5 @@
 import Foundation
 
 enum ScreenNavigation: String {
-    case moreView, passwordEditionView
+    case moreView, passwordEditionView, generatePassword
 }

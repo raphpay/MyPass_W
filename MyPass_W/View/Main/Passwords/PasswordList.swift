@@ -41,11 +41,22 @@ struct PasswordList: View {
                 
                 Spacer()
                 
-                NavigationLink(destination: PasswordEdition(), tag: ScreenNavigation.passwordEditionView.rawValue, selection: $screenSelection) {
-                    EmptyView()
-                }
-                RoundedButton(title: "Save password") {
-                    screenSelection = ScreenNavigation.passwordEditionView.rawValue
+                HStack(spacing: 8) {
+                    Spacer()
+                    
+                    NavigationLink(destination: GeneratorView(), tag: ScreenNavigation.generatePassword.rawValue, selection: $screenSelection) {
+                        EmptyView()
+                    }
+                    CircleButton(icon: SFSymbols.lockShield.rawValue) {
+                        screenSelection = ScreenNavigation.generatePassword.rawValue
+                    }
+                    
+                    NavigationLink(destination: PasswordEdition(), tag: ScreenNavigation.passwordEditionView.rawValue, selection: $screenSelection) {
+                        EmptyView()
+                    }
+                    CircleButton(icon: SFSymbols.plus.rawValue) {
+                        screenSelection = ScreenNavigation.passwordEditionView.rawValue
+                    }
                 }
 
             }
