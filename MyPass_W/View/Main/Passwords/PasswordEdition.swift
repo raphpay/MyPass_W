@@ -11,8 +11,6 @@ import RealmSwift
 struct PasswordEdition: View {
     
     @Environment(\.presentationMode) var presentation
-    // TODO: Add this to PasswordList instead
-    @ObservedResults(Credential.self) var credentials
     
     @State private var website: String = ""
     @State private var username: String = ""
@@ -24,10 +22,6 @@ struct PasswordEdition: View {
             PWTextField(placeholder: "Username", value: $username)
             PWSecureTextField(placeholder: "Password", value: $password)
             
-            ForEach(credentials) { credential in
-                Text(credential.username)
-            }
-            
             RoundedButton(title: "Save password") {
                 // Save password into Realm
                 saveCredentials()
@@ -37,6 +31,7 @@ struct PasswordEdition: View {
         }
     }
     
+    // TODO: Create separate file
     func saveCredentials() {
         do {
             let realm = try Realm()

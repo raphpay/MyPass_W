@@ -13,6 +13,7 @@ struct PasswordList: View {
     @ObservedObject var authViewModel: AuthViewModel
     @State private var screenSelection: String?
     @ObservedResults(Credential.self) var credentials
+//    var credentials = MockCredential.samples
     
     var body: some View {
         ZStack {
@@ -35,7 +36,20 @@ struct PasswordList: View {
                 
                 ScrollView {
                     ForEach(credentials) { credential in
-                        Text(credential.website)
+                        HStack {
+                            
+                            ZStack {
+                                RoundedRectangle(cornerRadius: 10)
+                                    .frame(width: 50, height: 50)
+                            }
+                            
+                            VStack(alignment: .leading) {
+                                Text(credential.website)
+                                Text(credential.username)
+                            }
+                            
+                            Spacer()
+                        }
                     }
                 }
                 
