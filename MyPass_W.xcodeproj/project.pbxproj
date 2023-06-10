@@ -182,13 +182,6 @@
 			path = Passwords;
 			sourceTree = "<group>";
 		};
-		607846792A261BEF006FCFCD /* Test */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Test;
-			sourceTree = "<group>";
-		};
 		865B408628350FD3006B7ACF /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -322,7 +315,6 @@
 			isa = PBXGroup;
 			children = (
 				86CA7E63283EC01B00400DDA /* TabBar.swift */,
-				607846792A261BEF006FCFCD /* Test */,
 				86B799DC2834149800B27498 /* GeneratorView.swift */,
 				86CA7E61283EBD8300400DDA /* MoreView.swift */,
 				607845EB2A261552006FCFCD /* Passwords */,
