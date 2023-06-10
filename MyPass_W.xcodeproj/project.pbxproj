@@ -34,6 +34,8 @@
 		607846782A261BA9006FCFCD /* AuthenticationContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607846772A261BA9006FCFCD /* AuthenticationContentView.swift */; };
 		6078467F2A261C02006FCFCD /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6078467E2A261C02006FCFCD /* AuthViewModel.swift */; };
 		60A4DAC52A2A3E4400AC106F /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A4DAC42A2A3E4400AC106F /* KeychainHelper.swift */; };
+		86132E3D2A34BA8100059896 /* PasswordEditionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86132E3C2A34BA8100059896 /* PasswordEditionViewModel.swift */; };
+		86132E3F2A34BAFE00059896 /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86132E3E2A34BAFE00059896 /* RealmService.swift */; };
 		865B408528350FBB006B7ACF /* AppLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865B408428350FBB006B7ACF /* AppLogo.swift */; };
 		865B408A28351033006B7ACF /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865B408928351033006B7ACF /* PasswordTextField.swift */; };
 		865B408C2835109F006B7ACF /* RangeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865B408B2835109F006B7ACF /* RangeSlider.swift */; };
@@ -91,6 +93,8 @@
 		607846772A261BA9006FCFCD /* AuthenticationContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationContentView.swift; sourceTree = "<group>"; };
 		6078467E2A261C02006FCFCD /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		60A4DAC42A2A3E4400AC106F /* KeychainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
+		86132E3C2A34BA8100059896 /* PasswordEditionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordEditionViewModel.swift; sourceTree = "<group>"; };
+		86132E3E2A34BAFE00059896 /* RealmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmService.swift; sourceTree = "<group>"; };
 		861347DE2902CC0C00AE18CB /* MyPass_W.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyPass_W.entitlements; sourceTree = "<group>"; };
 		865B408428350FBB006B7ACF /* AppLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLogo.swift; sourceTree = "<group>"; };
 		865B408928351033006B7ACF /* PasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
@@ -348,6 +352,8 @@
 				868C909328401A2D00035F21 /* MoreViewViewModel.swift */,
 				6078467E2A261C02006FCFCD /* AuthViewModel.swift */,
 				60A4DAC42A2A3E4400AC106F /* KeychainHelper.swift */,
+				86132E3C2A34BA8100059896 /* PasswordEditionViewModel.swift */,
+				86132E3E2A34BAFE00059896 /* RealmService.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -536,6 +542,7 @@
 				868F2C1C283FBD5900517D1F /* FormButton.swift in Sources */,
 				86CA7E64283EC01B00400DDA /* TabBar.swift in Sources */,
 				865B408A28351033006B7ACF /* PasswordTextField.swift in Sources */,
+				86132E3D2A34BA8100059896 /* PasswordEditionViewModel.swift in Sources */,
 				8673F5192840EFE300EB28BB /* Images-Enum.swift in Sources */,
 				601386EC2A32F51200C05497 /* InlineButton.swift in Sources */,
 				868C90902840154D00035F21 /* ReviewHandler.swift in Sources */,
@@ -556,6 +563,7 @@
 				868F2C20283FC3E400517D1F /* StrengthCard.swift in Sources */,
 				607845E52A26153C006FCFCD /* LoginView.swift in Sources */,
 				8673F5172840ED0200EB28BB /* SFSafariViewWrapper.swift in Sources */,
+				86132E3F2A34BAFE00059896 /* RealmService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
