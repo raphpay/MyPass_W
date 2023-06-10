@@ -20,6 +20,9 @@ class Credential: Object, ObjectKeyIdentifiable {
         self.username = username
         self.password = password
     }
+    
+    static let sample = Credential(website: "www.apple.com", username: "Raphpay", password: "helloworld")
+    static let samples = [Credential(website: "www.apple.com", username: "Raphpay", password: "helloworld"), sample]
 }
 
 struct MockCredential: Identifiable {

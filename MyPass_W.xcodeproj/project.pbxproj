@@ -36,6 +36,7 @@
 		60A4DAC52A2A3E4400AC106F /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A4DAC42A2A3E4400AC106F /* KeychainHelper.swift */; };
 		86132E3D2A34BA8100059896 /* PasswordEditionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86132E3C2A34BA8100059896 /* PasswordEditionViewModel.swift */; };
 		86132E3F2A34BAFE00059896 /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86132E3E2A34BAFE00059896 /* RealmService.swift */; };
+		86132E432A34BDB100059896 /* CredentialRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86132E422A34BDB100059896 /* CredentialRow.swift */; };
 		865B408528350FBB006B7ACF /* AppLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865B408428350FBB006B7ACF /* AppLogo.swift */; };
 		865B408A28351033006B7ACF /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865B408928351033006B7ACF /* PasswordTextField.swift */; };
 		865B408C2835109F006B7ACF /* RangeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865B408B2835109F006B7ACF /* RangeSlider.swift */; };
@@ -95,6 +96,7 @@
 		60A4DAC42A2A3E4400AC106F /* KeychainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
 		86132E3C2A34BA8100059896 /* PasswordEditionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordEditionViewModel.swift; sourceTree = "<group>"; };
 		86132E3E2A34BAFE00059896 /* RealmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmService.swift; sourceTree = "<group>"; };
+		86132E422A34BDB100059896 /* CredentialRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialRow.swift; sourceTree = "<group>"; };
 		861347DE2902CC0C00AE18CB /* MyPass_W.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyPass_W.entitlements; sourceTree = "<group>"; };
 		865B408428350FBB006B7ACF /* AppLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLogo.swift; sourceTree = "<group>"; };
 		865B408928351033006B7ACF /* PasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
@@ -311,6 +313,7 @@
 			isa = PBXGroup;
 			children = (
 				865B408B2835109F006B7ACF /* RangeSlider.swift */,
+				86132E422A34BDB100059896 /* CredentialRow.swift */,
 			);
 			path = Organisms;
 			sourceTree = "<group>";
@@ -533,6 +536,7 @@
 				868F2C22283FC59500517D1F /* PWText.swift in Sources */,
 				607846762A261B3B006FCFCD /* AppDelegate.swift in Sources */,
 				60042A432A2799F8001E2137 /* PWTextField.swift in Sources */,
+				86132E432A34BDB100059896 /* CredentialRow.swift in Sources */,
 				8673F5282840F1A000EB28BB /* DonateView.swift in Sources */,
 				865B408E283512D7006B7ACF /* RoundedButton.swift in Sources */,
 				607845EF2A261565006FCFCD /* PasswordEdition.swift in Sources */,
