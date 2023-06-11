@@ -38,6 +38,8 @@
 		86132E3F2A34BAFE00059896 /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86132E3E2A34BAFE00059896 /* RealmService.swift */; };
 		86132E432A34BDB100059896 /* CredentialRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86132E422A34BDB100059896 /* CredentialRow.swift */; };
 		86132E452A34C06200059896 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86132E442A34C06200059896 /* CircleImage.swift */; };
+		8626C45F2A364274005348AD /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 8626C45E2A364274005348AD /* Alamofire */; };
+		8626C4622A3642BC005348AD /* AlamofireService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8626C4612A3642BC005348AD /* AlamofireService.swift */; };
 		865B408528350FBB006B7ACF /* AppLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865B408428350FBB006B7ACF /* AppLogo.swift */; };
 		865B408A28351033006B7ACF /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865B408928351033006B7ACF /* PasswordTextField.swift */; };
 		865B408C2835109F006B7ACF /* RangeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865B408B2835109F006B7ACF /* RangeSlider.swift */; };
@@ -100,6 +102,7 @@
 		86132E422A34BDB100059896 /* CredentialRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialRow.swift; sourceTree = "<group>"; };
 		86132E442A34C06200059896 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		861347DE2902CC0C00AE18CB /* MyPass_W.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyPass_W.entitlements; sourceTree = "<group>"; };
+		8626C4612A3642BC005348AD /* AlamofireService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireService.swift; sourceTree = "<group>"; };
 		865B408428350FBB006B7ACF /* AppLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLogo.swift; sourceTree = "<group>"; };
 		865B408928351033006B7ACF /* PasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
 		865B408B2835109F006B7ACF /* RangeSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangeSlider.swift; sourceTree = "<group>"; };
@@ -152,6 +155,7 @@
 				607846702A261A88006FCFCD /* FirebaseAuth in Frameworks */,
 				601386F12A32F8AB00C05497 /* RealmSwift in Frameworks */,
 				607846742A261A88006FCFCD /* FirebaseCrashlytics in Frameworks */,
+				8626C45F2A364274005348AD /* Alamofire in Frameworks */,
 				607846682A261A88006FCFCD /* FirebaseAnalytics in Frameworks */,
 				6078466A2A261A88006FCFCD /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
 				601386EF2A32F8AB00C05497 /* Realm in Frameworks */,
@@ -166,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				601386F22A32F8D800C05497 /* Credential.swift */,
+				8626C4602A364296005348AD /* Services */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -188,6 +193,16 @@
 				607845EE2A261565006FCFCD /* PasswordEdition.swift */,
 			);
 			path = Passwords;
+			sourceTree = "<group>";
+		};
+		8626C4602A364296005348AD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				60A4DAC42A2A3E4400AC106F /* KeychainHelper.swift */,
+				86132E3E2A34BAFE00059896 /* RealmService.swift */,
+				8626C4612A3642BC005348AD /* AlamofireService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		865B408628350FD3006B7ACF /* Components */ = {
@@ -357,9 +372,7 @@
 				865B409628351709006B7ACF /* GeneratorViewViewModel.swift */,
 				868C909328401A2D00035F21 /* MoreViewViewModel.swift */,
 				6078467E2A261C02006FCFCD /* AuthViewModel.swift */,
-				60A4DAC42A2A3E4400AC106F /* KeychainHelper.swift */,
 				86132E3C2A34BA8100059896 /* PasswordEditionViewModel.swift */,
-				86132E3E2A34BAFE00059896 /* RealmService.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -456,6 +469,7 @@
 				607846732A261A88006FCFCD /* FirebaseCrashlytics */,
 				601386EE2A32F8AB00C05497 /* Realm */,
 				601386F02A32F8AB00C05497 /* RealmSwift */,
+				8626C45E2A364274005348AD /* Alamofire */,
 			);
 			productName = MyPass_W;
 			productReference = 86B799D72834149800B27498 /* MyPass_W.app */;
@@ -489,6 +503,7 @@
 			packageReferences = (
 				607846662A261A88006FCFCD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				601386ED2A32F8AB00C05497 /* XCRemoteSwiftPackageReference "realm-swift" */,
+				8626C45D2A364274005348AD /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 86B799D82834149800B27498 /* Products */;
 			projectDirPath = "";
@@ -542,6 +557,7 @@
 				86132E432A34BDB100059896 /* CredentialRow.swift in Sources */,
 				8673F5282840F1A000EB28BB /* DonateView.swift in Sources */,
 				865B408E283512D7006B7ACF /* RoundedButton.swift in Sources */,
+				8626C4622A3642BC005348AD /* AlamofireService.swift in Sources */,
 				607845EF2A261565006FCFCD /* PasswordEdition.swift in Sources */,
 				60A4DAC52A2A3E4400AC106F /* KeychainHelper.swift in Sources */,
 				86B799DB2834149800B27498 /* MyPass_WApp.swift in Sources */,
@@ -810,6 +826,14 @@
 				minimumVersion = 9.0.0;
 			};
 		};
+		8626C45D2A364274005348AD /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -857,6 +881,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 607846662A261A88006FCFCD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseCrashlytics;
+		};
+		8626C45E2A364274005348AD /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8626C45D2A364274005348AD /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
