@@ -7,6 +7,7 @@
 
 import Foundation
 
+// TODO: To be removed ?
 enum ScreenNavigation: String {
-    case moreView, passwordEditionView, generatePassword
+    case moreView, passwordEditionView, generatePassword, passwordDetails
 }

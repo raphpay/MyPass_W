@@ -21,21 +21,20 @@ struct PasswordList: View {
             VStack() {
                 HStack {
                     Spacer()
-                    NavigationLink(destination: MoreView(authViewModel: authViewModel),
-                                   tag: ScreenNavigation.moreView.rawValue,
-                                   selection: $screenSelection) {
-                        EmptyView()
-                    }
-                    Button {
-                        screenSelection = ScreenNavigation.moreView.rawValue
-                    } label: {
+                    NavigationLink(destination: MoreView(authViewModel: authViewModel)) {
                         SettingsButtonLabel()
                     }
                 }
                 
                 ScrollView {
                     ForEach(credentials) { credential in
-                        CredentialRow(credential: credential)
+                        NavigationLink {
+                            PasswordDetails(credential: credential)
+                        } label: {
+                            CredentialRow(credential: credential)
+                                .tint(.black)
+                        }
+
                     }
                 }
                 
@@ -44,19 +43,16 @@ struct PasswordList: View {
                 HStack(spacing: 8) {
                     Spacer()
                     
-                    NavigationLink(destination: GeneratorView(), tag: ScreenNavigation.generatePassword.rawValue, selection: $screenSelection) {
-                        EmptyView()
-                    }
-                    CircleButton(icon: SFSymbols.lockShield.rawValue) {
-                        screenSelection = ScreenNavigation.generatePassword.rawValue
+                    NavigationLink(destination: GeneratorView()) {
+                        CircleImage(icon: SFSymbols.lockShield.rawValue)
                     }
                     
-                    NavigationLink(destination: PasswordEdition(), tag: ScreenNavigation.passwordEditionView.rawValue, selection: $screenSelection) {
-                        EmptyView()
+                    NavigationLink {
+                        PasswordEdition()
+                    } label: {
+                        CircleImage(icon: SFSymbols.plus.rawValue)
                     }
-                    CircleButton(icon: SFSymbols.plus.rawValue) {
-                        screenSelection = ScreenNavigation.passwordEditionView.rawValue
-                    }
+
                 }
 
             }

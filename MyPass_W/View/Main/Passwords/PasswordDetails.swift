@@ -6,15 +6,22 @@
 //
 
 import SwiftUI
+import RealmSwift
 
 struct PasswordDetails: View {
+    
+    @ObservedRealmObject var credential: Credential
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text(credential.website)
+            Text(credential.username)
+        }
     }
 }
 
 struct PasswordDetails_Previews: PreviewProvider {
     static var previews: some View {
-        PasswordDetails()
+        PasswordDetails(credential: Credential.sample)
     }
 }

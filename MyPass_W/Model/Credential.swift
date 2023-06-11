@@ -25,6 +25,7 @@ class Credential: Object, ObjectKeyIdentifiable {
     static let samples = [Credential(website: "www.apple.com", username: "Raphpay", password: "helloworld"), sample]
 }
 
+// TODO: To be removed ?
 struct MockCredential: Identifiable {
     var id = UUID()
     var website: String
