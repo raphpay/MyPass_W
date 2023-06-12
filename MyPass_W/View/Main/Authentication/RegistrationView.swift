@@ -29,11 +29,11 @@ struct RegistrationView: View {
                 Spacer()
                     .frame(height: 50)
                 
-                RoundedButton(title: "Create account", action: {
+                RoundedButton(title: "Create account", color: .black) {
                     authViewModel.createUser(email: email, password: password) { success in
                         print("Registration complete with:", success)
                     }
-                }, color: .black)
+                }
                 
                 Spacer()
             }

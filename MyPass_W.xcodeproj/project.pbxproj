@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		60042A432A2799F8001E2137 /* PWTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60042A422A2799F8001E2137 /* PWTextField.swift */; };
 		60042A452A279AAC001E2137 /* PWSecureTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60042A442A279AAC001E2137 /* PWSecureTextField.swift */; };
+		601386EA2A32F4EA00C05497 /* SettingsButtonLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601386E92A32F4EA00C05497 /* SettingsButtonLabel.swift */; };
+		601386EC2A32F51200C05497 /* InlineButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601386EB2A32F51200C05497 /* InlineButton.swift */; };
+		601386EF2A32F8AB00C05497 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 601386EE2A32F8AB00C05497 /* Realm */; };
+		601386F12A32F8AB00C05497 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 601386F02A32F8AB00C05497 /* RealmSwift */; };
+		601386F32A32F8D800C05497 /* Credential.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601386F22A32F8D800C05497 /* Credential.swift */; };
 		6047BE542A28EE2D00D3AB18 /* PWTextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6047BE532A28EE2D00D3AB18 /* PWTextButton.swift */; };
 		606D298B2A28C1510073037F /* PWLoginBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606D298A2A28C1510073037F /* PWLoginBackground.swift */; };
 		607845E52A26153C006FCFCD /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607845E42A26153C006FCFCD /* LoginView.swift */; };
@@ -28,6 +33,12 @@
 		607846782A261BA9006FCFCD /* AuthenticationContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607846772A261BA9006FCFCD /* AuthenticationContentView.swift */; };
 		6078467F2A261C02006FCFCD /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6078467E2A261C02006FCFCD /* AuthViewModel.swift */; };
 		60A4DAC52A2A3E4400AC106F /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A4DAC42A2A3E4400AC106F /* KeychainHelper.swift */; };
+		86132E3D2A34BA8100059896 /* PasswordEditionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86132E3C2A34BA8100059896 /* PasswordEditionViewModel.swift */; };
+		86132E3F2A34BAFE00059896 /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86132E3E2A34BAFE00059896 /* RealmService.swift */; };
+		86132E432A34BDB100059896 /* CredentialRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86132E422A34BDB100059896 /* CredentialRow.swift */; };
+		86132E452A34C06200059896 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86132E442A34C06200059896 /* CircleImage.swift */; };
+		8626C45F2A364274005348AD /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 8626C45E2A364274005348AD /* Alamofire */; };
+		8626C4622A3642BC005348AD /* AlamofireService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8626C4612A3642BC005348AD /* AlamofireService.swift */; };
 		865B408528350FBB006B7ACF /* AppLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865B408428350FBB006B7ACF /* AppLogo.swift */; };
 		865B408A28351033006B7ACF /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865B408928351033006B7ACF /* PasswordTextField.swift */; };
 		865B408C2835109F006B7ACF /* RangeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865B408B2835109F006B7ACF /* RangeSlider.swift */; };
@@ -60,7 +71,6 @@
 		86B799DF2834149900B27498 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86B799DE2834149900B27498 /* Assets.xcassets */; };
 		86B799E22834149900B27498 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86B799E12834149900B27498 /* Preview Assets.xcassets */; };
 		86CA7E62283EBD8300400DDA /* MoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CA7E61283EBD8300400DDA /* MoreView.swift */; };
-		86CA7E64283EC01B00400DDA /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CA7E63283EC01B00400DDA /* TabBar.swift */; };
 		86E2193928353C280045A799 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E2193828353C280045A799 /* String+Ext.swift */; };
 		86E2193B2835431A0045A799 /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E2193A2835431A0045A799 /* Color+Ext.swift */; };
 		86E2193D283546850045A799 /* PasswordStrenght-Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E2193C283546850045A799 /* PasswordStrenght-Enum.swift */; };
@@ -69,6 +79,9 @@
 /* Begin PBXFileReference section */
 		60042A422A2799F8001E2137 /* PWTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWTextField.swift; sourceTree = "<group>"; };
 		60042A442A279AAC001E2137 /* PWSecureTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWSecureTextField.swift; sourceTree = "<group>"; };
+		601386E92A32F4EA00C05497 /* SettingsButtonLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsButtonLabel.swift; sourceTree = "<group>"; };
+		601386EB2A32F51200C05497 /* InlineButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InlineButton.swift; sourceTree = "<group>"; };
+		601386F22A32F8D800C05497 /* Credential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credential.swift; sourceTree = "<group>"; };
 		6047BE532A28EE2D00D3AB18 /* PWTextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWTextButton.swift; sourceTree = "<group>"; };
 		606D298A2A28C1510073037F /* PWLoginBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWLoginBackground.swift; sourceTree = "<group>"; };
 		607845E42A26153C006FCFCD /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -81,7 +94,12 @@
 		607846772A261BA9006FCFCD /* AuthenticationContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationContentView.swift; sourceTree = "<group>"; };
 		6078467E2A261C02006FCFCD /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		60A4DAC42A2A3E4400AC106F /* KeychainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
+		86132E3C2A34BA8100059896 /* PasswordEditionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordEditionViewModel.swift; sourceTree = "<group>"; };
+		86132E3E2A34BAFE00059896 /* RealmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmService.swift; sourceTree = "<group>"; };
+		86132E422A34BDB100059896 /* CredentialRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialRow.swift; sourceTree = "<group>"; };
+		86132E442A34C06200059896 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		861347DE2902CC0C00AE18CB /* MyPass_W.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyPass_W.entitlements; sourceTree = "<group>"; };
+		8626C4612A3642BC005348AD /* AlamofireService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireService.swift; sourceTree = "<group>"; };
 		865B408428350FBB006B7ACF /* AppLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLogo.swift; sourceTree = "<group>"; };
 		865B408928351033006B7ACF /* PasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
 		865B408B2835109F006B7ACF /* RangeSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangeSlider.swift; sourceTree = "<group>"; };
@@ -118,7 +136,6 @@
 		86B799DE2834149900B27498 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86B799E12834149900B27498 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		86CA7E61283EBD8300400DDA /* MoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreView.swift; sourceTree = "<group>"; };
-		86CA7E63283EC01B00400DDA /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		86E2193828353C280045A799 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		86E2193A2835431A0045A799 /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
 		86E2193C283546850045A799 /* PasswordStrenght-Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PasswordStrenght-Enum.swift"; sourceTree = "<group>"; };
@@ -132,9 +149,12 @@
 				6078466C2A261A88006FCFCD /* FirebaseAnalyticsSwift in Frameworks */,
 				607846722A261A88006FCFCD /* FirebaseAuthCombine-Community in Frameworks */,
 				607846702A261A88006FCFCD /* FirebaseAuth in Frameworks */,
+				601386F12A32F8AB00C05497 /* RealmSwift in Frameworks */,
 				607846742A261A88006FCFCD /* FirebaseCrashlytics in Frameworks */,
+				8626C45F2A364274005348AD /* Alamofire in Frameworks */,
 				607846682A261A88006FCFCD /* FirebaseAnalytics in Frameworks */,
 				6078466A2A261A88006FCFCD /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
+				601386EF2A32F8AB00C05497 /* Realm in Frameworks */,
 				6078466E2A261A88006FCFCD /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,6 +162,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		601386F42A32F8DD00C05497 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				601386F22A32F8D800C05497 /* Credential.swift */,
+				8626C4602A364296005348AD /* Services */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		607845E62A261541006FCFCD /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,11 +191,14 @@
 			path = Passwords;
 			sourceTree = "<group>";
 		};
-		607846792A261BEF006FCFCD /* Test */ = {
+		8626C4602A364296005348AD /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				60A4DAC42A2A3E4400AC106F /* KeychainHelper.swift */,
+				86132E3E2A34BAFE00059896 /* RealmService.swift */,
+				8626C4612A3642BC005348AD /* AlamofireService.swift */,
 			);
-			path = Test;
+			path = Services;
 			sourceTree = "<group>";
 		};
 		865B408628350FD3006B7ACF /* Components */ = {
@@ -269,6 +301,7 @@
 				868F2C21283FC59500517D1F /* PWText.swift */,
 				6047BE532A28EE2D00D3AB18 /* PWTextButton.swift */,
 				86B1DD032846321D000F4704 /* DismissButton.swift */,
+				601386EB2A32F51200C05497 /* InlineButton.swift */,
 			);
 			path = Atoms;
 			sourceTree = "<group>";
@@ -281,8 +314,10 @@
 				60042A442A279AAC001E2137 /* PWSecureTextField.swift */,
 				868F2C1F283FC3E400517D1F /* StrengthCard.swift */,
 				865B408D283512D7006B7ACF /* RoundedButton.swift */,
+				86132E442A34C06200059896 /* CircleImage.swift */,
 				868F2C1B283FBD5900517D1F /* FormButton.swift */,
 				8673F5142840E9F900EB28BB /* LogoCard.swift */,
+				601386E92A32F4EA00C05497 /* SettingsButtonLabel.swift */,
 			);
 			path = Molecules;
 			sourceTree = "<group>";
@@ -291,6 +326,7 @@
 			isa = PBXGroup;
 			children = (
 				865B408B2835109F006B7ACF /* RangeSlider.swift */,
+				86132E422A34BDB100059896 /* CredentialRow.swift */,
 			);
 			path = Organisms;
 			sourceTree = "<group>";
@@ -298,8 +334,6 @@
 		8673F5212840F0B200EB28BB /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				86CA7E63283EC01B00400DDA /* TabBar.swift */,
-				607846792A261BEF006FCFCD /* Test */,
 				86B799DC2834149800B27498 /* GeneratorView.swift */,
 				86CA7E61283EBD8300400DDA /* MoreView.swift */,
 				607845EB2A261552006FCFCD /* Passwords */,
@@ -332,7 +366,7 @@
 				865B409628351709006B7ACF /* GeneratorViewViewModel.swift */,
 				868C909328401A2D00035F21 /* MoreViewViewModel.swift */,
 				6078467E2A261C02006FCFCD /* AuthViewModel.swift */,
-				60A4DAC42A2A3E4400AC106F /* KeychainHelper.swift */,
+				86132E3C2A34BA8100059896 /* PasswordEditionViewModel.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -384,6 +418,7 @@
 				861347DE2902CC0C00AE18CB /* MyPass_W.entitlements */,
 				865B409028351429006B7ACF /* MyPass-W-Info.plist */,
 				607845F02A261788006FCFCD /* GoogleService-Info.plist */,
+				601386F42A32F8DD00C05497 /* Model */,
 				865B40982835170F006B7ACF /* ViewModel */,
 				865B408728350FDA006B7ACF /* View */,
 				865B408828350FE6006B7ACF /* Support */,
@@ -426,6 +461,9 @@
 				6078466F2A261A88006FCFCD /* FirebaseAuth */,
 				607846712A261A88006FCFCD /* FirebaseAuthCombine-Community */,
 				607846732A261A88006FCFCD /* FirebaseCrashlytics */,
+				601386EE2A32F8AB00C05497 /* Realm */,
+				601386F02A32F8AB00C05497 /* RealmSwift */,
+				8626C45E2A364274005348AD /* Alamofire */,
 			);
 			productName = MyPass_W;
 			productReference = 86B799D72834149800B27498 /* MyPass_W.app */;
@@ -458,6 +496,8 @@
 			mainGroup = 86B799CE2834149800B27498;
 			packageReferences = (
 				607846662A261A88006FCFCD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				601386ED2A32F8AB00C05497 /* XCRemoteSwiftPackageReference "realm-swift" */,
+				8626C45D2A364274005348AD /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 86B799D82834149800B27498 /* Products */;
 			projectDirPath = "";
@@ -500,22 +540,28 @@
 				60042A452A279AAC001E2137 /* PWSecureTextField.swift in Sources */,
 				86E2193928353C280045A799 /* String+Ext.swift in Sources */,
 				86B799DD2834149800B27498 /* GeneratorView.swift in Sources */,
+				601386EA2A32F4EA00C05497 /* SettingsButtonLabel.swift in Sources */,
+				601386F32A32F8D800C05497 /* Credential.swift in Sources */,
 				8673F5152840E9F900EB28BB /* LogoCard.swift in Sources */,
 				867FC34F28357ED2009476D0 /* Double+Ext.swift in Sources */,
 				865B409728351709006B7ACF /* GeneratorViewViewModel.swift in Sources */,
 				868F2C22283FC59500517D1F /* PWText.swift in Sources */,
 				607846762A261B3B006FCFCD /* AppDelegate.swift in Sources */,
 				60042A432A2799F8001E2137 /* PWTextField.swift in Sources */,
+				86132E432A34BDB100059896 /* CredentialRow.swift in Sources */,
 				8673F5282840F1A000EB28BB /* DonateView.swift in Sources */,
 				865B408E283512D7006B7ACF /* RoundedButton.swift in Sources */,
+				8626C4622A3642BC005348AD /* AlamofireService.swift in Sources */,
 				607845EF2A261565006FCFCD /* PasswordEdition.swift in Sources */,
 				60A4DAC52A2A3E4400AC106F /* KeychainHelper.swift in Sources */,
 				86B799DB2834149800B27498 /* MyPass_WApp.swift in Sources */,
 				865B40952835155B006B7ACF /* SFSymbols-Enum.swift in Sources */,
 				868F2C1C283FBD5900517D1F /* FormButton.swift in Sources */,
-				86CA7E64283EC01B00400DDA /* TabBar.swift in Sources */,
 				865B408A28351033006B7ACF /* PasswordTextField.swift in Sources */,
+				86132E3D2A34BA8100059896 /* PasswordEditionViewModel.swift in Sources */,
 				8673F5192840EFE300EB28BB /* Images-Enum.swift in Sources */,
+				86132E452A34C06200059896 /* CircleImage.swift in Sources */,
+				601386EC2A32F51200C05497 /* InlineButton.swift in Sources */,
 				868C90902840154D00035F21 /* ReviewHandler.swift in Sources */,
 				865B408528350FBB006B7ACF /* AppLogo.swift in Sources */,
 				607846782A261BA9006FCFCD /* AuthenticationContentView.swift in Sources */,
@@ -533,6 +579,7 @@
 				868F2C20283FC3E400517D1F /* StrengthCard.swift in Sources */,
 				607845E52A26153C006FCFCD /* LoginView.swift in Sources */,
 				8673F5172840ED0200EB28BB /* SFSafariViewWrapper.swift in Sources */,
+				86132E3F2A34BAFE00059896 /* RealmService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -755,6 +802,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		601386ED2A32F8AB00C05497 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		607846662A261A88006FCFCD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -763,9 +818,27 @@
 				minimumVersion = 9.0.0;
 			};
 		};
+		8626C45D2A364274005348AD /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		601386EE2A32F8AB00C05497 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 601386ED2A32F8AB00C05497 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		601386F02A32F8AB00C05497 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 601386ED2A32F8AB00C05497 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
 		607846672A261A88006FCFCD /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 607846662A261A88006FCFCD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
@@ -800,6 +873,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 607846662A261A88006FCFCD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseCrashlytics;
+		};
+		8626C45E2A364274005348AD /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8626C45D2A364274005348AD /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
