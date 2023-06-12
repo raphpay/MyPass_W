@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		60042A432A2799F8001E2137 /* PWTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60042A422A2799F8001E2137 /* PWTextField.swift */; };
 		60042A452A279AAC001E2137 /* PWSecureTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60042A442A279AAC001E2137 /* PWSecureTextField.swift */; };
-		601386E82A32F4C100C05497 /* ScreenNavigation-Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601386E72A32F4C100C05497 /* ScreenNavigation-Enum.swift */; };
 		601386EA2A32F4EA00C05497 /* SettingsButtonLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601386E92A32F4EA00C05497 /* SettingsButtonLabel.swift */; };
 		601386EC2A32F51200C05497 /* InlineButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601386EB2A32F51200C05497 /* InlineButton.swift */; };
 		601386EF2A32F8AB00C05497 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 601386EE2A32F8AB00C05497 /* Realm */; };
@@ -81,7 +80,6 @@
 /* Begin PBXFileReference section */
 		60042A422A2799F8001E2137 /* PWTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWTextField.swift; sourceTree = "<group>"; };
 		60042A442A279AAC001E2137 /* PWSecureTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWSecureTextField.swift; sourceTree = "<group>"; };
-		601386E72A32F4C100C05497 /* ScreenNavigation-Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScreenNavigation-Enum.swift"; sourceTree = "<group>"; };
 		601386E92A32F4EA00C05497 /* SettingsButtonLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsButtonLabel.swift; sourceTree = "<group>"; };
 		601386EB2A32F51200C05497 /* InlineButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InlineButton.swift; sourceTree = "<group>"; };
 		601386F22A32F8D800C05497 /* Credential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credential.swift; sourceTree = "<group>"; };
@@ -260,7 +258,6 @@
 			isa = PBXGroup;
 			children = (
 				865B40942835155B006B7ACF /* SFSymbols-Enum.swift */,
-				601386E72A32F4C100C05497 /* ScreenNavigation-Enum.swift */,
 				865B4091283514BD006B7ACF /* Fonts-Enum.swift */,
 				86E2193C283546850045A799 /* PasswordStrenght-Enum.swift */,
 				8673F5182840EFE300EB28BB /* Images-Enum.swift */,
@@ -579,7 +576,6 @@
 				86E2193D283546850045A799 /* PasswordStrenght-Enum.swift in Sources */,
 				86B1DD042846321D000F4704 /* DismissButton.swift in Sources */,
 				867FC34D28357893009476D0 /* i18n-Enum.swift in Sources */,
-				601386E82A32F4C100C05497 /* ScreenNavigation-Enum.swift in Sources */,
 				86CA7E62283EBD8300400DDA /* MoreView.swift in Sources */,
 				86A1DA6C283CD68300C636DD /* SwiftUISlider.swift in Sources */,
 				865B408C2835109F006B7ACF /* RangeSlider.swift in Sources */,
