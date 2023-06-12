@@ -12,12 +12,10 @@ class AlamofireService {
     
     public static let shared = AlamofireService()
     
-    private init() {
-        // L'initialisation est privé pour être sur qu'une seule instance sera créé
-    }
+    private init() {}
     
     func fetchWebsiteIcon(for domain: String, completion: @escaping (Data?) -> Void) {
-        let urlString = "https://www.google.com/s2/favicons?domain=\(domain)&sz=64"
+        let urlString = "https://www.google.com/s2/favicons?domain=\(domain)&sz=128"
         var imageData: Data?
         
         AF.request(urlString).responseData { response in
