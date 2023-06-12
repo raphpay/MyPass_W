@@ -12,9 +12,7 @@ class RealmService {
     
     public static let shared = RealmService()
 
-      private init() {
-        // L'initialisation est privé pour être sur qu'une seule instance sera créé
-      }
+      private init() {}
     
     func saveCredentials(credential: Credential) {
         do {
