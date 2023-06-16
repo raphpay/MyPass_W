@@ -17,8 +17,11 @@ struct RegistrationView: View {
 
     var body: some View {
         ZStack {
+            
+            PWLoginBackground()
+            
             VStack {
-                PWLoginBackground()
+                Spacer()
                 
                 PWText(text: "My Pass_W", fontSize: 25)
                 PWText(text: "Create your account", fontSize: 16, color: .secondary)
