@@ -14,7 +14,7 @@ struct MyPass_WApp: App {
     
     var body: some Scene {
         WindowGroup {
-            AuthenticationContentView()
+            TabBar()
         }
     }
 }

@@ -74,6 +74,7 @@
 		86E2193928353C280045A799 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E2193828353C280045A799 /* String+Ext.swift */; };
 		86E2193B2835431A0045A799 /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E2193A2835431A0045A799 /* Color+Ext.swift */; };
 		86E2193D283546850045A799 /* PasswordStrenght-Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E2193C283546850045A799 /* PasswordStrenght-Enum.swift */; };
+		86FBC4CD2A3CBD19006C9B71 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FBC4CC2A3CBD19006C9B71 /* TabBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -139,6 +140,7 @@
 		86E2193828353C280045A799 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		86E2193A2835431A0045A799 /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
 		86E2193C283546850045A799 /* PasswordStrenght-Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PasswordStrenght-Enum.swift"; sourceTree = "<group>"; };
+		86FBC4CC2A3CBD19006C9B71 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -336,6 +338,7 @@
 			children = (
 				86B799DC2834149800B27498 /* GeneratorView.swift */,
 				86CA7E61283EBD8300400DDA /* MoreView.swift */,
+				86FBC4CC2A3CBD19006C9B71 /* TabBar.swift */,
 				607845EB2A261552006FCFCD /* Passwords */,
 				607845E62A261541006FCFCD /* Authentication */,
 			);
@@ -564,6 +567,7 @@
 				601386EC2A32F51200C05497 /* InlineButton.swift in Sources */,
 				868C90902840154D00035F21 /* ReviewHandler.swift in Sources */,
 				865B408528350FBB006B7ACF /* AppLogo.swift in Sources */,
+				86FBC4CD2A3CBD19006C9B71 /* TabBar.swift in Sources */,
 				607846782A261BA9006FCFCD /* AuthenticationContentView.swift in Sources */,
 				6078467F2A261C02006FCFCD /* AuthViewModel.swift in Sources */,
 				607845EA2A261550006FCFCD /* PasswordList.swift in Sources */,

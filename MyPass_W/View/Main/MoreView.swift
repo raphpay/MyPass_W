@@ -10,7 +10,6 @@ import SwiftUI
 struct MoreView: View {
     
     @StateObject private var viewModel = MoreViewViewModel()
-    @ObservedObject var authViewModel: AuthViewModel
     var isIPad: Bool {
         if UIDevice.current.localizedModel == "iPad" {
              return true
@@ -60,14 +59,6 @@ struct MoreView: View {
                         Text(i18n.donate.translation)
                     }
                 }
-                
-                Section {
-                    FormButton(title: "Log out",
-                               icon: SFSymbols.openDoor.rawValue,
-                               foregroundColor: .red) {
-                        authViewModel.signOut()
-                    }
-                }
             }
             .navigationTitle(i18n.more.translation)
             .sheet(isPresented: $viewModel.showingSheet) {
@@ -83,7 +74,7 @@ struct MoreView: View {
 
 struct MoreView_Previews: PreviewProvider {
     static var previews: some View {
-        MoreView(authViewModel: AuthViewModel())
+        MoreView()
             .previewInterfaceOrientation(.portrait)
     }
 }
