@@ -12,11 +12,11 @@ struct TabBar: View {
         TabView {
             GeneratorView()
                 .tabItem {
-                    Label("Generator", systemImage: SFSymbols.lockShield.rawValue)
+                    Label(i18n.generate.translation, systemImage: SFSymbols.lockShield.rawValue)
                 }
             MoreView()
                 .tabItem {
-                    Label("More View", systemImage: SFSymbols.starBubble.rawValue)
+                    Label(i18n.more.translation, systemImage: SFSymbols.starBubble.rawValue)
                 }
         }
     }
