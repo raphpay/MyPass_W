@@ -15,8 +15,10 @@ struct LoginView: View {
 
     var body: some View {
         ZStack {
+            PWLoginBackground()
+            
             VStack {
-                PWLoginBackground()
+                Spacer()
                 
                 VStack {
                     PWText(text: "My Pass_W", fontSize: 25)
