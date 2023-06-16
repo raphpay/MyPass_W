@@ -21,7 +21,11 @@ struct PasswordList: View {
             VStack() {
                 HStack {
                     Spacer()
-                    NavigationLink(destination: MoreView(authViewModel: authViewModel)) {
+                    // Commented after #20
+//                    NavigationLink(destination: MoreView(authViewModel: authViewModel)) {
+//                        SettingsButtonLabel()
+//                    }
+                    NavigationLink(destination: MoreView()) {
                         SettingsButtonLabel()
                     }
                 }
