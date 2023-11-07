@@ -66,25 +66,7 @@ final class GeneratorViewViewModel: ObservableObject {
     
     func calculateColor() -> Color {
         var color = backgroundColor
-        
-        switch (charactersValue) {
-        case PasswordStrength.weak.range:
-            color = PasswordStrength.weak.color
-            break
-        case PasswordStrength.mediocre.range:
-            color = PasswordStrength.mediocre.color
-            break
-        case PasswordStrength.strong.range:
-            color = PasswordStrength.strong.color
-            break
-        case PasswordStrength.veryStrong.range:
-            color = PasswordStrength.veryStrong.color
-            break
-        default:
-            color = Color.ui.weak
-            break
-        }
-        
+        color = PasswordStrength.strength(forCharacterCount: charactersValue).color
         return color
     }
     

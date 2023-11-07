@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-enum PasswordStrength {
+enum PasswordStrength: CaseIterable {
     case weak, mediocre, strong, veryStrong, none
     
     var title: LocalizedStringKey {
@@ -26,33 +26,27 @@ enum PasswordStrength {
         }
     }
     
+//    var title: LocalizedStringKey {
+//        return i18n.translation(for: self)
+//    }
+    
     var range: ClosedRange<Double> {
         switch self {
-        case .weak:
-            return 1...8
-        case .mediocre:
-            return 8...12
-        case .strong:
-            return 12...24
-        case .veryStrong:
-            return 24...40
-        case .none:
-            return 0...1
+        case .weak: return 1...8
+        case .mediocre: return 8...12
+        case .strong: return 12...24
+        case .veryStrong: return 24...40
+        case .none: return 0...1
         }
     }
     
     var color: Color {
         switch self {
-        case .weak:
-            return Color.ui.weak
-        case .mediocre:
-            return Color.ui.mediocre
-        case .strong:
-            return Color.ui.strong
-        case .veryStrong:
-            return Color.ui.veryStrong
-        case .none:
-            return Color.black
+        case .weak: return Color.ui.weak
+        case .mediocre: return Color.ui.mediocre
+        case .strong: return Color.ui.strong
+        case .veryStrong: return Color.ui.veryStrong
+        case .none: return Color.black
         }
     }
     
@@ -69,5 +63,19 @@ enum PasswordStrength {
         case .none:
             return ""
         }
+    }
+    
+//    var infos: LocalizedStringKey {
+//        return i18n.info(for: self)
+//    }
+    
+    static func strength(forCharacterCount count: Double) -> PasswordStrength {
+        var passwordStrenght = PasswordStrength.none
+        for strength in allCases {
+            if strength.range.contains(count) {
+                passwordStrenght = strength
+            }
+        }
+        return passwordStrenght
     }
 }
