@@ -65,32 +65,10 @@ final class GeneratorViewViewModel: ObservableObject {
     
     
     func calculateColor() -> Color {
-        var color = backgroundColor
-        color = PasswordStrength.strength(forCharacterCount: charactersValue).color
-        return color
+        PasswordStrength.strength(forCharacterCount: charactersValue).color
     }
     
     func calculateTitle() -> LocalizedStringKey {
-        var title: LocalizedStringKey
-        
-        switch (charactersValue) {
-        case PasswordStrength.weak.range:
-            title = PasswordStrength.weak.title
-            break
-        case PasswordStrength.mediocre.range:
-            title = PasswordStrength.mediocre.title
-            break
-        case PasswordStrength.strong.range:
-            title = PasswordStrength.strong.title
-            break
-        case PasswordStrength.veryStrong.range:
-            title = PasswordStrength.veryStrong.title
-            break
-        default:
-            title = PasswordStrength.weak.title
-            break
-        }
-        
-        return title
+        PasswordStrength.strength(forCharacterCount: charactersValue).title
     }
 }

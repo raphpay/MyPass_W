@@ -232,41 +232,50 @@ extension GeneratorViewModelTests {
     }
 }
 
-//var range: ClosedRange<Double> {
-//    switch self {
-//    case .weak:
-//        return 1...8
-//    case .mediocre:
-//        return 8...12
-//    case .strong:
-//        return 12...24
-//    case .veryStrong:
-//        return 24...40
-//    case .none:
-//        return 0...1
-//    }
-//}
-
-//func calculateColor() -> Color {
-//    var color = backgroundColor
-//    
-//    switch (charactersValue) {
-//    case PasswordStrength.weak.range:
-//        color = PasswordStrength.weak.color
-//        break
-//    case PasswordStrength.mediocre.range:
-//        color = PasswordStrength.mediocre.color
-//        break
-//    case PasswordStrength.strong.range:
-//        color = PasswordStrength.strong.color
-//        break
-//    case PasswordStrength.veryStrong.range:
-//        color = PasswordStrength.veryStrong.color
-//        break
-//    default:
-//        color = Color.ui.weak
-//        break
-//    }
-//    
-//    return color
-//}
+// MARK: - Calculate Title Tests
+extension GeneratorViewModelTests {
+    func testPasswordStrengthIsWeakThenTitleIsWeakTitle() {
+        // Given
+        sut.charactersValue = Double.random(in: PasswordStrength.weak.range)
+        // When
+        let title = sut.calculateTitle()
+        // Then
+        XCTAssertEqual(title, PasswordStrength.weak.title)
+    }
+    
+    func testPasswordStrengthIsMediocreThenTitleIsMediocreTitle() {
+        // Given
+        sut.charactersValue = Double.random(in: PasswordStrength.mediocre.range)
+        // When
+        let title = sut.calculateTitle()
+        // Then
+        XCTAssertEqual(title, PasswordStrength.mediocre.title)
+    }
+    
+    func testPasswordStrengthIsStrongThenTitleIsStrongTitle() {
+        // Given
+        sut.charactersValue = Double.random(in: PasswordStrength.strong.range)
+        // When
+        let title = sut.calculateTitle()
+        // Then
+        XCTAssertEqual(title, PasswordStrength.strong.title)
+    }
+    
+    func testPasswordStrengthIsVeryStrongThenTitleIsVeryStrongTitle() {
+        // Given
+        sut.charactersValue = Double.random(in: PasswordStrength.veryStrong.range)
+        // When
+        let title = sut.calculateTitle()
+        // Then
+        XCTAssertEqual(title, PasswordStrength.veryStrong.title)
+    }
+    
+    func testPasswordStrengthIsOverLimitThenTitleIsWeakTitle() {
+        // Given
+        sut.charactersValue = Double.random(in: PasswordStrength.none.range)
+        // When
+        let title = sut.calculateTitle()
+        // Then
+        XCTAssertEqual(title, PasswordStrength.none.title)
+    }
+}
