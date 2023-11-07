@@ -67,6 +67,7 @@
 		869D03522AFA733500F9C1F6 /* RealmServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869D03512AFA733500F9C1F6 /* RealmServiceTests.swift */; };
 		869D03542AFA7E5600F9C1F6 /* MockAlamofireService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869D03532AFA7E5600F9C1F6 /* MockAlamofireService.swift */; };
 		869D03562AFA7E9B00F9C1F6 /* AlamofireServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869D03552AFA7E9B00F9C1F6 /* AlamofireServiceTests.swift */; };
+		869D03582AFA834100F9C1F6 /* GeneratorViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869D03572AFA834100F9C1F6 /* GeneratorViewModelTests.swift */; };
 		86A1DA6A283CD02A00C636DD /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A1DA69283CD02A00C636DD /* View+Ext.swift */; };
 		86A1DA6C283CD68300C636DD /* SwiftUISlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A1DA6B283CD68300C636DD /* SwiftUISlider.swift */; };
 		86B1DD042846321D000F4704 /* DismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B1DD032846321D000F4704 /* DismissButton.swift */; };
@@ -147,6 +148,7 @@
 		869D03512AFA733500F9C1F6 /* RealmServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmServiceTests.swift; sourceTree = "<group>"; };
 		869D03532AFA7E5600F9C1F6 /* MockAlamofireService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAlamofireService.swift; sourceTree = "<group>"; };
 		869D03552AFA7E9B00F9C1F6 /* AlamofireServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireServiceTests.swift; sourceTree = "<group>"; };
+		869D03572AFA834100F9C1F6 /* GeneratorViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratorViewModelTests.swift; sourceTree = "<group>"; };
 		86A1DA69283CD02A00C636DD /* View+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Ext.swift"; sourceTree = "<group>"; };
 		86A1DA6B283CD68300C636DD /* SwiftUISlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUISlider.swift; sourceTree = "<group>"; };
 		86B1DD032846321D000F4704 /* DismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissButton.swift; sourceTree = "<group>"; };
@@ -420,6 +422,7 @@
 			isa = PBXGroup;
 			children = (
 				869D034A2AFA724E00F9C1F6 /* MyPass_WTests.swift */,
+				869D03572AFA834100F9C1F6 /* GeneratorViewModelTests.swift */,
 				869D03512AFA733500F9C1F6 /* RealmServiceTests.swift */,
 				869D03532AFA7E5600F9C1F6 /* MockAlamofireService.swift */,
 				869D03552AFA7E9B00F9C1F6 /* AlamofireServiceTests.swift */,
@@ -603,6 +606,7 @@
 			files = (
 				869D034B2AFA724E00F9C1F6 /* MyPass_WTests.swift in Sources */,
 				869D03522AFA733500F9C1F6 /* RealmServiceTests.swift in Sources */,
+				869D03582AFA834100F9C1F6 /* GeneratorViewModelTests.swift in Sources */,
 				869D03562AFA7E9B00F9C1F6 /* AlamofireServiceTests.swift in Sources */,
 				869D03542AFA7E5600F9C1F6 /* MockAlamofireService.swift in Sources */,
 			);

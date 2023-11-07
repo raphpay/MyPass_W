@@ -23,33 +23,25 @@ final class GeneratorViewViewModel: ObservableObject {
     func decreaseValue(_ valueType: ValueType) {
         switch valueType {
         case .characters:
-            if (charactersValue > 1) {
-                charactersValue -= 1
-            }
+            charactersValue = (charactersValue > 1) ? charactersValue - 1 : 0
         case .separators:
-            if (separatorValue > 1) {
-                separatorValue -= 1
-            }
+            separatorValue = (separatorValue > 1) ? separatorValue - 1 : 0
         }
     }
     
     func increaseValue(_ valueType: ValueType) {
         switch valueType {
         case .characters:
-            if (charactersValue < 40) {
-                charactersValue += 1
-            }
+            charactersValue = (charactersValue < 40) ? charactersValue + 1 : 40
         case .separators:
-            if (separatorValue < 10) {
-                separatorValue += 1
-            }
+            separatorValue = (separatorValue < 40) ? separatorValue + 1 : 40
         }
     }
     
     func generatePassword() {
         var password = ""
         for character in 1...(Int(charactersValue) + 1) {
-            if character.isMultiple(of: Int(separatorValue + 1)) {
+            if character.isMultiple(of: Int(separatorValue)) {
                 password += "_"
             } else {
                 password += password.random(length: 1)
