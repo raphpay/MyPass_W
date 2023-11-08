@@ -8,15 +8,22 @@
 import Foundation
 import RealmSwift
 
-class RealmService {
+public class RealmService {
     
+    var realm: Realm?
     public static let shared = RealmService()
-
-      private init() {}
+    
+    private init() {
+        self.realm = try? Realm()
+    }
+    
+    init(realm: Realm) {
+        self.realm = realm
+    }
     
     func saveCredentials(credential: Credential) {
         do {
-            let realm = try Realm()
+            guard let realm = self.realm else { return }
             try realm.write {
                 realm.add(credential)
             }

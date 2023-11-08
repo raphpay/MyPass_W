@@ -63,6 +63,17 @@
 		868F2C1E283FBEDD00517D1F /* PasswordStrengthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868F2C1D283FBEDD00517D1F /* PasswordStrengthView.swift */; };
 		868F2C20283FC3E400517D1F /* StrengthCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868F2C1F283FC3E400517D1F /* StrengthCard.swift */; };
 		868F2C22283FC59500517D1F /* PWText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868F2C21283FC59500517D1F /* PWText.swift */; };
+		869D03522AFA733500F9C1F6 /* RealmServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869D03512AFA733500F9C1F6 /* RealmServiceTests.swift */; };
+		869D03542AFA7E5600F9C1F6 /* MockAlamofireService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869D03532AFA7E5600F9C1F6 /* MockAlamofireService.swift */; };
+		869D03562AFA7E9B00F9C1F6 /* AlamofireServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869D03552AFA7E9B00F9C1F6 /* AlamofireServiceTests.swift */; };
+		869D03582AFA834100F9C1F6 /* GeneratorViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869D03572AFA834100F9C1F6 /* GeneratorViewModelTests.swift */; };
+		869D035E2AFADEE000F9C1F6 /* GeneratorViewModelTests+DecreaseValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869D035D2AFADEE000F9C1F6 /* GeneratorViewModelTests+DecreaseValue.swift */; };
+		869D03602AFADFC400F9C1F6 /* GeneratorViewModelTests+IncreaseValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869D035F2AFADFC400F9C1F6 /* GeneratorViewModelTests+IncreaseValue.swift */; };
+		869D03622AFADFF000F9C1F6 /* GeneratorViewModelTests+CalculateColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869D03612AFADFF000F9C1F6 /* GeneratorViewModelTests+CalculateColor.swift */; };
+		869D03642AFADFF900F9C1F6 /* GeneratorViewModelTests+CalculateTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869D03632AFADFF900F9C1F6 /* GeneratorViewModelTests+CalculateTitle.swift */; };
+		869D03662AFAE12300F9C1F6 /* GeneratorViewModelTests+CopyPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869D03652AFAE12300F9C1F6 /* GeneratorViewModelTests+CopyPassword.swift */; };
+		869D03682AFAE3E300F9C1F6 /* GeneratorViewModel+GeneratePassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869D03672AFAE3E300F9C1F6 /* GeneratorViewModel+GeneratePassword.swift */; };
+		869D036C2AFAE75700F9C1F6 /* PasswordStrenghtViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869D036B2AFAE75600F9C1F6 /* PasswordStrenghtViewModel.swift */; };
 		86A1DA6A283CD02A00C636DD /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A1DA69283CD02A00C636DD /* View+Ext.swift */; };
 		86A1DA6C283CD68300C636DD /* SwiftUISlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A1DA6B283CD68300C636DD /* SwiftUISlider.swift */; };
 		86B1DD042846321D000F4704 /* DismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B1DD032846321D000F4704 /* DismissButton.swift */; };
@@ -76,6 +87,16 @@
 		86E2193D283546850045A799 /* PasswordStrenght-Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E2193C283546850045A799 /* PasswordStrenght-Enum.swift */; };
 		86FBC4CD2A3CBD19006C9B71 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FBC4CC2A3CBD19006C9B71 /* TabBar.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		869D034C2AFA724E00F9C1F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 86B799CF2834149800B27498 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 86B799D62834149800B27498;
+			remoteInfo = MyPass_W;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		60042A422A2799F8001E2137 /* PWTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWTextField.swift; sourceTree = "<group>"; };
@@ -128,6 +149,18 @@
 		868F2C1D283FBEDD00517D1F /* PasswordStrengthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordStrengthView.swift; sourceTree = "<group>"; };
 		868F2C1F283FC3E400517D1F /* StrengthCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrengthCard.swift; sourceTree = "<group>"; };
 		868F2C21283FC59500517D1F /* PWText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWText.swift; sourceTree = "<group>"; };
+		869D03482AFA724E00F9C1F6 /* MyPass_WTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyPass_WTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		869D03512AFA733500F9C1F6 /* RealmServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmServiceTests.swift; sourceTree = "<group>"; };
+		869D03532AFA7E5600F9C1F6 /* MockAlamofireService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAlamofireService.swift; sourceTree = "<group>"; };
+		869D03552AFA7E9B00F9C1F6 /* AlamofireServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireServiceTests.swift; sourceTree = "<group>"; };
+		869D03572AFA834100F9C1F6 /* GeneratorViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratorViewModelTests.swift; sourceTree = "<group>"; };
+		869D035D2AFADEE000F9C1F6 /* GeneratorViewModelTests+DecreaseValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GeneratorViewModelTests+DecreaseValue.swift"; sourceTree = "<group>"; };
+		869D035F2AFADFC400F9C1F6 /* GeneratorViewModelTests+IncreaseValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GeneratorViewModelTests+IncreaseValue.swift"; sourceTree = "<group>"; };
+		869D03612AFADFF000F9C1F6 /* GeneratorViewModelTests+CalculateColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GeneratorViewModelTests+CalculateColor.swift"; sourceTree = "<group>"; };
+		869D03632AFADFF900F9C1F6 /* GeneratorViewModelTests+CalculateTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GeneratorViewModelTests+CalculateTitle.swift"; sourceTree = "<group>"; };
+		869D03652AFAE12300F9C1F6 /* GeneratorViewModelTests+CopyPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GeneratorViewModelTests+CopyPassword.swift"; sourceTree = "<group>"; };
+		869D03672AFAE3E300F9C1F6 /* GeneratorViewModel+GeneratePassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GeneratorViewModel+GeneratePassword.swift"; sourceTree = "<group>"; };
+		869D036B2AFAE75600F9C1F6 /* PasswordStrenghtViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordStrenghtViewModel.swift; sourceTree = "<group>"; };
 		86A1DA69283CD02A00C636DD /* View+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Ext.swift"; sourceTree = "<group>"; };
 		86A1DA6B283CD68300C636DD /* SwiftUISlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUISlider.swift; sourceTree = "<group>"; };
 		86B1DD032846321D000F4704 /* DismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissButton.swift; sourceTree = "<group>"; };
@@ -144,6 +177,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		869D03452AFA724E00F9C1F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		86B799D42834149800B27498 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -390,6 +430,56 @@
 			path = More;
 			sourceTree = "<group>";
 		};
+		869D03492AFA724E00F9C1F6 /* MyPass_WTests */ = {
+			isa = PBXGroup;
+			children = (
+				869D03592AFADE9300F9C1F6 /* ViewModel */,
+				869D035A2AFADEA200F9C1F6 /* Model */,
+			);
+			path = MyPass_WTests;
+			sourceTree = "<group>";
+		};
+		869D03592AFADE9300F9C1F6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				869D035C2AFADEB900F9C1F6 /* GeneratorViewModel */,
+				869D036B2AFAE75600F9C1F6 /* PasswordStrenghtViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		869D035A2AFADEA200F9C1F6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				869D035B2AFADEAD00F9C1F6 /* Services */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		869D035B2AFADEAD00F9C1F6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				869D03512AFA733500F9C1F6 /* RealmServiceTests.swift */,
+				869D03532AFA7E5600F9C1F6 /* MockAlamofireService.swift */,
+				869D03552AFA7E9B00F9C1F6 /* AlamofireServiceTests.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		869D035C2AFADEB900F9C1F6 /* GeneratorViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				869D03572AFA834100F9C1F6 /* GeneratorViewModelTests.swift */,
+				869D035D2AFADEE000F9C1F6 /* GeneratorViewModelTests+DecreaseValue.swift */,
+				869D035F2AFADFC400F9C1F6 /* GeneratorViewModelTests+IncreaseValue.swift */,
+				869D03612AFADFF000F9C1F6 /* GeneratorViewModelTests+CalculateColor.swift */,
+				869D03632AFADFF900F9C1F6 /* GeneratorViewModelTests+CalculateTitle.swift */,
+				869D03652AFAE12300F9C1F6 /* GeneratorViewModelTests+CopyPassword.swift */,
+				869D03672AFAE3E300F9C1F6 /* GeneratorViewModel+GeneratePassword.swift */,
+			);
+			path = GeneratorViewModel;
+			sourceTree = "<group>";
+		};
 		86A1DA6D283CD77900C636DD /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -403,6 +493,7 @@
 			isa = PBXGroup;
 			children = (
 				86B799D92834149800B27498 /* MyPass_W */,
+				869D03492AFA724E00F9C1F6 /* MyPass_WTests */,
 				86B799D82834149800B27498 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -411,6 +502,7 @@
 			isa = PBXGroup;
 			children = (
 				86B799D72834149800B27498 /* MyPass_W.app */,
+				869D03482AFA724E00F9C1F6 /* MyPass_WTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -443,6 +535,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		869D03472AFA724E00F9C1F6 /* MyPass_WTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 869D03502AFA724E00F9C1F6 /* Build configuration list for PBXNativeTarget "MyPass_WTests" */;
+			buildPhases = (
+				869D03442AFA724E00F9C1F6 /* Sources */,
+				869D03452AFA724E00F9C1F6 /* Frameworks */,
+				869D03462AFA724E00F9C1F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				869D034D2AFA724E00F9C1F6 /* PBXTargetDependency */,
+			);
+			name = MyPass_WTests;
+			productName = MyPass_WTests;
+			productReference = 869D03482AFA724E00F9C1F6 /* MyPass_WTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		86B799D62834149800B27498 /* MyPass_W */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 86B799E52834149900B27498 /* Build configuration list for PBXNativeTarget "MyPass_W" */;
@@ -479,9 +589,13 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1330;
-				LastUpgradeCheck = 1340;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
+					869D03472AFA724E00F9C1F6 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 86B799D62834149800B27498;
+					};
 					86B799D62834149800B27498 = {
 						CreatedOnToolsVersion = 13.3.1;
 					};
@@ -507,11 +621,19 @@
 			projectRoot = "";
 			targets = (
 				86B799D62834149800B27498 /* MyPass_W */,
+				869D03472AFA724E00F9C1F6 /* MyPass_WTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		869D03462AFA724E00F9C1F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		86B799D52834149800B27498 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -528,6 +650,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		869D03442AFA724E00F9C1F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				869D03642AFADFF900F9C1F6 /* GeneratorViewModelTests+CalculateTitle.swift in Sources */,
+				869D03522AFA733500F9C1F6 /* RealmServiceTests.swift in Sources */,
+				869D03582AFA834100F9C1F6 /* GeneratorViewModelTests.swift in Sources */,
+				869D036C2AFAE75700F9C1F6 /* PasswordStrenghtViewModel.swift in Sources */,
+				869D035E2AFADEE000F9C1F6 /* GeneratorViewModelTests+DecreaseValue.swift in Sources */,
+				869D03562AFA7E9B00F9C1F6 /* AlamofireServiceTests.swift in Sources */,
+				869D03602AFADFC400F9C1F6 /* GeneratorViewModelTests+IncreaseValue.swift in Sources */,
+				869D03542AFA7E5600F9C1F6 /* MockAlamofireService.swift in Sources */,
+				869D03662AFAE12300F9C1F6 /* GeneratorViewModelTests+CopyPassword.swift in Sources */,
+				869D03682AFAE3E300F9C1F6 /* GeneratorViewModel+GeneratePassword.swift in Sources */,
+				869D03622AFADFF000F9C1F6 /* GeneratorViewModelTests+CalculateColor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		86B799D32834149800B27498 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -589,6 +729,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		869D034D2AFA724E00F9C1F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 86B799D62834149800B27498 /* MyPass_W */;
+			targetProxy = 869D034C2AFA724E00F9C1F6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		867FC34A28357708009476D0 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
@@ -602,10 +750,60 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		869D034E2AFA724E00F9C1F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N96T5K2D2H;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.twinPaw.MyPass-WTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyPass_W.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MyPass_W";
+			};
+			name = Debug;
+		};
+		869D034F2AFA724E00F9C1F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N96T5K2D2H;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.twinPaw.MyPass-WTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyPass_W.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MyPass_W";
+			};
+			name = Release;
+		};
 		86B799E32834149900B27498 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -667,6 +865,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -785,6 +984,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		869D03502AFA724E00F9C1F6 /* Build configuration list for PBXNativeTarget "MyPass_WTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				869D034E2AFA724E00F9C1F6 /* Debug */,
+				869D034F2AFA724E00F9C1F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		86B799D22834149800B27498 /* Build configuration list for PBXProject "MyPass_W" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

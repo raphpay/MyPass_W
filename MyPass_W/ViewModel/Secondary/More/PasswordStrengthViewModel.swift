@@ -10,7 +10,7 @@
 import Foundation
 
 final class PasswordStrengthViewModel: ObservableObject {
-  // MAARK: - Properties
+  // MARK: - Properties
     @Published var password: String = ""
     @Published var passwordStrength: PasswordStrength = .none
 }

@@ -8,9 +8,14 @@
 import Foundation
 import Alamofire
 
-class AlamofireService {
+protocol AlamofireServiceDelegate {
+    func fetchWebsiteIcon(for domain: String, completion: @escaping (Data?) -> Void)
+}
+
+
+class AlamofireService: AlamofireServiceDelegate {
     
-    public static let shared = AlamofireService()
+    static let shared = AlamofireService()
     
     private init() {}
     
@@ -30,3 +35,16 @@ class AlamofireService {
         }
     }
 }
+
+class WebsiteIconDownloader {
+    let alamofireService: AlamofireServiceDelegate
+
+    init(alamofireService: AlamofireServiceDelegate = AlamofireService.shared) {
+        self.alamofireService = alamofireService
+    }
+
+    func downloadWebsiteIcon(for domain: String, completion: @escaping (Data?) -> Void) {
+        alamofireService.fetchWebsiteIcon(for: domain, completion: completion)
+    }
+}
+
