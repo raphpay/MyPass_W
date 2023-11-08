@@ -75,7 +75,7 @@ extension PasswordStrengthViewModelTests {
     func testCheckPasswordStrongStrengthLengthWithSymbolsThenResultIsStrong() {
         // Given
         let randomLength = Double.random(in: PasswordStrength.strong.range)
-        sut.password = sut.password.random(length: Int(randomLength))
+        sut.password = sut.password.random(length: Int(randomLength) - 2)
         sut.password += "A"
         sut.password += "_"
         // When
@@ -107,13 +107,3 @@ extension PasswordStrengthViewModelTests {
         XCTAssertEqual(sut.passwordStrength, PasswordStrength.veryStrong)
     }
 }
-
-//var range: ClosedRange<Double> {
-//    switch self {
-//    case .weak: return 1...8
-//    case .mediocre: return 8...12
-//    case .strong: return 12...24
-//    case .veryStrong: return 24...40
-//    case .none: return 0...1
-//    }
-//}
